@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-export default class Home extends Component {
-  state = {
-  }
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-  render () {
-      return (
-        <div>
-           <h1> connected! </h1>
-        </div>
-      )
+export default class Home extends Component {
+    state = {}
+
+    render () {
+        return (
+            <div>
+                <Header />
+                <h1>Home</h1>
+                <Footer />
+            </div>
+        )
    }
 }
