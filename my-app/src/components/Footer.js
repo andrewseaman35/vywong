@@ -7,20 +7,22 @@ export default class Footer extends Component {
       return (
         <div className="footer">
             <div className="inner">
-                <h6 className="footer-title">SMILE OFTEN.</h6>
+                <div className="title">
+                    <h6 className="footer-title">smile often.</h6>
+                </div>
                 <div className="link-container">
                     <div className="link-column">
-                        <a className="footer-link">ABOUT ME</a>
+                        <div><a className="footer-link">about me</a></div>
                     </div>
                     <div className="link-column">
-                        <a className="footer-link">MYCITE</a>
-                        <a className="footer-link">WHITE LABEL</a>
-                        <a className="footer-link">YBVR BRAND</a>
+                        <div><a className="footer-link">mycite</a></div>
+                        <div><a className="footer-link">white label</a></div>
+                        <div><a className="footer-link">ybvr brand</a></div>
                     </div>
                     <div className="link-column">
-                        <a className="footer-link">TRAVERSE</a>
-                        <a className="footer-link">AMMA</a>
-                        <a className="footer-link">OTHER WORK</a>
+                        <div><a className="footer-link">traverse</a></div>
+                        <div><a className="footer-link">amma</a></div>
+                        <div><a className="footer-link">other work</a></div>
                     </div>
                 </div>
             </div>

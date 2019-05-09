@@ -1,17 +1,30 @@
+body, html {
+  font-family: Lato, sans-serif; }
+
 .footer {
   height: 170px;
   background-color: #1f1f1f;
   color: #999;
-  margin-top: 2em;
-  text-align: center; }
+  margin-top: 24px;
+  text-align: center;
+  text-transform: uppercase; }
+  .footer .inner {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; }
+  .footer .title {
+    height: 48px; }
   .footer .footer-title {
     display: inline-block;
+    margin-top: 10px;
     margin-bottom: 20px;
-    margin-left: 5px;
     float: none;
-    font-family: Lato, sans-serif;
     color: #ececec;
     font-size: 18px;
+    line-height: 18px;
     font-weight: 400;
     text-align: left; }
   .footer .link-container {
@@ -26,6 +39,15 @@
     color: #616161;
     font-size: 14px;
     text-align: center;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    line-height: 18px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
+    .footer a.footer-link:hover {
+      color: #f49c50;
+      cursor: pointer; }
 
 /*# sourceMappingURL=App.css.map */

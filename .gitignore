@@ -1,7 +1,3 @@
 node_modules
 dist
-
-*.scssc
-
-*.css
-*.css.map
+.sass-cache
