@@ -10,11 +10,9 @@ body, html {
   text-transform: uppercase; }
   .footer .inner {
     padding-top: 24px;
-    padding-bottom: 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 100%; }
+    align-items: center; }
   .footer .title {
     height: 48px; }
   .footer .footer-title {

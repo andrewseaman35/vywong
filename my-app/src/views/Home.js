@@ -21,6 +21,10 @@ export default class Home extends Component {
                 <h1>Home</h1>
                 <h1>Home</h1>
                 <h1>Home</h1>
+                <h1>Home</h1>
+                <h1>Home</h1>
+                <h1>Home</h1>
+                <h1>Home</h1>
                 <Footer />
             </div>
         )
