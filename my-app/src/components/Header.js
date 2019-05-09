@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import { ReactComponent as Logo } from '../img/vyw_logo.svg';
 export default class Header extends Component {
   state = {
   }
 
   render () {
       return (
-        <div>
-           <h1>Header</h1>
+        <div className="header">
+            <a href='/'>
+               <Logo className="logo" />
+            </a>
         </div>
       )
    }
