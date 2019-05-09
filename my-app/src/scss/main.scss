@@ -3,3 +3,21 @@
 
 @import 'header.scss';
 @import 'footer.scss';
+
+
+.inner {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.homepage {
+    padding-top: 80px;
+
+    .homepage-header {
+        text-transform: uppercase;
+    }
+
+    @import 'home.scss';
+}
