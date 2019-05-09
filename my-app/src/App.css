@@ -2,6 +2,9 @@ body, html {
   font-family: Lato, sans-serif;
   color: #4a4a4a; }
 
+a {
+  color: #4a4a4a; }
+
 h1 {
   margin: 0;
   color: #4a4a4a;
@@ -116,5 +119,41 @@ p {
     border-left-style: solid;
     border-left-width: 3px;
     border-left-color: #4a4a4a; }
+
+.tile-container {
+  margin-top: 60px; }
+  .tile-container .tile {
+    height: 300px;
+    width: 40%;
+    border: 3px solid #4a4a4a;
+    background-size: cover; }
+    .tile-container .tile.mycite {
+      background-image: url("img/mycite_back.jpg"); }
+  .tile-container .tile-image {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .tile-container .tile-image img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; }
+  .tile-container .title-container {
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 25px;
+    font-family: "Open Sans", sans-serif; }
+    .tile-container .title-container .title {
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 20px; }
+    .tile-container .title-container .subtitle {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px; }
+  .tile-container .tile-cover {
+    height: 100%;
+    background-image: linear-gradient(180deg, transparent 54%, #fff); }
 
 /*# sourceMappingURL=App.css.map */

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
-import logo from './logo.svg';
 import Home from './views/Home';
 import Page from './views/Page';
 import './App.css';

@@ -21,3 +21,8 @@
 
     @import 'home.scss';
 }
+
+.tile-container {
+    margin-top: 60px;
+    @import 'tiles.scss';
+}
