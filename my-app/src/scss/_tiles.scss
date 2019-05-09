@@ -1,12 +1,36 @@
 .tile {
     height: 300px;
-    width: 40%;
+    width: 100%;
     border: 3px solid $DARK_GRAY;
     background-size: cover;
+    margin: 5px;
 
+    &.small {
+        width: 40%;
+    }
+
+    &.wide {
+        width: 60%;
+    }
 
     &.mycite {
         background-image: url('img/mycite_back.jpg');
+    }
+
+    &.ybvr_white_label {
+        background-image: url('img/ybvr_white_label_back.png');
+    }
+
+    &.ybvr_brand {
+        background-image: url('img/ybvr_brand_back.png');
+    }
+
+    &.traverse {
+        background-image: url('img/traverse_back.png');
+    }
+
+    &.amma {
+        background-image: url('img/amma_back.jpg');
     }
 
 }
@@ -21,6 +45,7 @@
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
+        opacity: 0.7;
     }
 }
 
@@ -29,6 +54,9 @@
     margin-top: -55px;
     margin-left: 25px;
     font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .title {
         text-transform: uppercase;
@@ -41,6 +69,13 @@
         font-weight: 400;
         line-height: 20px;
     }
+}
+
+.tile-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .tile-cover {

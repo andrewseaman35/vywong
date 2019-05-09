@@ -19,8 +19,15 @@ export default class Home extends Component {
                         </blockquote>
                     </div>
                     <div className="tile-container">
-                        <Tile project='mycite' title='MyCite' subtitle='Mobile and Web App'>
-                        </Tile>
+                        <div className="tile-row">
+                            <Tile project='mycite' size='small' title='MyCite' subtitle='Mobile and Web App' />
+                            <Tile project='ybvr_white_label' size='wide' title='YBVR White Label' subtitle='Virtual Reality' />
+                        </div>
+                        <div className="tile-row">
+                            <Tile project='ybvr_brand' size='small' title='YBVR Brand' subtitle='Brand Development' />
+                            <Tile project='traverse' size='small' title='Traverse' subtitle='Mobile iOS' />
+                            <Tile project='amma' size='small' title='AMMA' subtitle='Mobile Android' />
+                        </div>
                     </div>
                 </div>
                 <Footer />
