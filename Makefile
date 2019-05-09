@@ -10,4 +10,8 @@ start: css
 build: css
 	cd my-app && npm run build
 
-.PHONY: css start build
+deploy: build
+	aws s3 rm s3://victoriaywong.com --recursive --profile=aseaman
+	aws s3 cp --recursive my-app/build/ s3://victoriaywong.com --profile=aseaman --acl=public-read
+
+.PHONY: css start build deploy
