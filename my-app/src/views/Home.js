@@ -28,6 +28,9 @@ export default class Home extends Component {
                             <Tile project='traverse' size='small' title='Traverse' subtitle='Mobile iOS' />
                             <Tile project='amma' size='small' title='AMMA' subtitle='Mobile Android' />
                         </div>
+                        <div className="tile-row">
+                            <Tile project='other' size='full-width' title='Other Work' subtitle='Print, branding, infographic, fun' />
+                        </div>
                     </div>
                 </div>
                 <Footer />

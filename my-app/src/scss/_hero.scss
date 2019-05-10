@@ -1,0 +1,30 @@
+.hero {
+    height: 100vh;
+
+    .hero-overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    &.mycite {
+        background-image: url('img/mycite_hero_back.jpg');
+        background-size: cover;
+
+        .hero-overlay {
+            background-image: url('img/mycite_hero_front.png');
+        }
+    }
+
+    &.ybvr_white_label {
+        background-image: url('img/ybvr_white_label_hero_back.png');
+        background-size: cover;
+
+        .hero-overlay {
+            background-image: url('img/ybvr_white_label_hero_front.png');
+        }
+    }
+}

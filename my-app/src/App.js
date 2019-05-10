@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import Home from './views/Home';
-import Page from './views/Page';
+import ProjectPage from './views/ProjectPage';
 import './App.css';
 
 class App extends Component {
@@ -14,9 +14,14 @@ class App extends Component {
               <Home />
             </div>
           )}/>
-          <Route exact={true} path='/page' render={() => (
+          <Route exact={true} path='/mycite' render={() => (
             <div className="App">
-              <Page />
+              <ProjectPage project='mycite'/>
+            </div>
+          )}/>
+          <Route exact={true} path='/ybvr_white_label' render={() => (
+            <div className="App">
+              <ProjectPage project='ybvr_white_label'/>
             </div>
           )}/>
         </div>

@@ -1,4 +1,4 @@
-@import 'colors.scss';
+@import 'variables.scss';
 @import 'typography.scss';
 
 @import 'header.scss';
@@ -26,3 +26,10 @@
     margin-top: 60px;
     @import 'tiles.scss';
 }
+
+.hero-container {
+    height: 100vh;
+    @import 'hero.scss';
+}
+
+@import 'project.scss';
