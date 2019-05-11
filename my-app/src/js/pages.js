@@ -24,12 +24,15 @@ const PAGES = {
         projectLinks: {
             header: 'Articles about MYCITE',
             links: [{
+                id: 'interview_with_otsuke',
                 text: 'Interview with Otsuka\'s President and CEO about MYCITE',
                 href: 'https://pharmaphorum.com/views-analysis-digital/abilify-mycite-and-innovating-in-digital-health/',
             }, {
+                id: 'mobiquity_contributes',
                 text: 'Mobiquity Contributes To MYCITE\'s Design and Development',
                 href: 'https://www.mobiquityinc.com/blog/mobiquity-digital-medicine-system',
             }, {
+                id: 'fda_approves',
                 text: 'FDA Approves First Drugs with Digital Ingestion Tracking System',
                 href: 'https://www.fda.gov/news-events/press-announcements/fda-approves-pill-sensor-digitally-tracks-if-patients-have-ingested-their-medication',
             },

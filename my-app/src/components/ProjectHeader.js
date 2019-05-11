@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 import PAGES from '../js/pages';
+
+ReactGA.initialize('UA-130632736-4');
 
 export default class ProjectHeader extends Component {
     state = {}
+
+    onProjectLinkClicked(linkText) {
+        const linkId = `${this.props.project}:${linkText}`;
+        ReactGA.event({
+            category: 'projectLink',
+            action: 'click',
+            label: linkId,
+        });
+    }
 
     renderProjectLinks() {
         const projectLinks = PAGES[this.props.project].projectLinks;
@@ -10,11 +22,15 @@ export default class ProjectHeader extends Component {
             return null;
         }
         const links = [];
-        projectLinks.links.forEach(function(link, i) {
+        projectLinks.links.forEach((function(link, i) {
             links.push(
-                <div key={i} className="project-link"><a href={link.href} rel='noopener noreferrer' target='_blank'>{link.text}</a></div>
+                <div key={i} className="project-link">
+                    <a href={link.href} rel='noopener noreferrer' target='_blank' onClick={this.onProjectLinkClicked.bind(this, link.id)}>
+                        {link.text}
+                    </a>
+                </div>
             )
-        });
+        }).bind(this));
         return (
             <div className='link-container'>
                 <h3 className="link-header">{projectLinks.header}</h3>
