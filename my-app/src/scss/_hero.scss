@@ -11,20 +11,47 @@
     }
 
     &.mycite {
-        background-image: url('img/mycite_hero_back.jpg');
+        background-image: url('img/mycite/calendar.jpg');
         background-size: cover;
 
         .hero-overlay {
-            background-image: url('img/mycite_hero_front.png');
+            background-image: url('img/mycite/abilify.png');
         }
     }
 
     &.ybvr_white_label {
-        background-image: url('img/ybvr_white_label_hero_back.png');
+        background-image: url('img/ybvr_white_label/forest.png');
         background-size: cover;
 
         .hero-overlay {
-            background-image: url('img/ybvr_white_label_hero_front.png');
+            background-image: url('img/ybvr_white_label/menu_ui.png');
+        }
+    }
+
+    &.ybvr_brand {
+        background-image: url('img/ybvr_brand/yosemite.jpg');
+        background-size: cover;
+
+        .hero-overlay {
+            background-image: url('img/ybvr_brand/ybvr_logo.png');
+        }
+    }
+
+    &.traverse {
+        background-image: url('img/traverse/map.png');
+        background-size: cover;
+
+        .hero-overlay {
+            background-image: url('img/traverse/logo_phone.png');
+        }
+    }
+
+    &.amma {
+        background-image: url('img/amma/runner.jpg');
+        background-size: cover;
+
+        .hero-overlay {
+            background-image: url('img/amma/logo_phone.png');
         }
     }
 }

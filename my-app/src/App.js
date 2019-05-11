@@ -27,6 +27,21 @@ class App extends Component {
               <ProjectPage project='ybvr_white_label'/>
             </div>
           )}/>
+          <Route exact={true} path='/ybvr_brand' render={() => (
+            <div className="App">
+              <ProjectPage project='ybvr_brand'/>
+            </div>
+          )}/>
+          <Route exact={true} path='/traverse' render={() => (
+            <div className="App">
+              <ProjectPage project='traverse'/>
+            </div>
+          )}/>
+          <Route exact={true} path='/amma' render={() => (
+            <div className="App">
+              <ProjectPage project='amma'/>
+            </div>
+          )}/>
         </div>
       </HashRouter>
     );

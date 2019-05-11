@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
 import Header from '../components/Header';
 import Tile from '../components/Tile';
 import Footer from '../components/Footer';

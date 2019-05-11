@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import MyCiteFlower from '../img/mycite_flower.png';
-import YbvrWhiteLabel from '../img/ybvr_white_label.svg';
-import YbvrBrand from '../img/ybvr_brand_logo.png';
-import Traverse from '../img/traverse_phone.png';
-import Amma from '../img/amma_front.png';
+import MyCiteFlower from '../img/mycite/flower.png';
+import YbvrWhiteLabel from '../img/ybvr_white_label/headset.svg';
+import YbvrBrand from '../img/ybvr_brand/ybvr_logo.png';
+import Traverse from '../img/traverse/phone.png';
+import Amma from '../img/amma/phone.png';
 import VYWLogo from '../img/vyw_logo.svg';
 
 const images = {
