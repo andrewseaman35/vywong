@@ -1,6 +1,7 @@
 .project-header {
     display: flex;
     flex-direction: row;
+    margin-bottom: 24px;
 }
 
 .project-details {
@@ -30,3 +31,11 @@
         color: $ORANGE;
     }
 }
+
+
+.mycite-image {
+    img {
+        max-width: 100%;
+    }
+}
+
