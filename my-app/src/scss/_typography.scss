@@ -16,6 +16,18 @@ h1 {
     line-height: 44px;
 }
 
+h2 {
+    margin: 0 0 18px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 24px 0 0 0;
+}
+
 p {
     color: $DARK_GRAY;
     font-size: 14px;
@@ -26,6 +38,18 @@ p {
     margin: 10px 0px;
     padding-right: 0px;
     font-family: Lato, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.body {
+    width: auto;
+    margin: 10px 0px;
+    padding-right: 0px;
+    font-family: Lato, sans-serif;
+    color: $DARK_GRAY;
     font-size: 14px;
     line-height: 26px;
     font-weight: 300;

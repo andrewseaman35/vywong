@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import Home from './views/Home';
 import ProjectPage from './views/ProjectPage';
 import './App.css';
+
+ReactGA.initialize('UA-130632736-4');
 
 class App extends Component {
   render() {

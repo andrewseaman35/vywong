@@ -1,42 +1,45 @@
 import React, { Component } from 'react';
-import ProjectDetails from '../components/ProjectDetails';
-import ProjectIntro from '../components/ProjectIntro';
-
-const data = {
-    mycite: {
-        projectDetails: {
-            product: 'Brand Design',
-            year: '2017-2018',
-            experience: 'Branding',
-            platform: 'Digital, Print',
-        },
-        projectIntro: {
-            title: 'Medicine Goes Digital',
-            content: 'At Mobiquity, I worked on the MYCITE mobile app and web-based portal. My work on the MYCITE project is under strict NDA.',
-        }
-    },
-    ybvr_white_label: {
-        projectDetails: {
-            product: 'Virtual Reality',
-            year: '2017-2018',
-            experience: 'Product Design, UX/UI Design, UX Research',
-            platform: 'Android, GearVP',
-        },
-        projectIntro: {
-            title: 'VR Streaming Platform',
-            content: 'YBVR, a Silicon Valley based startup, is creating a VR video streaming platform. YBVR\'s white label application allows customers to customize their application with their own branding without having to build one themselves. To showcase YBVR’s white label capabilities, I focused on creating a dynamic home scene that displayed different feature options.',
-        },
-    },
-}
+import PAGES from '../js/pages';
 
 export default class ProjectHeader extends Component {
     state = {}
 
+    renderProjectLinks() {
+        const projectLinks = PAGES[this.props.project].projectLinks;
+        if (!projectLinks) {
+            return null;
+        }
+        const links = [];
+        projectLinks.links.forEach(function(link, i) {
+            links.push(
+                <div key={i} className="project-link"><a href={link.href} rel='noopener noreferrer' target='_blank'>{link.text}</a></div>
+            )
+        });
+        return (
+            <div className='link-container'>
+                <h3 className="link-header">{projectLinks.header}</h3>
+                {links}
+            </div>
+        )
+    }
+
     render () {
+        const details = PAGES[this.props.project].projectDetails;
+        const intro = PAGES[this.props.project].projectIntro;
+
         return (
             <div className="project-header">
-                <ProjectDetails {...data[this.props.project].projectDetails} />
-                <ProjectIntro {...data[this.props.project].projectIntro} />
+                <div className="project-details">
+                    <div className="detail">Product: <strong>{details.product}</strong></div>
+                    <div className="detail">‍Year: <strong>{details.year}</strong></div>
+                    <div className="detail">‍Experience: <strong>{details.experience}</strong></div>
+                    <div className="detail">‍Platform: <strong>{details.platform}</strong></div>
+                </div>
+                <div className="project-intro">
+                    <h2 className="title">{intro.title}</h2>
+                    <div className="body">{intro.content}</div>
+                    {this.renderProjectLinks()}
+                </div>
             </div>
         )
     }
