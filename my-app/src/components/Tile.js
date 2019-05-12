@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import { getImageSrc } from '../js/util';
-import Amma from '../img/amma/phone.png';
-import VYWLogo from '../img/vyw_logo.svg';
 
 const images = {
     'mycite': getImageSrc('mycite/flower.png'),
     'ybvr_white_label': getImageSrc('ybvr_white_label/headset.svg'),
     'ybvr_brand': getImageSrc('ybvr_brand/ybvr_logo.png'),
     'traverse': getImageSrc('traverse/phone.png'),
-    'amma': Amma,
-    'other': VYWLogo,
+    'amma': getImageSrc('amma/phone.png'),
+    'other': getImageSrc('vyw_logo.svg'),
 }
 
 export default class Tile extends Component {

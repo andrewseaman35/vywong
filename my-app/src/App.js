@@ -8,6 +8,7 @@ import MyCite from './views/MyCite';
 import Traverse from './views/Traverse';
 import YbvrWhiteLabel from './views/YbvrWhiteLabel';
 import YbvrBrand from './views/YbvrBrand';
+import Amma from './views/Amma';
 
 import './App.css';
 
@@ -54,6 +55,7 @@ class App extends Component {
           <Route exact={true} path='/amma' render={() => (
             <div className="App">
               <ProjectPage project='amma'>
+                <Amma />
               </ProjectPage>
             </div>
           )}/>

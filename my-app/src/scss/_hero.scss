@@ -47,11 +47,11 @@
     }
 
     &.amma {
-        background-image: url('img/amma/runner.jpg');
+        background-image: image-url('amma/runner.jpg');
         background-size: cover;
 
         .hero-overlay {
-            background-image: url('img/amma/logo_phone.png');
+            background-image: image-url('amma/logo_phone.png');
         }
     }
 }

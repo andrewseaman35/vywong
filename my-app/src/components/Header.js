@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ReactComponent as Logo } from '../img/vyw_logo.svg';
+import { getImageSrc } from '../js/util';
 export default class Header extends Component {
   state = {
   }
@@ -8,7 +8,7 @@ export default class Header extends Component {
       return (
         <div className="header">
             <a href='/'>
-               <Logo className="logo" />
+               <img className='logo' src={getImageSrc('vyw_logo.svg')} alt="Logo"/>
             </a>
         </div>
       )
