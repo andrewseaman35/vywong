@@ -4,6 +4,10 @@
 @import 'header.scss';
 @import 'footer.scss';
 
+img {
+    max-width: 100%;
+    margin: 16px 0;
+}
 
 .inner {
     max-width: 940px;
@@ -18,8 +22,6 @@
     .homepage-header {
         text-transform: uppercase;
     }
-
-    @import 'home.scss';
 }
 
 .tile-container {
@@ -33,3 +35,5 @@
 }
 
 @import 'project.scss';
+
+@import 'ybvr.scss';

@@ -20,11 +20,11 @@
     }
 
     &.ybvr_white_label {
-        background-image: url('img/ybvr_white_label/forest.png');
+        background-image: image-url('ybvr_white_label/forest.png');
         background-size: cover;
 
         .hero-overlay {
-            background-image: url('img/ybvr_white_label/menu_ui.png');
+            background-image: image-url('ybvr_white_label/menu_ui.png');
         }
     }
 

@@ -19,9 +19,6 @@
 
 .project-intro {
     padding: 0 20px;
-    h2 {
-        text-transform: uppercase;
-    }
 }
 
 .project-link {
@@ -32,10 +29,13 @@
     }
 }
 
-
-.mycite-image {
-    img {
-        max-width: 100%;
-    }
+.main-content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
 }
 
+section {
+    margin-top: 40px;
+}

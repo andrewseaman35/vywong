@@ -14,6 +14,8 @@ export default class ProjectPage extends Component {
                 <Hero project={this.props.project} />
                 <div className="inner">
                     <ProjectHeader project={this.props.project} />
+                </div>
+                <div className="main-content">
                     {this.props.children}
                 </div>
                 <Footer />

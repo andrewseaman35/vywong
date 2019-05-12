@@ -49,7 +49,7 @@ export default class Footer extends Component {
         <div className="footer">
             <div className="inner">
                 <div className="title">
-                    <h6 className="footer-title">smile often.</h6>
+                    <h4 className="footer-title">smile often.</h4>
                 </div>
                 <div className="link-container">
                     {this.renderLinkColumns()}

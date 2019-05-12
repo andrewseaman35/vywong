@@ -23,7 +23,7 @@
     }
 
     &.ybvr_white_label {
-        background-image: url('img/ybvr_white_label/forest.png');
+        background-image: image-url('ybvr_white_label/forest.png');
     }
 
     &.ybvr_brand {
@@ -47,6 +47,7 @@
     justify-content: center;
 
     img {
+        margin: 0;
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;

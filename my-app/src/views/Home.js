@@ -15,7 +15,12 @@ export default class Home extends Component {
                         <h1 className='homepage-header'><strong>Hello there!</strong></h1>
                         <p className="body">I am Victoria. I am a passionate, driven designer who loves:</p>
                         <blockquote className="quote">
-                            <strong className="bold-text-2">Designing with impact<br/>Advocating for user needs<br/>Believing my cat loves me back<br/>Saving the best bite of food for last</strong>
+                            <strong className="bold-text-2">
+                                Designing with impact<br/>
+                                Advocating for user needs<br/>
+                                Believing my cat loves me back<br/>
+                                Saving the best bite of food for last
+                            </strong>
                         </blockquote>
                     </div>
                     <div className="tile-container">

@@ -20,12 +20,23 @@ h2 {
     margin: 0 0 18px 0;
     font-size: 18px;
     font-weight: 700;
+    text-transform: uppercase;
+
 }
 
 h3 {
     font-size: 14px;
     font-weight: bold;
     margin: 24px 0 0 0;
+}
+
+h6 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: $DARK_GRAY;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
 }
 
 p {
@@ -42,6 +53,10 @@ p {
     line-height: 26px;
     font-weight: 300;
     text-align: left;
+
+    +p {
+        margin-top: 24px;
+    }
 }
 
 .body {
@@ -67,4 +82,22 @@ p {
 .bold-text-2 {
     margin-right: 0px;
     font-size: 14px;
+}
+
+
+blockquote {
+    margin: 0 0 10px 0;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 26px;
+
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-left-color: $DARK_GRAY;
+
+    a {
+        &:hover {
+            color: $ORANGE;
+        }
+    }
 }

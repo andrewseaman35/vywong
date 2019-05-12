@@ -1,0 +1,33 @@
+.ybvr-white-label {
+    .before-after-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        .before, .after {
+            border: 3px solid $DARK_GRAY;
+            padding: 16px;
+            text-transform: uppercase;
+        }
+
+        .before {
+            margin-right: 10px;
+        }
+        .after {
+            margin-left: 10px;
+        }
+    }
+
+    .content {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+
+        blockquote {
+            margin-top: 10px;
+        }
+    }
+}

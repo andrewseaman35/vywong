@@ -3,7 +3,10 @@ import { HashRouter, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import Home from './views/Home';
 import ProjectPage from './views/ProjectPage';
+
 import MyCite from './views/MyCite';
+import YbvrWhiteLabel from './views/YbvrWhiteLabel';
+
 import './App.css';
 
 ReactGA.initialize('UA-130632736-4');
@@ -27,7 +30,9 @@ class App extends Component {
           )}/>
           <Route exact={true} path='/ybvr_white_label' render={() => (
             <div className="App">
-              <ProjectPage project='ybvr_white_label'/>
+              <ProjectPage project='ybvr_white_label'>
+                <YbvrWhiteLabel />
+              </ProjectPage>
             </div>
           )}/>
           <Route exact={true} path='/ybvr_brand' render={() => (
