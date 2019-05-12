@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { getImageSrc } from '../js/util';
 import MyCiteFlower from '../img/mycite/flower.png';
-import YbvrWhiteLabel from '../img/ybvr_white_label/headset.svg';
 import YbvrBrand from '../img/ybvr_brand/ybvr_logo.png';
 import Traverse from '../img/traverse/phone.png';
 import Amma from '../img/amma/phone.png';
@@ -8,7 +8,7 @@ import VYWLogo from '../img/vyw_logo.svg';
 
 const images = {
     'mycite': MyCiteFlower,
-    'ybvr_white_label': YbvrWhiteLabel,
+    'ybvr_white_label': getImageSrc('ybvr_white_label/headset.svg'),
     'ybvr_brand': YbvrBrand,
     'traverse': Traverse,
     'amma': Amma,
