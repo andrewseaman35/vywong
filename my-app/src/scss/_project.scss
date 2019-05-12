@@ -39,3 +39,35 @@
 section {
     margin-top: 40px;
 }
+
+.content {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+    blockquote {
+        margin-top: 10px;
+    }
+}
+
+.traverse {
+    .screens-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        div{
+            width: 30%
+        }
+    }
+    section {
+        a {
+            color: $ORANGE;
+
+            &:hover {
+                color: $DARK_GRAY;
+            }
+        }
+    }
+}

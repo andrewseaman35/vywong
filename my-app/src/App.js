@@ -5,6 +5,7 @@ import Home from './views/Home';
 import ProjectPage from './views/ProjectPage';
 
 import MyCite from './views/MyCite';
+import Traverse from './views/Traverse';
 import YbvrWhiteLabel from './views/YbvrWhiteLabel';
 import YbvrBrand from './views/YbvrBrand';
 
@@ -45,7 +46,9 @@ class App extends Component {
           )}/>
           <Route exact={true} path='/traverse' render={() => (
             <div className="App">
-              <ProjectPage project='traverse'/>
+              <ProjectPage project='traverse'>
+                <Traverse />
+              </ProjectPage>
             </div>
           )}/>
           <Route exact={true} path='/amma' render={() => (

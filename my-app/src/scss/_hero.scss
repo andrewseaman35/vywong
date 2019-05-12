@@ -38,11 +38,11 @@
     }
 
     &.traverse {
-        background-image: url('img/traverse/map.png');
+        background-image: image-url('traverse/map.png');
         background-size: cover;
 
         .hero-overlay {
-            background-image: url('img/traverse/logo_phone.png');
+            background-image: image-url('traverse/logo_phone.png');
         }
     }
 
