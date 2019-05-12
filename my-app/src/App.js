@@ -6,6 +6,7 @@ import ProjectPage from './views/ProjectPage';
 
 import MyCite from './views/MyCite';
 import YbvrWhiteLabel from './views/YbvrWhiteLabel';
+import YbvrBrand from './views/YbvrBrand';
 
 import './App.css';
 
@@ -37,7 +38,9 @@ class App extends Component {
           )}/>
           <Route exact={true} path='/ybvr_brand' render={() => (
             <div className="App">
-              <ProjectPage project='ybvr_brand'/>
+              <ProjectPage project='ybvr_brand'>
+                <YbvrBrand />
+              </ProjectPage>
             </div>
           )}/>
           <Route exact={true} path='/traverse' render={() => (

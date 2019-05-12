@@ -29,11 +29,11 @@
     }
 
     &.ybvr_brand {
-        background-image: url('img/ybvr_brand/yosemite.jpg');
+        background-image: image-url('ybvr_brand/yosemite.jpg');
         background-size: cover;
 
         .hero-overlay {
-            background-image: url('img/ybvr_brand/ybvr_logo.png');
+            background-image: image-url('ybvr_brand/ybvr_logo.png');
         }
     }
 

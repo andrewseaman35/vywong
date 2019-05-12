@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { getImageSrc } from '../js/util';
-import YbvrBrand from '../img/ybvr_brand/ybvr_logo.png';
 import Traverse from '../img/traverse/phone.png';
 import Amma from '../img/amma/phone.png';
 import VYWLogo from '../img/vyw_logo.svg';
@@ -8,7 +7,7 @@ import VYWLogo from '../img/vyw_logo.svg';
 const images = {
     'mycite': getImageSrc('mycite/flower.png'),
     'ybvr_white_label': getImageSrc('ybvr_white_label/headset.svg'),
-    'ybvr_brand': YbvrBrand,
+    'ybvr_brand': getImageSrc('ybvr_brand/ybvr_logo.png'),
     'traverse': Traverse,
     'amma': Amma,
     'other': VYWLogo,
