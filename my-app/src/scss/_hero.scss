@@ -11,11 +11,11 @@
     }
 
     &.mycite {
-        background-image: url('img/mycite/calendar.jpg');
+        background-image: image-url('mycite/calendar.jpg');
         background-size: cover;
 
         .hero-overlay {
-            background-image: url('img/mycite/abilify.png');
+            background-image: image-url('mycite/abilify.png');
         }
     }
 

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { getImageSrc } from '../js/util';
-import MyCiteFlower from '../img/mycite/flower.png';
 import YbvrBrand from '../img/ybvr_brand/ybvr_logo.png';
 import Traverse from '../img/traverse/phone.png';
 import Amma from '../img/amma/phone.png';
 import VYWLogo from '../img/vyw_logo.svg';
 
 const images = {
-    'mycite': MyCiteFlower,
+    'mycite': getImageSrc('mycite/flower.png'),
     'ybvr_white_label': getImageSrc('ybvr_white_label/headset.svg'),
     'ybvr_brand': YbvrBrand,
     'traverse': Traverse,

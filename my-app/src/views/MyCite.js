@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Packaging from '../img/mycite/packaging.png';
+import { getImageSrc } from '../js/util';
 
 export default class MyCite extends Component {
     state = {}
@@ -7,7 +7,7 @@ export default class MyCite extends Component {
     render () {
         return (
             <div className='mycite-image'>
-                <img src={Packaging} alt='MyCite Packaging' />
+                <img src={getImageSrc('mycite/packaging.png')} alt='MyCite Packaging' />
             </div>
         )
    }
