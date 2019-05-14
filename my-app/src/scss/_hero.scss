@@ -59,8 +59,8 @@
         background-image: image-url('other/workspace.jpg');
         background-size: cover;
 
-        .hero-overlay::before {
-            content: "Other work"
+        .hero-overlay {
+            background-image: image-url('other/other_logo.png');
         }
     }
 }
