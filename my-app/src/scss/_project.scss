@@ -86,3 +86,25 @@ section {
         }
     }
 }
+
+.other {
+    .item-container {
+        display: flex;
+    }
+
+    .item-description {
+        padding: 48px 20px;
+    }
+
+    .item-image {
+        img {
+            max-width: 250px;
+            @include screen-medium {
+                max-width: 400px;
+            }
+            @include screen-large {
+                max-width: 600px;
+            }
+        }
+    }
+}
