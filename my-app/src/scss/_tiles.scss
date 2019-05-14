@@ -47,6 +47,16 @@
         background-image: image-url('amma/runner.jpg');
     }
 
+    &:hover {
+        .tile-image {
+            background-size: 90%;
+        }
+
+        .tile-image.other {
+            background-size: 110%;
+        }
+    }
+
 }
 
 .tile-image {
@@ -55,9 +65,16 @@
     flex-direction: row;
     justify-content: center;
 
-    background-size: contain;
+    // background-size: contain;
+    background-size: 80%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    transition: background-size 0.5s;
+    -moz-transition: background-size 0.5s;
+    -ms-transition: background-size 0.5s;
+    -o-transition: background-size 0.5s;
+    -webkit-transition: background-size 0.5s;
 
     &.mycite {
         background-image: image-url('mycite/tile_flower.png');
@@ -81,7 +98,7 @@
 
     &.other {
         background-image: image-url('vyw_logo.svg');
-        background-size: cover;
+        background-size: 100%;
         background-position: 50% 30%;
     }
 }

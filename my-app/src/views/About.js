@@ -29,7 +29,7 @@ export default class About extends Component {
                         </div>
                         <div>
                             <div className="profile">
-                                <img src={getImageSrc('about/profile.jpg')} alt="Profile picture"/>
+                                <img src={getImageSrc('about/profile.jpg')} alt="Profile"/>
                                 <div className="profile-text">
                                     <p>
                                         As a versatile designer who loves to understand her users, I strive to create meaningful experiences that boost how people work. I value intuitive, impactful designs and aim to build products that solve complex problems and improve the way people interact with the digital world.
