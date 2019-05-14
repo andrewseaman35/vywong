@@ -20,19 +20,19 @@ $screen-med-min: $screen-sml-max + 1;
 $screen-med-max: 1070px;
 $screen-lrg-min: $screen-med-max + 1;
 
-@mixin screen-small {
+@mixin screen-small-only {
     @media (max-width: #{$screen-sml-max}) {
         @content;
     }
  }
 
  @mixin screen-medium {
-    @media (max-width: #{$screen-med-max}) {
+    @media (min-width: #{$screen-med-min}) {
         @content;
     }
  }
 
- @mixin screen-large-only {
+ @mixin screen-large {
     @media (min-width: #{$screen-lrg-min}) {
         @content;
     }

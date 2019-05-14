@@ -7,6 +7,10 @@
         justify-content: space-between;
         margin-bottom: 24px;
 
+        @include screen-small-only {
+            flex-direction: column;
+        }
+
         .before, .after {
             border: 3px solid $DARK_GRAY;
             padding: 16px;
@@ -15,9 +19,16 @@
 
         .before {
             margin-right: 10px;
+            @include screen-small-only {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
         }
         .after {
             margin-left: 10px;
+            @include screen-small-only {
+                margin-left: 0;
+            }
         }
     }
 }

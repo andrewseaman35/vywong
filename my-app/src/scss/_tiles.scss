@@ -7,14 +7,14 @@
 
     &.small {
         width: 40%;
-        @include screen-small {
+        @include screen-small-only {
             width: auto;
         }
     }
 
     &.wide {
         width: 60%;
-        @include screen-small {
+        @include screen-small-only {
             width: auto;
         }
     }
@@ -125,7 +125,7 @@
     justify-content: space-between;
     align-content: center;
 
-    @include screen-small {
+    @include screen-small-only {
         flex-direction: column;
     }
 }
