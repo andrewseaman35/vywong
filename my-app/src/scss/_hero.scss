@@ -54,4 +54,13 @@
             background-image: image-url('amma/logo_phone.png');
         }
     }
+
+    &.other {
+        background-image: image-url('other/workspace.jpg');
+        background-size: cover;
+
+        .hero-overlay::before {
+            content: "Other work"
+        }
+    }
 }

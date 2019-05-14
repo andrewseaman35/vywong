@@ -9,53 +9,66 @@ import Traverse from './views/Traverse';
 import YbvrWhiteLabel from './views/YbvrWhiteLabel';
 import YbvrBrand from './views/YbvrBrand';
 import Amma from './views/Amma';
+import Other from './views/Other';
 
 import './App.css';
 
 ReactGA.initialize('UA-130632736-4');
+
+function changePage(content) {
+  window.scrollTo(0, 0);
+  return content;
+}
 
 class App extends Component {
   render() {
     return (
       <HashRouter>
         <div>
-          <Route exact={true} path='/' render={() => (
+          <Route exact={true} path='/' render={changePage.bind(null,
             <div className="App">
               <Home />
             </div>
           )}/>
-          <Route exact={true} path='/mycite' render={() => (
+          <Route exact={true} path='/mycite' render={changePage.bind(null,
             <div className="App">
               <ProjectPage project='mycite'>
                 <MyCite />
               </ProjectPage>
             </div>
           )}/>
-          <Route exact={true} path='/ybvr_white_label' render={() => (
+          <Route exact={true} path='/ybvr_white_label' render={changePage.bind(null,
             <div className="App">
               <ProjectPage project='ybvr_white_label'>
                 <YbvrWhiteLabel />
               </ProjectPage>
             </div>
           )}/>
-          <Route exact={true} path='/ybvr_brand' render={() => (
+          <Route exact={true} path='/ybvr_brand' render={changePage.bind(null,
             <div className="App">
               <ProjectPage project='ybvr_brand'>
                 <YbvrBrand />
               </ProjectPage>
             </div>
           )}/>
-          <Route exact={true} path='/traverse' render={() => (
+          <Route exact={true} path='/traverse' render={changePage.bind(null,
             <div className="App">
               <ProjectPage project='traverse'>
                 <Traverse />
               </ProjectPage>
             </div>
           )}/>
-          <Route exact={true} path='/amma' render={() => (
+          <Route exact={true} path='/amma' render={changePage.bind(null,
             <div className="App">
               <ProjectPage project='amma'>
                 <Amma />
+              </ProjectPage>
+            </div>
+          )}/>
+          <Route exact={true} path='/other' render={changePage.bind(null,
+            <div className="App">
+              <ProjectPage project='other'>
+                <Other />
               </ProjectPage>
             </div>
           )}/>

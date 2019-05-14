@@ -20,7 +20,10 @@
     }
 
     &.full-width {
-        width: 100%;
+        width: auto;
+        @include screen-medium {
+            width: 100%;
+        }
         height: 84px;
     }
 
@@ -57,23 +60,23 @@
     background-position: 50% 50%;
 
     &.mycite {
-        background-image: image-url('mycite/flower.png');
+        background-image: image-url('mycite/tile_flower.png');
     }
 
     &.ybvr_white_label {
-        background-image: image-url('ybvr_white_label/headset.svg');
+        background-image: image-url('ybvr_white_label/tile_headset.png');
     }
 
     &.ybvr_brand {
-        background-image: image-url('ybvr_brand/ybvr_logo.png');
+        background-image: image-url('ybvr_brand/tile_logo.png');
     }
 
     &.traverse {
-        background-image: image-url('traverse/phone.png');
+        background-image: image-url('traverse/tile_phone.png');
     }
 
     &.amma {
-        background-image: image-url('amma/phone.png');
+        background-image: image-url('amma/tile_phone.png');
     }
 
     &.other {

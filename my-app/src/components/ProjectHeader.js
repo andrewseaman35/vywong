@@ -40,8 +40,12 @@ export default class ProjectHeader extends Component {
     }
 
     render () {
-        const details = PAGES[this.props.project].projectDetails;
-        const intro = PAGES[this.props.project].projectIntro;
+        const projectInfo = PAGES[this.props.project];
+        if (!projectInfo) {
+            return null;
+        }
+        const details = projectInfo.projectDetails;
+        const intro = projectInfo.projectIntro;
 
         return (
             <div className="project-header">
