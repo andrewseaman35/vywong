@@ -100,6 +100,18 @@ blockquote {
             color: $ORANGE;
         }
     }
+
+    button {
+        background: none!important;
+        color: inherit;
+        border: none;
+        padding: 0!important;
+        font: inherit;
+        cursor: pointer;
+        &:hover {
+            color: $ORANGE;
+        }
+    }
 }
 
 i {

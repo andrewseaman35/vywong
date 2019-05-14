@@ -5,6 +5,32 @@ import { getImageSrc } from '../js/util';
 export default class YbvrWhiteLabel extends Component {
     state = {}
 
+    constructor() {
+        super();
+        this.scrollToItem = this.scrollToItem.bind(this);
+    }
+
+    scrollToItem(el) {
+        var item = document.getElementById(el);
+        var offset = item.offsetTop - 100;
+        var diff=(offset - window.scrollY) / 20;
+        if(!window._lastDiff){
+            window._lastDiff = 0;
+        }
+
+        if (Math.abs(diff) > 1) {
+            window.scrollTo(0, (window.scrollY+diff))
+            clearTimeout(window._TO)
+
+            if(diff !== window._lastDiff){
+                window._lastDiff = diff;
+                window._TO=setTimeout(this.scrollToItem, 15, item.id);
+            }
+        } else {
+            window.scrollTo(0, offset);
+        }
+    }
+
     render () {
         return (
             <div className='ybvr-white-label'>
@@ -23,13 +49,13 @@ export default class YbvrWhiteLabel extends Component {
                         My iterations on the white label focused on enhancing functionality and usability.
                         <blockquote className="quote">
                             <strong className="bold-text-2">
-                                <a>Typography within VR</a><br/>
-                                <a>Usability enhancements</a><br/>
-                                <a>Additional features</a>
+                                <button onClick={() => {this.scrollToItem('typography')}}>Typography within VR</button><br/>
+                                <button onClick={() => {this.scrollToItem('usability')}}>Usability enhancements</button><br/>
+                                <button onClick={() => {this.scrollToItem('features')}}>Additional features</button>
                             </strong>
                         </blockquote>
                     </div>
-                    <section>
+                    <section id='typography'>
                         <div className="section-header">
                             <h2>Typography Within VR</h2>
                             <h6>Research, wireframing, rapid prototyping in Unity3D</h6>
@@ -154,7 +180,7 @@ export default class YbvrWhiteLabel extends Component {
                             and order the modular and completely customize the layout.
                         </p>
                     </section>
-                    <section>
+                    <section id='features'>
                         <div className="section-header">
                             <h2>Additional Features</h2>
                             <h6>Research, user flows, wireframes, prototypes, usability testing</h6>
