@@ -7,10 +7,16 @@
 
     &.small {
         width: 40%;
+        @include screen-small {
+            width: auto;
+        }
     }
 
     &.wide {
         width: 60%;
+        @include screen-small {
+            width: auto;
+        }
     }
 
     &.full-width {
@@ -46,29 +52,45 @@
     flex-direction: row;
     justify-content: center;
 
-    img {
-        margin: 0;
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-        opacity: 0.7;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 
-        &.other {
-            object-fit: cover;
-            width: 100%;
-            object-position: 50% 30%;
-        }
+    &.mycite {
+        background-image: image-url('mycite/flower.png');
+    }
+
+    &.ybvr_white_label {
+        background-image: image-url('ybvr_white_label/headset.svg');
+    }
+
+    &.ybvr_brand {
+        background-image: image-url('ybvr_brand/ybvr_logo.png');
+    }
+
+    &.traverse {
+        background-image: image-url('traverse/phone.png');
+    }
+
+    &.amma {
+        background-image: image-url('amma/phone.png');
+    }
+
+    &.other {
+        background-image: image-url('vyw_logo.svg');
+        background-size: cover;
+        background-position: 50% 30%;
     }
 }
 
-.title-container {
-    position: absolute;
-    margin-top: -55px;
-    margin-left: 25px;
+.tile-cover {
+    background-image: linear-gradient(180deg, transparent 54%, #fff);
+    position: relative;
+    width: 100%;
     font-family: "Open Sans", sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
 
     &.other {
         position: relative;
@@ -79,7 +101,10 @@
         text-transform: uppercase;
         font-size: 36px;
         font-weight: 700;
-        line-height: 20px;
+
+        @include screen-medium {
+            font-size: 26px;
+        }
     }
     .subtitle {
         font-size: 14px;
@@ -88,11 +113,21 @@
     }
 }
 
+.title-container {
+    padding: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
 .tile-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+
+    @include screen-small {
+        flex-direction: column;
+    }
 }
 
 .tile-cover {

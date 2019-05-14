@@ -14,3 +14,27 @@ $ASSET_BASE_PATH: 'http://dsxhlwnbcmyjm.cloudfront.net/vywong';
 @function image-url($path) {
     @return url($ASSET_BASE_PATH + '/' + $path)
 }
+
+$screen-sml-max: 767px;
+$screen-med-min: $screen-sml-max + 1;
+$screen-med-max: 1070px;
+$screen-lrg-min: $screen-med-max + 1;
+
+@mixin screen-small {
+    @media (max-width: #{$screen-sml-max}) {
+        @content;
+    }
+ }
+
+ @mixin screen-medium {
+    @media (max-width: #{$screen-med-max}) {
+        @content;
+    }
+ }
+
+ @mixin screen-large-only {
+    @media (min-width: #{$screen-lrg-min}) {
+        @content;
+    }
+ }
+
