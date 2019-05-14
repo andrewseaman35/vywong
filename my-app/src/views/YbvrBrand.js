@@ -33,11 +33,11 @@ export default class YbvrBrand extends Component {
             </div>
             <div className="before-after-container dark-before-after">
                 <div className="before">
-                    <h2>Before</h2>
+                    <h2>Light Background</h2>
                     <img src={getImageSrc('ybvr_brand/ybvr_logo_after.png')} alt='YBVR Logo dark on light' />
                 </div>
                 <div className="after ybvr-dark">
-                    <h2>After</h2>
+                    <h2>Dark Background</h2>
                     <img src={getImageSrc('ybvr_brand/ybvr_logo.png')} alt='YBVR Logo light on dark' />
                 </div>
             </div>

@@ -61,9 +61,19 @@ section {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: auto;
 
-        div{
-            width: 30%
+        @include screen-small-only {
+            flex-direction: column;
+            max-width: 300px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @include screen-medium {
+            div {
+                width: 30%
+            }
         }
     }
     section {

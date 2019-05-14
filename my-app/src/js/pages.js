@@ -15,7 +15,7 @@ const PAGES = {
             product: 'Mobile App and Web Portal',
             year: '2018–2019',
             experience: 'Product Design, UX/UI Design',
-            platform: 'iOS, Android, Responsive web',
+            platform: 'iOS, Android, Responsive Web',
         },
         projectIntro: {
             title: 'Medicine Goes Digital',
@@ -43,7 +43,7 @@ const PAGES = {
             product: 'Virtual Reality',
             year: '2017-2018',
             experience: 'Product Design, UX/UI Design, UX Research',
-            platform: 'Android, GearVP',
+            platform: 'Android, GearVR',
         },
         projectIntro: {
             title: 'VR Streaming Platform',
@@ -67,7 +67,7 @@ const PAGES = {
             product: 'Mobile App and Landing Page',
             year: '2017',
             experience: 'Product Design, UX/UI Design, Branding',
-            platform: 'iOS, web',
+            platform: 'iOS, Web',
         },
         projectIntro: {
             title: 'One exploration experience to unite them all',

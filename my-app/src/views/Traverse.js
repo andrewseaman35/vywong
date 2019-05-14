@@ -67,6 +67,7 @@ export default class Traverse extends Component {
                     </p>
                     <img src={getImageSrc('traverse/wireframes1.png')} alt="Wireframes"/>
                     <img src={getImageSrc('traverse/wireframes2.png')} alt="More wireframes"/>
+                    <img src={getImageSrc('traverse/wireframes3.png')} alt="Even more wireframes"/>
                 </section>
                 <section>
                     <div className="section-header">
