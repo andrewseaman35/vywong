@@ -46,3 +46,45 @@ img {
 @import 'project.scss';
 
 @import 'ybvr.scss';
+
+.about {
+    .about-content {
+        max-width: 80%;
+        @include screen-medium {
+            max-width: 780px;
+        }
+        @include screen-large {
+            max-width: 925px;
+        }
+        margin: 140px auto 0 auto;
+    }
+    h1 {
+        text-transform: uppercase;
+    }
+
+    .items {
+        margin-top: 16px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+
+        @include screen-small-only {
+            flex-direction: column;
+        }
+    }
+
+    .profile-text {
+        padding: 0;
+        @include screen-medium {
+            padding: 0 30px;
+        }
+    }
+
+    img {
+        width: 400px;
+        height: 400px;
+    }
+}

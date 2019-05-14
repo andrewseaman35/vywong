@@ -10,6 +10,7 @@ import YbvrWhiteLabel from './views/YbvrWhiteLabel';
 import YbvrBrand from './views/YbvrBrand';
 import Amma from './views/Amma';
 import Other from './views/Other';
+import About from './views/About';
 
 import './App.css';
 
@@ -70,6 +71,11 @@ class App extends Component {
               <ProjectPage project='other'>
                 <Other />
               </ProjectPage>
+            </div>
+          )}/>
+          <Route exact={true} path='/about' render={changePage.bind(null,
+            <div className="App">
+                <About />
             </div>
           )}/>
         </div>
