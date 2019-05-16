@@ -12,7 +12,7 @@ export default class YbvrWhiteLabel extends Component {
 
     scrollToItem(el) {
         var item = document.getElementById(el);
-        var offset = item.offsetTop - 100;
+        var offset = item.offsetTop - 80;
         var diff=(offset - window.scrollY) / 20;
         if(!window._lastDiff){
             window._lastDiff = 0;
