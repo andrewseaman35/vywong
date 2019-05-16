@@ -34,24 +34,53 @@
 
         .hero-overlay {
             background-image: image-url('ybvr_brand/ybvr_logo.png');
+            background-size: 80%;
+
+            @include screen-medium {
+                background-size: 60%;
+            }
+            @include screen-large {
+                background-size: 40%;
+            }
+
         }
     }
 
     &.traverse {
         background-image: image-url('traverse/map.png');
         background-size: cover;
+        @include screen-small-only {
+            background-position-x: 25%;
+        }
 
         .hero-overlay {
             background-image: image-url('traverse/logo.png');
+            background-position: 50% 50%;
+            background-size: 150%;
+            @include screen-medium {
+                background-size: 125%;
+            }
+            @include screen-large {
+                background-size: contain;
+            }
         }
     }
 
     &.amma {
         background-image: image-url('amma/runner.jpg');
         background-size: cover;
+        background-position-x: 72%;
 
         .hero-overlay {
-            background-image: image-url('amma/logo_phone.png');
+            background-image: image-url('amma/hero_logo.png');
+            background-size: 170%;
+            @include screen-medium {
+                background-size: 120%;
+            }
+            @include screen-large {
+                background-size: contain;
+            }
+
         }
     }
 

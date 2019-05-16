@@ -129,6 +129,7 @@ export default class Traverse extends Component {
                         access the the product. As a new concept, I thought a landing page that showed a glimpse of the
                         product would be a great way to test the waters and gauge interest while also gathering
                         potential users to test the app. See the full landing page <a
+                            className='highlighted'
                             href='https://invis.io/49ACBERCS#/217769410_Landing_PageA' rel='noopener noreferrer'>here</a>.
                     </p>
                     <img src={getImageSrc('traverse/laptop_mockup.png')} alt="Laptop mockup"/>

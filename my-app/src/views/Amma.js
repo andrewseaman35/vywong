@@ -50,7 +50,7 @@ export default class Amma extends Component {
                         <h2>Reflecting on a Hypothesis</h2>
                     </div>
                     <p>
-                        After working on the MYCITE project and understanding the thoroughness of human factor
+                        After working on the <a className='highlighted' href='/#/mycite'>MYCITE project</a> and understanding the thoroughness of human factor
                         studies in relation to medical devices, I wanted to reflect on AMMA as a viable medicine
                         companion app.
                     </p>

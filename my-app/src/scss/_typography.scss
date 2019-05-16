@@ -6,6 +6,14 @@ body, html {
 a {
     color: $DARK_GRAY;
     text-decoration: none;
+
+    &.highlighted {
+        color: $ORANGE;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    };
 }
 
 h1 {
