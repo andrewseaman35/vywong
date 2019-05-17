@@ -40,8 +40,19 @@ export default class Traverse extends Component {
                         gathered, I built personas that encompassed three types of explorers:
                         <strong><i> Andrew, Ciara, and Brandyn</i></strong>
                     </p>
-                    <div className="full-width">
-                        <img src={getImageSrc('traverse/personas.png')} alt="Personas"/>
+                    <div className="screens-container full-width">
+                        <div className="persona">
+                            <img src={getImageSrc('traverse/persona_travis.png')} alt="Persona Travis"/>
+                            <img className='user-story' src={getImageSrc('traverse/userstory_travis.png')} alt="User Story Travis"/>
+                        </div>
+                        <div className="persona">
+                            <img src={getImageSrc('traverse/persona_andrew.png')} alt="Persona Andrew"/>
+                            <img className='user-story'src={getImageSrc('traverse/userstory_andrew.png')} alt="User Story Andrew"/>
+                        </div>
+                        <div className="persona">
+                            <img src={getImageSrc('traverse/persona_ciara.png')} alt="Persona Ciana"/>
+                            <img className='user-story'src={getImageSrc('traverse/userstory_ciara.png')} alt="User Story Ciana"/>
+                        </div>
                     </div>
                     <p>
                         After mapping out each of the persona’s journey and clustering their key actions to find

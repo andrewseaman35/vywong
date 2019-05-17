@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
+import createBrowserHistory from 'history/createBrowserHistory';
+
 import Home from './views/Home';
 import ProjectPage from './views/ProjectPage';
 
@@ -16,15 +18,23 @@ import './App.css';
 
 ReactGA.initialize('UA-130632736-4');
 
+var history = createBrowserHistory();
+history.listen(function(location) {
+  const path = location.pathname + location.hash + location.search;
+  ReactGA.set({ page: path });
+  ReactGA.pageview(path);
+});
+
+
 function changePage(content) {
-  window.scrollTo(0, 0);
-  return content;
+    window.scrollTo(0, 0);
+    return content;
 }
 
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <HashRouter history={history}>
         <div>
           <Route exact={true} path='/' render={changePage.bind(null,
             <div className="App">

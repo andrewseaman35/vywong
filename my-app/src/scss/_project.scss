@@ -55,8 +55,10 @@ section {
     }
 
     .full-width {
-        margin-left: -$CONTENT_MARGIN;
-        margin-right: -$CONTENT_MARGIN;
+        @include screen-medium {
+            margin-left: -$CONTENT_MARGIN;
+            margin-right: -$CONTENT_MARGIN;
+        }
     }
 }
 
@@ -81,6 +83,19 @@ section {
     @include screen-medium {
         div {
             width: 30%
+        }
+    }
+
+    .persona {
+        img {
+            margin-bottom: 8px;
+
+            &.user-story {
+                margin-top: 0px;
+            }
+        }
+        img:last-child {
+            margin-bottom: 16px;
         }
     }
 }
