@@ -3,6 +3,7 @@
     width: 100%;
     border: 3px solid $DARK_GRAY;
     background-size: cover;
+    background-position: 50% 50%;
     margin: 5px;
 
     &.small {
@@ -41,6 +42,7 @@
 
     &.traverse {
         background-image: image-url('traverse/map2.png');
+        background-position: 40% 50%;
     }
 
     &.amma {

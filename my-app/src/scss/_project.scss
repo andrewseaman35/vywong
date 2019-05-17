@@ -107,6 +107,10 @@ section {
     .item-container {
         display: flex;
         padding: 20px 0;
+
+        @include screen-small-only {
+            flex-direction: column-reverse;
+        }
     }
 
     .item-description {
@@ -114,9 +118,11 @@ section {
     }
 
     .item-image {
+        @include screen-small-only {
+            padding: 24px 20px;
+        }
         img {
             margin-top: 0;
-            max-width: 250px;
             @include screen-medium {
                 max-width: 400px;
             }

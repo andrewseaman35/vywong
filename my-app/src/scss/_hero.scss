@@ -90,6 +90,10 @@
 
         .hero-overlay {
             background-image: image-url('other/other_logo.png');
+            background-size: 200%;
+            @include screen-medium {
+                background-size: 150%;
+            }
         }
     }
 }
