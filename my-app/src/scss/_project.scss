@@ -60,23 +60,44 @@ section {
     }
 }
 
-.traverse {
-    .screens-container {
+.screens-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: auto;
+
+    +.screens-container {
+        margin-top: 0;
+    }
+
+    @include screen-small-only {
+        flex-direction: column;
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @include screen-medium {
+        div {
+            width: 30%
+        }
+    }
+}
+
+.amma {
+    .top-image {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        width: auto;
+        justify-content: center;
 
-        @include screen-small-only {
-            flex-direction: column;
-            max-width: 300px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        @include screen-medium {
-            div {
-                width: 30%
+        >div {
+            max-width: 80%;
+            @include screen-medium {
+                max-width: 60%;
+            }
+            @include screen-large {
+                max-width: 40%;
             }
         }
     }

@@ -7,8 +7,12 @@ export default class Amma extends Component {
     render () {
         return (
         <div className='amma'>
-            <img src={getImageSrc('amma/mockups.png')} alt="Mockups"/>
             <div className="content">
+                <div className="top-image full-width">
+                    <div>
+                        <img src={getImageSrc('amma/phone_watch_layout.png')} alt="Mockups"/>
+                    </div>
+                </div>
                 <section>
                     <div className="section-header">
                         <h2>Building with Asthma</h2>
@@ -35,7 +39,28 @@ export default class Amma extends Component {
                             Cumulative logs of historical data
                         </strong>
                     </blockquote>
-                    <img src={getImageSrc('amma/wireframes.png')} alt="Wireframes"/>
+                    <div className="screens-container full-width">
+                        <div>
+                            <img src={getImageSrc('amma/key_1_dashboard.png')} alt="Dashboard"/>
+                        </div>
+                        <div>
+                            <img src={getImageSrc('amma/key_2_dashboard.png')} alt="Dashboard"/>
+                        </div>
+                        <div>
+                            <img src={getImageSrc('amma/key_3_asthma_log.png')} alt="Asthma Log"/>
+                        </div>
+                    </div>
+                    <div className="screens-container full-width">
+                        <div>
+                            <img src={getImageSrc('amma/key_4_history_logs.png')} alt="History Logs"/>
+                        </div>
+                        <div>
+                            <img src={getImageSrc('amma/key_5_history_logs.png')} alt="History Logs"/>
+                        </div>
+                        <div>
+                            <img src={getImageSrc('amma/key_6_account.png')} alt="Account"/>
+                        </div>
+                    </div>
                     <p>
                         After creating high fidelity mockups and a prototype, I ran usability tests to see the
                         effectiveness of the layout and UI elements. Although users navigated smoothly through the

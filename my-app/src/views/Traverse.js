@@ -40,7 +40,9 @@ export default class Traverse extends Component {
                         gathered, I built personas that encompassed three types of explorers:
                         <strong><i> Andrew, Ciara, and Brandyn</i></strong>
                     </p>
-                    <img src={getImageSrc('traverse/personas.png')} alt="Personas"/>
+                    <div className="full-width">
+                        <img src={getImageSrc('traverse/personas.png')} alt="Personas"/>
+                    </div>
                     <p>
                         After mapping out each of the persona’s journey and clustering their key actions to find
                         common goals, I solidified the product’s core features:
