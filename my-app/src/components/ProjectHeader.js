@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PAGES from '../js/pages';
-import { trackLinkClick } from '../js/events';
+import { trackLinkClick } from '../js/tracking';
 
 export default class ProjectHeader extends Component {
     state = {}
@@ -11,7 +11,7 @@ export default class ProjectHeader extends Component {
             return null;
         }
         const links = [];
-        projectLinks.links.forEach((function(link, i) {
+        projectLinks.links.forEach(function(link, i) {
             links.push(
                 <div key={i} className="project-link">
                     <a href={link.href} rel='noopener noreferrer' target='_blank' onClick={function() { trackLinkClick(link.id) }}>
@@ -19,7 +19,7 @@ export default class ProjectHeader extends Component {
                     </a>
                 </div>
             )
-        }).bind(this));
+        });
         return (
             <div className='link-container'>
                 <h3 className="link-header">{projectLinks.header}</h3>

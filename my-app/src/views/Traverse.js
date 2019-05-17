@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { getImageSrc } from '../js/util';
-import { trackLinkClick } from '../js/events';
 
 
 export default class Traverse extends Component {

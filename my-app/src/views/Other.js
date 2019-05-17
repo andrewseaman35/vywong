@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ScrollTracker } from '../js/tracking';
 import OtherWorkItem from '../components/OtherWorkItem';
 
 const items = {
@@ -31,6 +32,10 @@ function getItem(item) {
 
 export default class Other extends Component {
     state = {}
+
+    componentDidMount() {
+        new ScrollTracker('other');
+    }
 
     render () {
         return (
