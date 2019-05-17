@@ -8,18 +8,18 @@ export default class Traverse extends Component {
     render () {
         return (
         <div className='traverse'>
-            <div className="screens-container">
-                <div>
-                    <img src={getImageSrc('traverse/login.png')} alt="Login Screen"/>
-                </div>
-                <div>
-                    <img src={getImageSrc('traverse/whereto.png')} alt="Where To Screen"/>
-                </div>
-                <div>
-                    <img src={getImageSrc('traverse/routing.png')} alt="Routing Screen"/>
-                </div>
-            </div>
             <div className="content">
+                <div className="screens-container full-width">
+                    <div>
+                        <img src={getImageSrc('traverse/login.png')} alt="Login Screen"/>
+                    </div>
+                    <div>
+                        <img src={getImageSrc('traverse/whereto.png')} alt="Where To Screen"/>
+                    </div>
+                    <div>
+                        <img src={getImageSrc('traverse/routing.png')} alt="Routing Screen"/>
+                    </div>
+                </div>
                 <section>
                     <div className="section-header">
                         <h2>Building on an Idea</h2>
@@ -65,9 +65,11 @@ export default class Traverse extends Component {
                         so that the process of finding, navigating, and sharing explorations would create a seamless
                         journey for the user.
                     </p>
-                    <img src={getImageSrc('traverse/wireframes1.png')} alt="Wireframes"/>
-                    <img src={getImageSrc('traverse/wireframes2.png')} alt="More wireframes"/>
-                    <img src={getImageSrc('traverse/wireframes3.png')} alt="Even more wireframes"/>
+                    <div className="full-width">
+                        <img src={getImageSrc('traverse/wireframes1.png')} alt="Wireframes"/>
+                        <img src={getImageSrc('traverse/wireframes2.png')} alt="More wireframes"/>
+                        <img src={getImageSrc('traverse/wireframes3.png')} alt="Even more wireframes"/>
+                    </div>
                 </section>
                 <section>
                     <div className="section-header">
@@ -86,7 +88,7 @@ export default class Traverse extends Component {
                         to capture the user journeys through the app and walk the user through key flows.
                     </p>
                 </section>
-                <div className="screens-container">
+                <div className="screens-container full-width">
                     <div>
                         <img src={getImageSrc('traverse/signup.png')} alt="Sign Up Screen"/>
                     </div>
@@ -97,7 +99,7 @@ export default class Traverse extends Component {
                         <img src={getImageSrc('traverse/interests.png')} alt="Interests"/>
                     </div>
                 </div>
-                <div className="screens-container">
+                <div className="screens-container full-width">
                     <div>
                         <img src={getImageSrc('traverse/friends.png')} alt="Friends"/>
                     </div>
@@ -108,7 +110,7 @@ export default class Traverse extends Component {
                         <img src={getImageSrc('traverse/whereto.png')} alt="Where to"/>
                     </div>
                 </div>
-                <div className="screens-container">
+                <div className="screens-container full-width">
                     <div>
                         <img src={getImageSrc('traverse/routing.png')} alt="Routing Screen"/>
                     </div>
@@ -132,7 +134,9 @@ export default class Traverse extends Component {
                             className='highlighted'
                             href='https://invis.io/49ACBERCS#/217769410_Landing_PageA' rel='noopener noreferrer'>here</a>.
                     </p>
-                    <img src={getImageSrc('traverse/laptop_mockup.png')} alt="Laptop mockup"/>
+                    <div className="full-width">
+                        <img src={getImageSrc('traverse/laptop_mockup.png')} alt="Laptop mockup"/>
+                    </div>
                 </section>
             </div>
         </div>

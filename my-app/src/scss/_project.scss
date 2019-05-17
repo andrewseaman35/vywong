@@ -46,13 +46,17 @@ section {
 }
 
 .content {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: $CONTENT_MARGIN;
+    margin-right: $CONTENT_MARGIN;
     margin-top: 60px;
 
     blockquote {
         margin-top: 10px;
+    }
+
+    .full-width {
+        margin-left: -$CONTENT_MARGIN;
+        margin-right: -$CONTENT_MARGIN;
     }
 }
 
