@@ -24,7 +24,7 @@ const PAGES = {
         projectLinks: {
             header: 'Articles about MYCITE',
             links: [{
-                id: 'interview_with_otsuke',
+                id: 'interview_with_otsuka',
                 text: 'Interview with Otsuka\'s President and CEO about MYCITE',
                 href: 'https://pharmaphorum.com/views-analysis-digital/abilify-mycite-and-innovating-in-digital-health/',
             }, {

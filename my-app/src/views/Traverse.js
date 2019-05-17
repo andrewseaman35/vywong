@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { getImageSrc } from '../js/util';
+import { trackLinkClick } from '../js/events';
 
 
 export default class Traverse extends Component {
@@ -100,8 +101,12 @@ export default class Traverse extends Component {
                     </div>
                     <p>
                         Based on the style guide, I created high fidelity mockups for the screens and built an <a
-                            className='highlighted' href='https://invis.io/ZPS2FZ2U98A' rel='noopener noreferrer' target='_blank'>InVision prototype
-                        </a> to capture the user journeys through the app and walk the user through key flows.
+                            className='highlighted'
+                            href='https://invis.io/ZPS2FZ2U98A'
+                            rel='noopener noreferrer'
+                            target='_blank'
+                            onClick={function() { trackLinkClick('traverse_invision') }}>InVision prototype</a> to capture the user journeys
+                            through the app and walk the user through key flows.
                     </p>
                 </section>
                 <div className="screens-container full-width">

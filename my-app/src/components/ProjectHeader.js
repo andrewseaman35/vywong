@@ -1,20 +1,9 @@
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
 import PAGES from '../js/pages';
-
-ReactGA.initialize('UA-130632736-4');
+import { trackLinkClick } from '../js/events';
 
 export default class ProjectHeader extends Component {
     state = {}
-
-    onProjectLinkClicked(linkText) {
-        const linkId = `${this.props.project}:${linkText}`;
-        ReactGA.event({
-            category: 'projectLink',
-            action: 'click',
-            label: linkId,
-        });
-    }
 
     renderProjectLinks() {
         const projectLinks = PAGES[this.props.project].projectLinks;
@@ -25,7 +14,7 @@ export default class ProjectHeader extends Component {
         projectLinks.links.forEach((function(link, i) {
             links.push(
                 <div key={i} className="project-link">
-                    <a href={link.href} rel='noopener noreferrer' target='_blank' onClick={this.onProjectLinkClicked.bind(this, link.id)}>
+                    <a href={link.href} rel='noopener noreferrer' target='_blank' onClick={function() { trackLinkClick(link.id) }}>
                         {link.text}
                     </a>
                 </div>
