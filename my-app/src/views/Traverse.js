@@ -84,7 +84,9 @@ export default class Traverse extends Component {
                         a style guide that encompassed Traverse's modern aesthetic with a dark theme, accented with
                         bright colors, and a clean, refined typeface.
                     </p>
-                    <img src={getImageSrc('traverse/traverse_style_guide.png')} alt="Traverse style guide"/>
+                    <div className="full-width">
+                        <img src={getImageSrc('traverse/traverse_style_guide.png')} alt="Traverse style guide"/>
+                    </div>
                     <p>
                         Based on the style guide, I created high fidelity mockups for the screens and built prototype
                         to capture the user journeys through the app and walk the user through key flows.

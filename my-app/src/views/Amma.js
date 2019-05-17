@@ -25,7 +25,9 @@ export default class Amma extends Component {
                         asthma, they did not know what would always cause their asthma attacks. This lack of certainty
                         often lead people to feel weary and held back by their asthma.
                     </p>
-                    <img src={getImageSrc('amma/persona.jpg')} alt="Persona"/>
+                    <div className="full-width">
+                        <img src={getImageSrc('amma/persona.jpg')} alt="Persona"/>
+                    </div>
                     <p>
                         I envisioned an app that could deliver real-time information about asthmatic triggers and
                         offer insights based on historically accumulated personal data. I found the following
