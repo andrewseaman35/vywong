@@ -9,6 +9,7 @@ a {
 
     &.highlighted {
         color: $ORANGE;
+        font-weight: 700;
 
         &:hover {
             text-decoration: underline;

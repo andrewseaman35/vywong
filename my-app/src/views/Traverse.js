@@ -99,8 +99,9 @@ export default class Traverse extends Component {
                         <img src={getImageSrc('traverse/traverse_style_guide.png')} alt="Traverse style guide"/>
                     </div>
                     <p>
-                        Based on the style guide, I created high fidelity mockups for the screens and built prototype
-                        to capture the user journeys through the app and walk the user through key flows.
+                        Based on the style guide, I created high fidelity mockups for the screens and built an <a
+                            className='highlighted' href='https://invis.io/ZPS2FZ2U98A' rel='noopener noreferrer' target='_blank'>InVision prototype
+                        </a> to capture the user journeys through the app and walk the user through key flows.
                     </p>
                 </section>
                 <div className="screens-container full-width">
