@@ -73,8 +73,13 @@ export default class Traverse extends Component {
                         <h6>User flows, information architecture, wireframes</h6>
                     </div>
                     <p>
-                        I focused the initial wireframes on the ability to explore and navigate to new routes. I built
-                        the core elements to allow users quick access to both finding routes and browsing nearby
+                        I focused the initial site map on the ability to explore and navigate to new routes.
+                    </p>
+                    <div className="full-width">
+                        <img src={getImageSrc('traverse/sitemap.png')} alt="Site map"/>
+                    </div>
+                    <p>
+                        I built the core elements to allow users quick access to both finding routes and browsing nearby
                         sites. In addition, I included multiple entry points for reviewing and sharing experiences
                         so that the process of finding, navigating, and sharing explorations would create a seamless
                         journey for the user.
