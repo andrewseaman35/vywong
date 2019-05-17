@@ -17,15 +17,6 @@ export default class About extends Component {
                             <h1 className="header-title">
                                 I am Victoria.
                             </h1>
-                            <div className="items">
-                                <blockquote className="quote">
-                                    <strong className="bold-text-2">
-                                        San Jose, CA<br/>
-                                        User Experience Certification at DesignLab<br/>
-                                        B.A. in Digital Design at Seattle University
-                                    </strong>
-                                </blockquote>
-                            </div>
                         </div>
                         <div>
                             <div className="profile">
