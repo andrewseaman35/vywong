@@ -73,6 +73,10 @@ section {
         margin-top: 0;
     }
 
+    &.user-stories {
+        margin-top: 0;
+    }
+
     @include screen-small-only {
         flex-direction: column;
         max-width: 300px;

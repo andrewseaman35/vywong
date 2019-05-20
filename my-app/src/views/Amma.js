@@ -29,10 +29,24 @@ export default class Amma extends Component {
                         <img src={getImageSrc('amma/persona.jpg')} alt="Persona"/>
                     </div>
                     <p>
-                        I envisioned an app that could deliver real-time information about asthmatic triggers and
-                        offer insights based on historically accumulated personal data. I found the following
-                        features to be crucial in informing the user of current conditions and accumulating data for
-                        long-term analysis:
+                        With the persona in mind, I wrote out user scenarios that I wanted to make sure the app would
+                        accommodate. The scenarios focused on monitoring and tracking asthmatic triggers and inhaler usage.
+                    </p>
+                    <div className="screens-container full-width user-stories">
+                        <div>
+                            <img src={getImageSrc('amma/user_story_1.png')} alt="User Story"/>
+                        </div>
+                        <div>
+                            <img src={getImageSrc('amma/user_story_2.png')} alt="User Story"/>
+                        </div>
+                        <div>
+                            <img src={getImageSrc('amma/user_story_3.png')} alt="User Story"/>
+                        </div>
+                    </div>
+                    <p>
+                        I envisioned an app that could deliver real-time information about asthmatic triggers and offer
+                        insights based on historically accumulated personal data. I found the following features to be
+                        crucial in informing the user of current conditions and accumulating data for long-term analysis:
                     </p>
                     <blockquote className="quote">
                         <strong className="bold-text-2">
@@ -41,6 +55,32 @@ export default class Amma extends Component {
                             Cumulative logs of historical data
                         </strong>
                     </blockquote>
+                    <div className="screens-container full-width">
+                        <div>
+                            <img src={getImageSrc('amma/wireframe_1.png')} alt="Dashboard wireframe"/>
+                        </div>
+                        <div>
+                            <img src={getImageSrc('amma/wireframe_2.png')} alt="Asthma log wireframe"/>
+                        </div>
+                        <div>
+                            <img src={getImageSrc('amma/wireframe_3.png')} alt="Reminders wireframe"/>
+                        </div>
+                    </div>
+                    <div className="screens-container full-width">
+                        <div>
+                            <img src={getImageSrc('amma/wireframe_4.png')} alt="Graph wireframe"/>
+                        </div>
+                        <div>
+                            <img src={getImageSrc('amma/wireframe_5.png')} alt="Summary wireframe"/>
+                        </div>
+                        <div>
+                            <img src={getImageSrc('amma/wireframe_6.png')} alt="Profile wireframe"/>
+                        </div>
+                    </div>
+                    <p>
+                        After building the initial wireframes, I created high fidelity mockups and a walkthrough
+                        prototype to access the effectiveness of the layout and UI elements.
+                    </p>
                     <div className="screens-container full-width">
                         <div>
                             <img src={getImageSrc('amma/key_1_dashboard.png')} alt="Dashboard"/>
@@ -64,12 +104,11 @@ export default class Amma extends Component {
                         </div>
                     </div>
                     <p>
-                        After creating high fidelity mockups and a prototype, I ran usability tests to see the
-                        effectiveness of the layout and UI elements. Although users navigated smoothly through the
-                        prototype, I found that the asthma logging page had too much information, which sometimes
-                        overwhelmed the user and discouraged them from filling it out. This feedback suggested that
-                        the asthma logging process is ineffective and needs to be streamlined. For future iterations
-                        of the project, I would revisit ways to make user entry easier and more approachable.
+                        Although users navigated smoothly through the prototype, I found that the asthma logging
+                        page had too much information, which sometimes overwhelmed the user and discouraged them
+                        from filling it out. This feedback suggested that the asthma logging process is ineffective
+                        and needs to be streamlined. For future iterations of the project, I would revisit ways
+                        to make user entry easier and more approachable.
                     </p>
                 </section>
                 <section>
