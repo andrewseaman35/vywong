@@ -92,6 +92,21 @@ class Lightbox extends Component {
         }
     }
 
+    renderDots() {
+        const imagesInGroup = this.imagesByGroupId[this.state.currentGroup];
+        if (imagesInGroup.length > 1) {
+            const elements = [];
+            for (let i = 0; i < imagesInGroup.length; i++) {
+                const className = i === this.state.currentImageIndex ? 'lightbox-dot selected' : 'lightbox-dot';
+                elements.push(
+                    <div key={i} className={className}></div>
+                )
+            }
+            return elements;
+        }
+        return null;
+    }
+
     render () {
         if (!this.state.isOpen || !this.state.currentGroup) {
             return null;
@@ -113,6 +128,9 @@ class Lightbox extends Component {
                     <div id='lightbox-next' className={`lightbox-control ${arrowButtonClass}`}>
                         <img src={getImageSrc('assets/right_arrow.svg')} alt="Next" onClick={this.next}/>
                     </div>
+                </div>
+                <div className="lightbox-dots">
+                    {this.renderDots()}
                 </div>
             </div>
         )

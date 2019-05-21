@@ -1,13 +1,20 @@
-.lightbox {
-    position: fixed;
+.lightbox-container {
+    background-color: rgba(0, 0, 0, 0.8);
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
     overflow: hidden;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
     z-index: $Z_INDEX_LIGHTBOX;
+}
+
+.lightbox {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
 
     display: flex;
     flex-direction: row;
@@ -94,5 +101,28 @@
         height: 40px;
         margin: 8px;
         cursor: pointer;
+    }
+}
+
+.lightbox-dots {
+    position: fixed;
+    bottom: 20px;
+    height: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    .lightbox-dot {
+        height: 10px;
+        width: 10px;
+        background-color: $DOT_UNSELECTED;
+        border-radius: 100%;
+        margin: 5px;
+
+        &.selected {
+            background-color: $DOT_SELECTED;
+        }
     }
 }
