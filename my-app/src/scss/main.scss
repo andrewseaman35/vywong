@@ -76,9 +76,16 @@ img {
         display: flex;
         flex-direction: row;
         margin-top: 40px;
+        align-items: flex-start;
 
         @include screen-small-only {
             flex-direction: column;
+        }
+        img {
+            max-height: 400px;
+            height: auto;
+            width: auto;
+            object-fit: contain;
         }
     }
 
