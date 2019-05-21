@@ -7,7 +7,7 @@ export default class YbvrWhiteLabel extends Component {
     state = {}
 
     componentDidMount() {
-        initLightbox('lightbox')
+        initLightbox('yvbr_white_label', 'lightbox')
     }
 
     constructor() {

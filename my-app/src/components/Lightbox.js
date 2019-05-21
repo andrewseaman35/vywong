@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { getImageSrc } from '../js/util';
+import { trackLightbox } from '../js/tracking';
 
 
 class Lightbox extends Component {
@@ -49,6 +50,7 @@ class Lightbox extends Component {
     }
 
     previous() {
+        trackLightbox(this.props.page, 'previous', this.state.currentGroup);
         const currentGroupImages = this.imagesByGroupId[this.state.currentGroup];
         let nextImageIndex = (this.state.currentImageIndex - 1) % currentGroupImages.length;
         if (nextImageIndex < 0) {
@@ -61,6 +63,7 @@ class Lightbox extends Component {
     }
 
     next() {
+        trackLightbox(this.props.page, 'next', this.state.currentGroup);
         const currentGroupImages = this.imagesByGroupId[this.state.currentGroup];
         const nextImageIndex = (this.state.currentImageIndex + 1) % currentGroupImages.length;
         this.setState({
@@ -83,6 +86,7 @@ class Lightbox extends Component {
         const imageIndex = imagesInGroup.map(function(e) { return e.src; }).indexOf(imgSrc);
 
         if (imageIndex >= 0) {
+            trackLightbox(this.props.page, 'open', group);
             this.setState({
                 currentGroup: group,
                 currentImageIndex: imageIndex,
@@ -137,6 +141,6 @@ class Lightbox extends Component {
    }
 }
 
-export default function initLightbox(el) {
-    ReactDOM.render(<Lightbox />, document.getElementById(el));
+export default function initLightbox(page, el) {
+    ReactDOM.render(<Lightbox page={page}/>, document.getElementById(el));
 }

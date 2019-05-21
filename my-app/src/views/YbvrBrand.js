@@ -6,7 +6,7 @@ export default class YbvrBrand extends Component {
     state = {}
 
     componentDidMount() {
-        initLightbox('lightbox')
+        initLightbox('ybvr_brand', 'lightbox')
     }
 
     render () {

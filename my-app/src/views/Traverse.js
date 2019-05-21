@@ -8,7 +8,7 @@ export default class Traverse extends Component {
     state = {}
 
     componentDidMount() {
-        initLightbox('lightbox')
+        initLightbox('traverse', 'lightbox')
     }
 
     render () {

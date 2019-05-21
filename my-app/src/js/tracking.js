@@ -19,6 +19,14 @@ export function trackLinkClick(linkId) {
     });
 };
 
+export function trackLightbox(page, action, label) {
+    ReactGA.event({
+        category: 'lightbox-' + page,
+        action: action,
+        label: label,
+    })
+}
+
 export class ScrollTracker {
     constructor(page) {
         this.category = page;

@@ -6,7 +6,7 @@ export default class Amma extends Component {
     state = {}
 
     componentDidMount() {
-        initLightbox('lightbox')
+        initLightbox('amma', 'lightbox')
     }
 
     render () {
