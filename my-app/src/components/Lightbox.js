@@ -27,7 +27,12 @@ class Lightbox extends Component {
                 if (!(lightboxGroup in this.imagesByGroupId)) {
                     this.imagesByGroupId[lightboxGroup] = [];
                 }
-                this.imagesByGroupId[lightboxGroup].push(image.src);
+                console.log(image.dataset['lightboxClass'])
+                const additionalClass = image.dataset['lightboxClass'] ? image.dataset['lightboxClass'] : '';
+                this.imagesByGroupId[lightboxGroup].push({
+                    src: image.src,
+                    class: additionalClass
+                });
                 image.style.cursor = 'pointer';
                 image.addEventListener('click', (function() {
                     this.open(lightboxGroup, image.src);
@@ -37,7 +42,11 @@ class Lightbox extends Component {
     }
 
     getCurrentImage() {
-        return this.imagesByGroupId[this.state.currentGroup][this.state.currentImageIndex];
+        return this.imagesByGroupId[this.state.currentGroup][this.state.currentImageIndex].src;
+    }
+
+    getCurrentClass() {
+        return this.imagesByGroupId[this.state.currentGroup][this.state.currentImageIndex].class;
     }
 
     previous() {
@@ -72,13 +81,15 @@ class Lightbox extends Component {
 
     open(group, imgSrc) {
         const imagesInGroup = this.imagesByGroupId[group];
-        const imageIndex = imagesInGroup.indexOf(imgSrc);
+        const imageIndex = imagesInGroup.map(function(e) { return e.src; }).indexOf(imgSrc);
+
         if (imageIndex >= 0) {
             this.setState({
                 currentGroup: group,
                 currentImageIndex: imageIndex,
                 isOpen: true,
             })
+            this.forceUpdate();
         }
     }
 
@@ -86,19 +97,21 @@ class Lightbox extends Component {
         if (!this.state.isOpen || !this.state.currentGroup) {
             return null;
         }
+        const disableArrowButton = this.imagesByGroupId[this.state.currentGroup].length === 1;
+        const arrowButtonClass = disableArrowButton ? 'disabled' : '';
         return (
-            <div className="lightbox-container">
+            <div className={`lightbox-container hide-for-small-screen ${this.getCurrentClass()}`}>
                 <div className="lightbox-close">
                     <img src={getImageSrc('assets/close.svg')} data-close-lightbox='true' alt="Close" onClick={this.close}/>
                 </div>
                 <div id='lightbox-outer' className='lightbox' data-close-lightbox='true' onClick={this.close}>
-                    <div id='lightbox-previous' className="lightbox-control">
+                    <div id='lightbox-previous' className={`lightbox-control ${arrowButtonClass}`}>
                         <img src={getImageSrc('assets/left_arrow.svg')} alt="Previous" onClick={this.previous}/>
                     </div>
                     <div className="lightbox-content">
                         <img src={this.getCurrentImage()} alt=""/>
                     </div>
-                    <div id='lightbox-next' className="lightbox-control">
+                    <div id='lightbox-next' className={`lightbox-control ${arrowButtonClass}`}>
                         <img src={getImageSrc('assets/right_arrow.svg')} alt="Next" onClick={this.next}/>
                     </div>
                 </div>

@@ -16,7 +16,7 @@ export default class Amma extends Component {
             <div className="content">
                 <div className="top-image full-width">
                     <div>
-                        <img data-lightbox-group='watch_layout' src={getImageSrc('amma/phone_watch_layout.png')} alt="Mockups"/>
+                        <img data-lightbox-group='watch_layout' data-lightbox-class='no-background' src={getImageSrc('amma/phone_watch_layout.png')} alt="Mockups"/>
                     </div>
                 </div>
                 <section>
@@ -32,7 +32,7 @@ export default class Amma extends Component {
                         often lead people to feel weary and held back by their asthma.
                     </p>
                     <div className="full-width">
-                        <img src={getImageSrc('amma/persona.jpg')} alt="Persona"/>
+                        <img data-lightbox-group='persona' data-lightbox-class='no-background' src={getImageSrc('amma/persona.jpg')} alt="Persona"/>
                     </div>
                     <p>
                         With the persona in mind, I wrote out user scenarios that I wanted to make sure the app would
@@ -63,24 +63,24 @@ export default class Amma extends Component {
                     </blockquote>
                     <div className="screens-container full-width">
                         <div>
-                            <img src={getImageSrc('amma/wireframe_1.png')} alt="Dashboard wireframe"/>
+                            <img data-lightbox-group='wireframes' src={getImageSrc('amma/wireframe_1.png')} alt="Dashboard wireframe"/>
                         </div>
                         <div>
-                            <img src={getImageSrc('amma/wireframe_2.png')} alt="Asthma log wireframe"/>
+                            <img data-lightbox-group='wireframes' src={getImageSrc('amma/wireframe_2.png')} alt="Asthma log wireframe"/>
                         </div>
                         <div>
-                            <img src={getImageSrc('amma/wireframe_3.png')} alt="Reminders wireframe"/>
+                            <img data-lightbox-group='wireframes' src={getImageSrc('amma/wireframe_3.png')} alt="Reminders wireframe"/>
                         </div>
                     </div>
                     <div className="screens-container full-width">
                         <div>
-                            <img src={getImageSrc('amma/wireframe_4.png')} alt="Graph wireframe"/>
+                            <img data-lightbox-group='wireframes' src={getImageSrc('amma/wireframe_4.png')} alt="Graph wireframe"/>
                         </div>
                         <div>
-                            <img src={getImageSrc('amma/wireframe_5.png')} alt="Summary wireframe"/>
+                            <img data-lightbox-group='wireframes' src={getImageSrc('amma/wireframe_5.png')} alt="Summary wireframe"/>
                         </div>
                         <div>
-                            <img src={getImageSrc('amma/wireframe_6.png')} alt="Profile wireframe"/>
+                            <img data-lightbox-group='wireframes' src={getImageSrc('amma/wireframe_6.png')} alt="Profile wireframe"/>
                         </div>
                     </div>
                     <p>
@@ -89,24 +89,24 @@ export default class Amma extends Component {
                     </p>
                     <div className="screens-container full-width">
                         <div>
-                            <img src={getImageSrc('amma/key_1_dashboard.png')} alt="Dashboard"/>
+                            <img data-lightbox-group='key_screens' data-lightbox-class='no-background' src={getImageSrc('amma/key_1_dashboard.png')} alt="Dashboard"/>
                         </div>
                         <div>
-                            <img src={getImageSrc('amma/key_2_dashboard.png')} alt="Dashboard"/>
+                            <img data-lightbox-group='key_screens' data-lightbox-class='no-background' src={getImageSrc('amma/key_2_dashboard.png')} alt="Dashboard"/>
                         </div>
                         <div>
-                            <img src={getImageSrc('amma/key_3_asthma_log.png')} alt="Asthma Log"/>
+                            <img data-lightbox-group='key_screens' data-lightbox-class='no-background' src={getImageSrc('amma/key_3_asthma_log.png')} alt="Asthma Log"/>
                         </div>
                     </div>
                     <div className="screens-container full-width">
                         <div>
-                            <img src={getImageSrc('amma/key_4_history_logs.png')} alt="History Logs"/>
+                            <img data-lightbox-group='key_screens' data-lightbox-class='no-background' src={getImageSrc('amma/key_4_history_logs.png')} alt="History Logs"/>
                         </div>
                         <div>
-                            <img src={getImageSrc('amma/key_5_history_logs.png')} alt="History Logs"/>
+                            <img data-lightbox-group='key_screens' data-lightbox-class='no-background' src={getImageSrc('amma/key_5_history_logs.png')} alt="History Logs"/>
                         </div>
                         <div>
-                            <img src={getImageSrc('amma/key_6_account.png')} alt="Account"/>
+                            <img data-lightbox-group='key_screens' data-lightbox-class='no-background' src={getImageSrc('amma/key_6_account.png')} alt="Account"/>
                         </div>
                     </div>
                     <p>

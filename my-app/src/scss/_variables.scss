@@ -11,6 +11,7 @@ $CONTENT_MARGIN: 20%;
 $Z_INDEX_HEADER: 5;
 $Z_INDEX_LIGHTBOX: 10;
 $Z_INDEX_LIGHTBOX_CLOSE: 11;
+$Z_INDEX_LIGHTBOX_IMAGE: 12;
 
 $ASSET_BASE_PATH: 'http://dsxhlwnbcmyjm.cloudfront.net/vywong';
 
@@ -41,3 +42,8 @@ $screen-lrg-min: $screen-med-max + 1;
     }
  }
 
+.hide-for-small-screen {
+    @include screen-small-only {
+        display: none !important;
+    }
+}

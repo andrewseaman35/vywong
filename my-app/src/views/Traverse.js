@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
 import { getImageSrc } from '../js/util';
 import { trackLinkClick } from '../js/tracking';
+import initLightbox from '../components/Lightbox';
 
 
 export default class Traverse extends Component {
     state = {}
 
+    componentDidMount() {
+        initLightbox('lightbox')
+    }
+
     render () {
         return (
         <div className='traverse'>
+            <div id='lightbox'></div>
             <div className="content">
                 <div className="screens-container full-width">
                     <div>
-                        <img src={getImageSrc('traverse/login.png')} alt="Login Screen"/>
+                        <img data-lightbox-group='screens' data-lightbox-class='no-background' src={getImageSrc('traverse/login.png')} alt="Login Screen"/>
                     </div>
                     <div>
-                        <img src={getImageSrc('traverse/whereto.png')} alt="Where To Screen"/>
+                        <img data-lightbox-group='screens' data-lightbox-class='no-background' src={getImageSrc('traverse/whereto.png')} alt="Where To Screen"/>
                     </div>
                     <div>
-                        <img src={getImageSrc('traverse/routing.png')} alt="Routing Screen"/>
+                        <img data-lightbox-group='screens' data-lightbox-class='no-background' src={getImageSrc('traverse/routing.png')} alt="Routing Screen"/>
                     </div>
                 </div>
                 <section>
@@ -43,16 +49,16 @@ export default class Traverse extends Component {
                     </p>
                     <div className="screens-container full-width">
                         <div className="persona">
-                            <img src={getImageSrc('traverse/persona_travis.png')} alt="Persona Travis"/>
-                            <img className='user-story' src={getImageSrc('traverse/userstory_travis.png')} alt="User Story Travis"/>
+                            <img data-lightbox-group='personas' src={getImageSrc('traverse/persona_travis.png')} alt="Persona Travis"/>
+                            <img data-lightbox-group='personas' className='user-story' src={getImageSrc('traverse/userstory_travis.png')} alt="User Story Travis"/>
                         </div>
                         <div className="persona">
-                            <img src={getImageSrc('traverse/persona_andrew.png')} alt="Persona Andrew"/>
-                            <img className='user-story'src={getImageSrc('traverse/userstory_andrew.png')} alt="User Story Andrew"/>
+                            <img data-lightbox-group='personas' src={getImageSrc('traverse/persona_andrew.png')} alt="Persona Andrew"/>
+                            <img data-lightbox-group='personas' className='user-story'src={getImageSrc('traverse/userstory_andrew.png')} alt="User Story Andrew"/>
                         </div>
                         <div className="persona">
-                            <img src={getImageSrc('traverse/persona_ciara.png')} alt="Persona Ciana"/>
-                            <img className='user-story'src={getImageSrc('traverse/userstory_ciara.png')} alt="User Story Ciana"/>
+                            <img data-lightbox-group='personas' src={getImageSrc('traverse/persona_ciara.png')} alt="Persona Ciana"/>
+                            <img data-lightbox-group='personas' className='user-story'src={getImageSrc('traverse/userstory_ciara.png')} alt="User Story Ciana"/>
                         </div>
                     </div>
                     <p>
@@ -76,7 +82,7 @@ export default class Traverse extends Component {
                         I focused the initial site map on the ability to explore and navigate to new routes.
                     </p>
                     <div className="full-width">
-                        <img src={getImageSrc('traverse/sitemap.png')} alt="Site map"/>
+                        <img data-lightbox-group='sitemap' src={getImageSrc('traverse/sitemap.png')} alt="Site map"/>
                     </div>
                     <p>
                         I built the core elements to allow users quick access to both finding routes and browsing nearby
@@ -85,9 +91,9 @@ export default class Traverse extends Component {
                         journey for the user.
                     </p>
                     <div className="full-width">
-                        <img src={getImageSrc('traverse/wireframes1.png')} alt="Wireframes"/>
-                        <img src={getImageSrc('traverse/wireframes2.png')} alt="More wireframes"/>
-                        <img src={getImageSrc('traverse/wireframes3.png')} alt="Even more wireframes"/>
+                        <img data-lightbox-group='wireframes' src={getImageSrc('traverse/wireframes1.png')} alt="Wireframes"/>
+                        <img data-lightbox-group='wireframes' src={getImageSrc('traverse/wireframes2.png')} alt="More wireframes"/>
+                        <img data-lightbox-group='wireframes' src={getImageSrc('traverse/wireframes3.png')} alt="Even more wireframes"/>
                     </div>
                 </section>
                 <section>
@@ -102,7 +108,7 @@ export default class Traverse extends Component {
                         bright colors, and a clean, refined typeface.
                     </p>
                     <div className="full-width">
-                        <img src={getImageSrc('traverse/traverse_style_guide.png')} alt="Traverse style guide"/>
+                        <img data-lightbox-group='style-guide' src={getImageSrc('traverse/traverse_style_guide.png')} alt="Traverse style guide"/>
                     </div>
                     <p>
                         Based on the style guide, I created high fidelity mockups for the screens and built an <a
@@ -116,35 +122,35 @@ export default class Traverse extends Component {
                 </section>
                 <div className="screens-container full-width">
                     <div>
-                        <img src={getImageSrc('traverse/signup.png')} alt="Sign Up Screen"/>
+                        <img data-lightbox-group='mockups' data-lightbox-class='no-background' src={getImageSrc('traverse/signup.png')} alt="Sign Up Screen"/>
                     </div>
                     <div>
-                        <img src={getImageSrc('traverse/configure.png')} alt="Personalize"/>
+                        <img data-lightbox-group='mockups' data-lightbox-class='no-background' src={getImageSrc('traverse/configure.png')} alt="Personalize"/>
                     </div>
                     <div>
-                        <img src={getImageSrc('traverse/interests.png')} alt="Interests"/>
-                    </div>
-                </div>
-                <div className="screens-container full-width">
-                    <div>
-                        <img src={getImageSrc('traverse/friends.png')} alt="Friends"/>
-                    </div>
-                    <div>
-                        <img src={getImageSrc('traverse/letsgo.png')} alt="Lets go"/>
-                    </div>
-                    <div>
-                        <img src={getImageSrc('traverse/whereto.png')} alt="Where to"/>
+                        <img data-lightbox-group='mockups' data-lightbox-class='no-background' src={getImageSrc('traverse/interests.png')} alt="Interests"/>
                     </div>
                 </div>
                 <div className="screens-container full-width">
                     <div>
-                        <img src={getImageSrc('traverse/routing.png')} alt="Routing Screen"/>
+                        <img data-lightbox-group='mockups' data-lightbox-class='no-background' src={getImageSrc('traverse/friends.png')} alt="Friends"/>
                     </div>
                     <div>
-                        <img src={getImageSrc('traverse/navigation.png')} alt="Navigation"/>
+                        <img data-lightbox-group='mockups' data-lightbox-class='no-background' src={getImageSrc('traverse/letsgo.png')} alt="Lets go"/>
                     </div>
                     <div>
-                        <img src={getImageSrc('traverse/site.png')} alt="Site"/>
+                        <img data-lightbox-group='mockups' data-lightbox-class='no-background' src={getImageSrc('traverse/whereto.png')} alt="Where to"/>
+                    </div>
+                </div>
+                <div className="screens-container full-width">
+                    <div>
+                        <img data-lightbox-group='mockups' data-lightbox-class='no-background' src={getImageSrc('traverse/routing.png')} alt="Routing Screen"/>
+                    </div>
+                    <div>
+                        <img data-lightbox-group='mockups' data-lightbox-class='no-background' src={getImageSrc('traverse/navigation.png')} alt="Navigation"/>
+                    </div>
+                    <div>
+                        <img data-lightbox-group='mockups' data-lightbox-class='no-background' src={getImageSrc('traverse/site.png')} alt="Site"/>
                     </div>
                 </div>
                 <section>
@@ -161,7 +167,7 @@ export default class Traverse extends Component {
                             href='https://invis.io/49ACBERCS#/217769410_Landing_PageA' rel='noopener noreferrer'>here</a>.
                     </p>
                     <div className="full-width">
-                        <img src={getImageSrc('traverse/laptop_mockup.png')} alt="Laptop mockup"/>
+                        <img data-lightbox-group='laptop' data-lightbox-class='no-background' src={getImageSrc('traverse/laptop_mockup.png')} alt="Laptop mockup"/>
                     </div>
                 </section>
             </div>

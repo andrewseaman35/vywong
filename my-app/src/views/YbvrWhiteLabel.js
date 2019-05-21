@@ -1,9 +1,14 @@
 
 import React, { Component } from 'react';
 import { getImageSrc } from '../js/util';
+import initLightbox from '../components/Lightbox';
 
 export default class YbvrWhiteLabel extends Component {
     state = {}
+
+    componentDidMount() {
+        initLightbox('lightbox')
+    }
 
     constructor() {
         super();
@@ -34,14 +39,15 @@ export default class YbvrWhiteLabel extends Component {
     render () {
         return (
             <div className='ybvr-white-label'>
+                <div id='lightbox'></div>
                 <div className="before-after-container">
                     <div className="before">
                         <h2>Before</h2>
-                        <img src={getImageSrc('ybvr_white_label/before.jpg')} alt='YBVR WhiteLabel before' />
+                        <img data-lightbox-group='before-after' src={getImageSrc('ybvr_white_label/before.jpg')} alt='YBVR WhiteLabel before' />
                     </div>
                     <div className="after">
                         <h2>After</h2>
-                        <img src={getImageSrc('ybvr_white_label/after.jpg')} alt='YBVR WhiteLabel after' />
+                        <img data-lightbox-group='before-after' src={getImageSrc('ybvr_white_label/after.jpg')} alt='YBVR WhiteLabel after' />
                     </div>
                 </div>
                 <div className="content">
@@ -66,7 +72,7 @@ export default class YbvrWhiteLabel extends Component {
                             or jaggedness to lines, particularly in curves. The effects of aliasing are particularly
                             noticeable in text and the distortion can cause massive readability issues at a close distance.
                         </p>
-                        <img src={getImageSrc('ybvr_white_label/aliasing.png')} alt='Example of Aliasing'/>
+                        <img data-lightbox-group='aliasing' src={getImageSrc('ybvr_white_label/aliasing.png')} alt='Example of Aliasing'/>
                         <p>
                             To become more familiar with the issue, I started out by conducting research. I found that
                             typographic aliasing in VR occurs the most with thin lines and extraneous strokes, many of
@@ -77,7 +83,7 @@ export default class YbvrWhiteLabel extends Component {
                             aliasing. After sifting through a plethora of san serif typefaces, I narrowed down my list
                             to Cabin Regular, Avenir Medium, Clear Sans Light, and Oculus Sans.
                         </p>
-                        <img src={getImageSrc('ybvr_white_label/text_comparison.png')} alt='Text Comparison'/>
+                        <img data-lightbox-group='text-compare' src={getImageSrc('ybvr_white_label/text_comparison.png')} alt='Text Comparison'/>
                         <p>
                             With the shortlist of typefaces, I prepared different test cases to see the effects of
                             typographic aliasing on legibility of the letters and readability of the content against
@@ -89,7 +95,7 @@ export default class YbvrWhiteLabel extends Component {
                             category and created a final round of testing to see the most readable combination of
                             typefaces, font sizes, and background treatments.
                         </p>
-                        <img src={getImageSrc('ybvr_white_label/typography.gif')} alt="Typography"/>
+                        <img data-lightbox-group='typography' src={getImageSrc('ybvr_white_label/typography.gif')} alt="Typography"/>
                         <p>
                             For my rounds of testing, I recruited individuals with ample years of video streaming
                             experience. Although the targeted user for the white label application would most likely
@@ -130,7 +136,7 @@ export default class YbvrWhiteLabel extends Component {
                         <p>
                             Both of these insights gave me a good starting point for a comfortable field of view (FOV) in VR.
                         </p>
-                        <img src={getImageSrc('ybvr_white_label/fov_diagram.png')} alt="Field of View Diagram"/>
+                        <img data-lightbox-group='diagram' src={getImageSrc('ybvr_white_label/fov_diagram.png')} alt="Field of View Diagram"/>
                         <p>
                             With this optimal FOV in mind, I needed to apply this towards the enhancement of the white
                             label. The scope now included the ability to add more layouts as well as optimize the user’s
@@ -140,7 +146,7 @@ export default class YbvrWhiteLabel extends Component {
                             to create various layouts while still maintaining a simple aesthetic. The modular sections
                             included a gallery, a categories, and a featured module which could be arranged in any order.
                         </p>
-                        <img src={getImageSrc('ybvr_white_label/modules.png')} alt="Modules"/>
+                        <img data-lightbox-group='modules' src={getImageSrc('ybvr_white_label/modules.png')} alt="Modules"/>
                         <p>
                             By creating elements with the same height, the modular pieces would be able to fit together
                             in any horizontal order as well as cap the maximum height of the UI elements which would
@@ -151,7 +157,7 @@ export default class YbvrWhiteLabel extends Component {
                             elements, it was felt more comfortable to center the eye with the most important element
                             than with the entire layout.
                         </p>
-                        <img src={getImageSrc('ybvr_white_label/fov_alignment.png')} alt="Field of View Alignment"/>
+                        <img data-lightbox-group='alignment' src={getImageSrc('ybvr_white_label/fov_alignment.png')} alt="Field of View Alignment"/>
                         <p>
                             In addition to the maximum height, the horizontal length of the layout and distance of the
                             UI from the camera needed to be taken into consideration for maximizing usability. The
@@ -162,7 +168,7 @@ export default class YbvrWhiteLabel extends Component {
                             or text. In addition, I limited the length of the layout to half the circumference
                             surrounding the user’s location to avoid the need to turn their head beyond 180°.
                         </p>
-                        <img src={getImageSrc('ybvr_white_label/curved_ui.png')} alt="Curved UI"/>
+                        <img data-lightbox-group='curved_ui' src={getImageSrc('ybvr_white_label/curved_ui.png')} alt="Curved UI"/>
                         <p>
                             After testing the maximum height and length with several users, I found that the curved
                             layout did greatly improve usability for user. When presenting the modular layouts with
@@ -173,7 +179,7 @@ export default class YbvrWhiteLabel extends Component {
                             decided on three variations of the modular layouts to allow customizability while still
                             minimizing technical capacity.
                         </p>
-                        <img src={getImageSrc('ybvr_white_label/white_label_options.png')} alt="White Label Options"/>
+                        <img data-lightbox-group='options' src={getImageSrc('ybvr_white_label/white_label_options.png')} alt="White Label Options"/>
                         <p>
                             Several months after this white label version, we were able to iterate on the modular
                             concept and implement the full dynamic layout, giving the user the freedom to choose
@@ -205,7 +211,7 @@ export default class YbvrWhiteLabel extends Component {
                             understanding of these varying types of interactions, I focused on two types of page
                             indicators.
                         </p>
-                        <img src={getImageSrc('ybvr_white_label/slider_options.png')} alt="Slider Options"/>
+                        <img data-lightbox-group='sliders' src={getImageSrc('ybvr_white_label/slider_options.png')} alt="Slider Options"/>
                         <p>
                             The options above show two possible locations for the slider arrows and styles for
                             page indicators. After testing the different combinations of the variables, I found
@@ -221,13 +227,13 @@ export default class YbvrWhiteLabel extends Component {
                             that the videos had not finished loading. This feedback conveyed to me that I needed
                             to implement an empty state that would show the end of the list of the videos.
                         </p>
-                        <img src={getImageSrc('ybvr_white_label/home_empty_state.png')} alt="Home empty state"/>
+                        <img data-lightbox-group='empty-state' src={getImageSrc('ybvr_white_label/home_empty_state.png')} alt="Home empty state"/>
                         <p>
                             The next feature I focused on creating was categories. Adding categories to the white
                             label allowed for sorting videos into sections, which would improve the user’s ability
                             to browse and search through videos.
                         </p>
-                        <img src={getImageSrc('ybvr_white_label/home_categories.png')} alt="Home categories"/>
+                        <img data-lightbox-group='categories' src={getImageSrc('ybvr_white_label/home_categories.png')} alt="Home categories"/>
                     </section>
                 </div>
             </div>
