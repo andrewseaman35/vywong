@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 24px;
+
+    @include screen-small-only {
+        flex-direction: column;
+    }
 }
 
 .project-details {
@@ -19,6 +23,9 @@
 
 .project-intro {
     padding: 0 20px;
+    @include screen-small-only {
+        margin-top: 32px;
+    }
 }
 
 .project-link {
