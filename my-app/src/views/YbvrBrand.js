@@ -62,7 +62,7 @@ export default class YbvrBrand extends Component {
                         For YBVR's white label demo, we wanted to create a product name different from the brand
                         itself: The YBVR Experience.
                     </p>
-                    <img data-lightbox-group='experience' src={getImageSrc('ybvr_brand/ybvr_experience.png')} alt="The YBVR Experience"/>
+                    <img data-lightbox-group='experience' data-lightbox-class='no-background' src={getImageSrc('ybvr_brand/ybvr_experience.png')} alt="The YBVR Experience"/>
                 </section>
             </div>
         </div>
