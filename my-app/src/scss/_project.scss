@@ -52,10 +52,12 @@ section {
     margin-top: 40px;
 }
 
-.content {
-    margin-left: $CONTENT_MARGIN;
-    margin-right: $CONTENT_MARGIN;
+content {
     margin-top: 60px;
+    @include screen-medium {
+        margin-left: $CONTENT_MARGIN;
+        margin-right: $CONTENT_MARGIN;
+    }
 
     blockquote {
         margin-top: 10px;
