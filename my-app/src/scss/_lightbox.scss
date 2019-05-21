@@ -1,0 +1,68 @@
+.lightbox {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: $Z_INDEX_LIGHTBOX;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .lightbox-control {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none; // Let clicks pass through to lightbox-outer
+
+        img {
+            height: 40px;
+            width: 40px;
+            padding: 20px;
+            cursor: pointer;
+            pointer-events: all; // capture clicks on the image itself
+        }
+
+    }
+
+    .lightbox-content {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 85%;
+        width: 85%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none; // Let clicks pass through to lightbox-outer
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            background-color: $WHITE;
+            pointer-events: all; // capture clicks on the image itself
+        }
+    }
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: $Z_INDEX_LIGHTBOX_CLOSE;
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin: 8px;
+        cursor: pointer;
+    }
+}

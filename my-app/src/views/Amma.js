@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import { getImageSrc } from '../js/util';
+import initLightbox from '../components/Lightbox';
 
 export default class Amma extends Component {
     state = {}
 
+    componentDidMount() {
+        initLightbox('lightbox')
+    }
+
     render () {
         return (
         <div className='amma'>
+            <div id='lightbox'></div>
             <div className="content">
                 <div className="top-image full-width">
                     <div>
-                        <img src={getImageSrc('amma/phone_watch_layout.png')} alt="Mockups"/>
+                        <img data-lightbox-group='watch_layout' src={getImageSrc('amma/phone_watch_layout.png')} alt="Mockups"/>
                     </div>
                 </div>
                 <section>
@@ -34,13 +40,13 @@ export default class Amma extends Component {
                     </p>
                     <div className="screens-container full-width user-stories">
                         <div>
-                            <img src={getImageSrc('amma/user_story_1.png')} alt="User Story"/>
+                            <img data-lightbox-group='user_stories' src={getImageSrc('amma/user_story_1.png')} alt="User Story"/>
                         </div>
                         <div>
-                            <img src={getImageSrc('amma/user_story_2.png')} alt="User Story"/>
+                            <img data-lightbox-group='user_stories' src={getImageSrc('amma/user_story_2.png')} alt="User Story"/>
                         </div>
                         <div>
-                            <img src={getImageSrc('amma/user_story_3.png')} alt="User Story"/>
+                            <img data-lightbox-group='user_stories' src={getImageSrc('amma/user_story_3.png')} alt="User Story"/>
                         </div>
                     </div>
                     <p>
