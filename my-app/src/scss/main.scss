@@ -15,7 +15,7 @@ img {
     padding: 0 48px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
+    margin-top: $INNER_MARGIN_TOP;
     max-width: 730px;
 
     @include screen-large {
@@ -50,6 +50,10 @@ img {
 @import 'ybvr.scss';
 
 .about {
+    $ABOUT_MARGIN_TOP: 140px;
+    // 100vh - (about-content margin-top) - (footer-height) - (footer.inner margin top)
+    min-height: calc(100vh - #{$ABOUT_MARGIN_TOP} - #{$FOOTER_HEIGHT} - #{$INNER_MARGIN_TOP});
+
     .about-content {
         max-width: 80%;
         @include screen-medium {
@@ -58,7 +62,7 @@ img {
         @include screen-large {
             max-width: 925px;
         }
-        margin: 140px auto 0 auto;
+        margin: $ABOUT_MARGIN_TOP auto 0 auto;
     }
     h1 {
         text-transform: uppercase;
