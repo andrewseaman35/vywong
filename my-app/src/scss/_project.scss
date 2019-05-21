@@ -54,6 +54,10 @@ section {
 
 .content {
     margin-top: 60px;
+    @include screen-small-only {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     @include screen-medium {
         margin-left: $CONTENT_MARGIN;
         margin-right: $CONTENT_MARGIN;
