@@ -52,7 +52,7 @@ section {
     margin-top: 40px;
 }
 
-content {
+.content {
     margin-top: 60px;
     @include screen-medium {
         margin-left: $CONTENT_MARGIN;
