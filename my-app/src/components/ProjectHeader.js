@@ -14,7 +14,7 @@ export default class ProjectHeader extends Component {
         projectLinks.links.forEach(function(link, i) {
             links.push(
                 <div key={i} className="project-link">
-                    <a href={link.href} rel='noopener noreferrer' target='_blank' onClick={function() { trackLinkClick(link.id) }}>
+                    <a href={link.href} rel='noopener noreferrer' target='_blank' className='highlighted' onClick={function() { trackLinkClick(link.id) }}>
                         {link.text}
                     </a>
                 </div>
