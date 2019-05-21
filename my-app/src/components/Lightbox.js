@@ -27,7 +27,6 @@ class Lightbox extends Component {
                 if (!(lightboxGroup in this.imagesByGroupId)) {
                     this.imagesByGroupId[lightboxGroup] = [];
                 }
-                console.log(image.dataset['lightboxClass'])
                 const additionalClass = image.dataset['lightboxClass'] ? image.dataset['lightboxClass'] : '';
                 this.imagesByGroupId[lightboxGroup].push({
                     src: image.src,
