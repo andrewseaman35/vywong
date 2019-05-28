@@ -96,6 +96,24 @@ class Lightbox extends Component {
         }
     }
 
+    renderImages() {
+        const imagesInGroup = this.imagesByGroupId[this.state.currentGroup];
+
+        if (imagesInGroup.length > 1) {
+            const elements = [];
+            for (let i = 0; i < imagesInGroup.length; i++) {
+                const className = i === this.state.currentImageIndex ? 'displayed' : '';
+                const imageSrc = imagesInGroup[i].src;
+                elements.push(
+                    <img className={className} src={imageSrc} alt="" key={i} />
+                )
+            }
+            return elements;
+        }
+        return <img className='displayed' src={this.getCurrentImage()} alt=""/>;
+
+    }
+
     renderDots() {
         const imagesInGroup = this.imagesByGroupId[this.state.currentGroup];
         if (imagesInGroup.length > 1) {
@@ -127,7 +145,7 @@ class Lightbox extends Component {
                         <img src={getImageSrc('assets/left_arrow.svg')} alt="Previous" onClick={this.previous}/>
                     </div>
                     <div className="lightbox-content">
-                        <img src={this.getCurrentImage()} alt=""/>
+                        {this.renderImages()}
                     </div>
                     <div id='lightbox-next' className={`lightbox-control ${arrowButtonClass}`}>
                         <img src={getImageSrc('assets/right_arrow.svg')} alt="Next" onClick={this.next}/>

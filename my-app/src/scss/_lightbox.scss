@@ -70,7 +70,11 @@
             background-color: $WHITE;
             pointer-events: all; // capture clicks on the image itself
             z-index: $Z_INDEX_LIGHTBOX_IMAGE;
+            display: none;
 
+            &.displayed {
+                display: flex;
+            }
         }
     }
 }
