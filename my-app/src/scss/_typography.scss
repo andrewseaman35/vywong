@@ -104,6 +104,11 @@ blockquote {
     border-left-width: 3px;
     border-left-color: $DARK_GRAY;
 
+
+    &.traverse-header {
+        margin-top: 10px;
+    }
+
     a {
         &:hover {
             color: $ORANGE;
