@@ -44,7 +44,7 @@ export default class YbvrBrand extends Component {
                 </div>
                 <div className="after ybvr-dark">
                     <h2>Dark Background</h2>
-                    <img data-lightbox-group='brand-light' data-lightbox-class='ybvr-dark' src={getImageSrc('ybvr_brand/ybvr_logo.png')} alt='YBVR Logo light on dark' />
+                    <img data-lightbox-group='brand-light' data-lightbox-class='ybvr-dark-lightbox' src={getImageSrc('ybvr_brand/ybvr_logo.png')} alt='YBVR Logo light on dark' />
                 </div>
             </div>
             <div className="content">

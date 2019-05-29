@@ -80,7 +80,7 @@ export default class YbvrWhiteLabel extends Component {
                             aliasing and be visually appealing. I focused my search of typefaces to medium-weight sans
                             serifs, more specifically, typefaces that were thick enough to resist distortion yet be
                             readable at a distance, as well as thin enough to avoid unwanted bulging of strokes due to
-                            aliasing. After sifting through a plethora of san serif typefaces, I narrowed down my list
+                            aliasing. After sifting through a plethora of sans serif typefaces, I narrowed down my list
                             to Cabin Regular, Avenir Medium, Clear Sans Light, and Oculus Sans.
                         </p>
                         <img data-lightbox-group='text-compare' src={getImageSrc('ybvr_white_label/text_comparison.png')} alt='Text Comparison'/>
@@ -154,7 +154,7 @@ export default class YbvrWhiteLabel extends Component {
                             the ideal FOV container. I found that even if there was an unbalanced number of modals in the
                             layout, the user’s FOV should be centered with the main element rather than centering the
                             entire layout with the FOV. User feedback showed that because of the close proximity to UI
-                            elements, it was felt more comfortable to center the eye with the most important element
+                            elements, it felt more comfortable to center the eye with the most important element
                             than with the entire layout.
                         </p>
                         <img data-lightbox-group='alignment' src={getImageSrc('ybvr_white_label/fov_alignment.png')} alt="Field of View Alignment"/>
@@ -193,7 +193,7 @@ export default class YbvrWhiteLabel extends Component {
                         </div>
                         <p>
                             After enhancing the usability of the white label application, I focused on designing
-                            three additional features that would create a more detailed and mature platform.
+                            two additional features that would create a more detailed and mature platform.
                         </p>
                         <blockquote className="quote">
                             <strong className="bold-text-2">

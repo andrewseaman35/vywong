@@ -87,6 +87,7 @@
     &.other {
         background-image: image-url('other/workspace.jpg');
         background-size: cover;
+        background-position-x: 50%;
 
         .hero-overlay {
             background-image: image-url('other/other_logo.png');

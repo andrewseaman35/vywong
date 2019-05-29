@@ -29,13 +29,13 @@ export default class Amma extends Component {
                         of having asthma attacks as well as how they have learned to cope with living with asthma.
                         Based on the interviews, I found that although the individuals were diagnosed and treated for
                         asthma, they did not know what would always cause their asthma attacks. This lack of certainty
-                        often lead people to feel weary and held back by their asthma.
+                        often led people to feel weary and held back by their asthma.
                     </p>
                     <div className="full-width">
                         <img data-lightbox-group='persona' data-lightbox-class='no-background' src={getImageSrc('amma/persona.jpg')} alt="Persona"/>
                     </div>
                     <p>
-                        With the persona in mind, I wrote out user scenarios that I wanted to make sure the app would
+                        With the persona in mind, I wrote user scenarios that I wanted to make sure the app would
                         accommodate. The scenarios focused on monitoring and tracking asthmatic triggers and inhaler usage.
                     </p>
                     <div className="screens-container full-width user-stories">

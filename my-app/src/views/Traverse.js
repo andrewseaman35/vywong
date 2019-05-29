@@ -99,7 +99,7 @@ export default class Traverse extends Component {
                 <section>
                     <div className="section-header">
                         <h2>Building a Brand</h2>
-                        <h6>High fidelity mockups, style guide, Invision prototyping</h6>
+                        <h6>High fidelity mockups, style guide, InVision prototyping</h6>
                     </div>
                     <p>
                         With the layout from the wireframes, I began to build Traverse's brand. I wanted Traverse to
@@ -156,7 +156,7 @@ export default class Traverse extends Component {
                 <section>
                     <div className="section-header">
                         <h2>Testing the Waters</h2>
-                        <h6>Invision prototyping, usability testing</h6>
+                        <h6>InVision prototyping, usability testing</h6>
                     </div>
                     <p>
                         In addition to the app prototype, I wanted to build a landing page that would allow users early
