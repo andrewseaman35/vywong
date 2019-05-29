@@ -45,7 +45,7 @@ export default class Traverse extends Component {
                         around how they found and planned their trips as well as what they liked and felt frustration
                         about their planning and the execution of their exploration. Based on the information
                         gathered, I built personas that encompassed three types of explorers:
-                        <strong><i> Andrew, Ciara, and Brandyn</i></strong>
+                        <strong><i> Travis, Andrew, and Ciara.</i></strong>
                     </p>
                     <div className="screens-container full-width">
                         <div className="persona">
