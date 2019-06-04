@@ -7,7 +7,9 @@
     "react-dom": "^16.8.6",
     "react-ga": "^2.5.7",
     "react-router-dom": "^5.0.0",
+    "react-sanitized-html": "^2.0.0",
     "react-scripts": "3.0.0",
+    "sanitize-html": "^1.20.1",
     "sass": "^1.20.1"
   },
   "scripts": {

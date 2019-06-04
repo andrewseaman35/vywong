@@ -19,7 +19,11 @@ const PAGES = {
         },
         projectIntro: {
             title: 'Medicine Goes Digital',
-            content: 'At Mobiquity, I worked on the MYCITE mobile app and web-based portal. My work on the MYCITE project is under strict NDA.',
+            content: 'At Mobiquity, I worked on the Otsuka Pharmaceutical account to build the MYCITE system, ' +
+                'a native iOS and Android app and web-based portal. As the lead designer on the project, I ' +
+                'guided the development of app designs and documentation for the product\'s FDA submission ' +
+                'and built mockups and prototypes for user testing. <br><br>' +
+                'My work on the MYCITE project is under strict NDA.',
         },
         projectLinks: {
             header: 'Articles about MYCITE',

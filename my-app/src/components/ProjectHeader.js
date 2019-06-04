@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SanitizedHTML from 'react-sanitized-html';
 import PAGES from '../js/pages';
 import { trackLinkClick } from '../js/tracking';
 
@@ -46,7 +47,9 @@ export default class ProjectHeader extends Component {
                 </div>
                 <div className="project-intro">
                     <h2 className="title">{intro.title}</h2>
-                    <div className="body">{intro.content}</div>
+                    <div className="body">
+                        <SanitizedHTML allowedTags={['br']} html={intro.content} />
+                    </div>
                     {this.renderProjectLinks()}
                 </div>
             </div>
