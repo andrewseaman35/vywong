@@ -3,7 +3,7 @@ import { HashRouter, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import createBrowserHistory from 'history/createBrowserHistory';
 
-import Home from './views/Home';
+import NewHome from './views/NewHome';
 import ProjectPage from './views/ProjectPage';
 
 import MyCite from './views/MyCite';
@@ -12,7 +12,6 @@ import YbvrWhiteLabel from './views/YbvrWhiteLabel';
 import YbvrBrand from './views/YbvrBrand';
 import Amma from './views/Amma';
 import Other from './views/Other';
-import About from './views/About';
 
 import './App.css';
 
@@ -37,8 +36,8 @@ class App extends Component {
       <HashRouter history={history}>
         <div>
           <Route exact={true} path='/' render={changePage.bind(null,
-            <div className="App">
-              <Home />
+            <div className="App home">
+              <NewHome />
             </div>
           )}/>
           <Route exact={true} path='/mycite' render={changePage.bind(null,
@@ -81,11 +80,6 @@ class App extends Component {
               <ProjectPage project='other'>
                 <Other />
               </ProjectPage>
-            </div>
-          )}/>
-          <Route exact={true} path='/about' render={changePage.bind(null,
-            <div className="App">
-                <About />
             </div>
           )}/>
         </div>

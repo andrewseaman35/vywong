@@ -10,20 +10,32 @@
     overflow-x: hidden;
 }
 
+@import 'home.scss';
+
 img {
     max-width: 100%;
     margin: 16px 0;
 }
 
+.tiny-only {
+    display: none;
+    @include screen-tiny {
+        display: block;
+    }
+    @include screen-medium {
+        display: none;
+    }
+}
+
 .inner {
-    padding: 0 48px;
+    padding: 0 60px;
     margin-left: auto;
     margin-right: auto;
     margin-top: $INNER_MARGIN_TOP;
-    max-width: 730px;
+    // max-width: 730px;
 
     @include screen-large {
-        max-width: 940px;
+        max-width: 1200px;
     }
 
     @include screen-small-only {
@@ -40,7 +52,6 @@ img {
 }
 
 .tile-container {
-    margin-top: 60px;
     @import 'tiles.scss';
 }
 

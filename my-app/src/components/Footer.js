@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 const FOOTER_LINKS = [
     [
-        {text: 'about me', href: '/#/about'},
-    ], [
         {text: 'mycite', href: '/#/mycite'},
         {text: 'white label', href: '/#/ybvr_white_label'},
         {text: 'ybvr brand', href: '/#/ybvr_brand'},

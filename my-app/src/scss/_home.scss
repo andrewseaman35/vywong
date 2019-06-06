@@ -1,0 +1,131 @@
+.home {
+    padding-top: 80px;
+
+    .header-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+    .home-hello {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+
+        .hello {
+            color: $FADED_ORANGE;
+        }
+        .me {
+            color: $DARK_GRAY;
+        }
+    }
+
+    .home-about {
+        font-size: 18px;
+    }
+
+    .row-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        @include screen-medium {
+            margin: 20px 0;
+            flex-direction: row;
+        }
+
+        &.group-header {
+            transition: all 350ms;
+            margin-top: 60px;
+            align-items: start;
+            @include screen-tiny {
+                margin-bottom: 10px;
+            }
+            @include screen-medium {
+                margin-top: 120px;
+            }
+        }
+
+        .recent-work {
+            font-size: 32px;
+            font-weight: bold;
+            color: $DARK_GRAY;
+        }
+
+        .item {
+            width: calc(100% - 20px);
+            margin: 10px 0;
+
+            @include screen-medium {
+                width: 100%;
+                margin-top: 0;
+                margin-bottom: 0;
+
+                &.left {
+                    margin-right: 10px;
+                }
+                &.right {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .item:after {
+            content: "";
+            display: block;
+            padding-bottom: calc(61.8% - 54px);
+            @include screen-large {
+                padding-bottom: calc(61.8% - 74px);
+            }
+        }
+    }
+
+    .about-content {
+        transition: all 350ms;
+        align-items: flex-start;
+        flex-direction: row;
+        margin: 20px 0;
+
+        @include screen-tiny {
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .profile-picture {
+            transition: all 350ms;
+            flex-basis: 50%;
+
+            @include screen-medium {
+                flex-basis: 40%;
+            }
+
+            @include screen-large {
+                flex-basis: 33%;
+            }
+
+            img {
+                border-radius: 5px;
+            }
+        }
+        .about-text {
+            transition: all 350ms;
+            flex-basis: 50%;
+            margin-left: 20px;
+
+            @include screen-tiny {
+                margin-left: 0;
+            }
+
+            @include screen-medium {
+                flex-basis: 60%;
+            }
+
+            @include screen-large {
+                flex-basis: 66%;
+            }
+        }
+    }
+
+
+}

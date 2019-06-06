@@ -1,190 +1,74 @@
 .tile {
-    height: 300px;
-    width: 100%;
-    border: 3px solid $DARK_GRAY;
+    $TRANSITION_DURATION: 350ms;
+    border-radius: 5px;
     background-size: cover;
     background-position: 50% 50%;
-    margin: 5px;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
 
-    &.small {
-        width: 40%;
-        @include screen-small-only {
-            width: auto;
-        }
-    }
-
-    &.wide {
-        width: 60%;
-        @include screen-small-only {
-            width: auto;
-        }
-    }
-
-    &.full-width {
-        width: auto;
-        @include screen-medium {
-            width: 100%;
-        }
-        height: 84px;
-    }
-
-    &.mycite {
-        background-image: image-url('mycite/calendar.jpg');
-    }
-
-    &.ybvr_white_label {
-        background-image: image-url('ybvr_white_label/forest.png');
-    }
-
-    &.ybvr_brand {
-        background-image: image-url('ybvr_brand/yosemite.jpg');
-    }
-
-    &.traverse {
-        background-image: image-url('traverse/map2.png');
-        background-position: 40% 50%;
-    }
-
-    &.amma {
-        background-image: image-url('amma/runner.jpg');
-    }
+    transition: all $TRANSITION_DURATION;
 
     &:hover {
-        .tile-image {
-            background-size: 50%;
-            @include screen-medium {
-                background-size: 110%;
-            }
-            @include screen-large {
-                background-size: 90%;
-            }
+        transition: all $TRANSITION_DURATION;
+        background-size: 115%;
+        cursor: pointer;
 
-            &.ybvr_white_label {
-                @include screen-medium {
-                    background-size: 85%;
-                }
-                @include screen-large {
-                    background-size: 75%;
-                }
-            }
-            &.mycite,
-            &.ybvr_brand {
-                @include screen-small-only {
-                    background-size: 60%;
-                }
-            }
-        }
-
-        .tile-image.other {
-            background-size: 110%;
+        .tile-title {
+            opacity: 1;
         }
     }
-
-}
-
-.tile-image {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    // background-size: contain;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-
-    @include screen-medium {
-        background-position: 50% 30%;
-        background-size: 100%;
-    }
-
-    @include screen-large {
-        background-position: 50% 0;
-        background-size: 80%;
-    }
-
-    transition: background-size 0.5s;
-    -moz-transition: background-size 0.5s;
-    -ms-transition: background-size 0.5s;
-    -o-transition: background-size 0.5s;
-    -webkit-transition: background-size 0.5s;
 
     &.mycite {
-        background-image: image-url('mycite/tile_flower.png');
+        background-image: image-url('mycite/packaging.png');
     }
 
     &.ybvr_white_label {
-        background-image: image-url('ybvr_white_label/tile_headset.png');
-        @include screen-medium {
-            background-size: 80%;
-            background-position: 50% 130%;
-        }
-        @include screen-large {
-            background-size: 65%;
-            background-position: 50% 50%;
-        }
-    }
-
-    &.ybvr_brand {
-        background-image: image-url('ybvr_brand/tile_logo.png');
-    }
-    &.ybvr_brand,
-    &.mycite {
-        @include screen-small-only {
-            background-size: 50%;
-            background-position: 50% 50%;
-        }
+        background-image: image-url('ybvr_white_label/new_headset.jpg');
     }
 
     &.traverse {
-        background-image: image-url('traverse/tile_phone.png');
+        background-image: image-url('traverse/new_tile.jpg');
     }
 
     &.amma {
-        background-image: image-url('amma/tile_phone.png');
+        background-image: image-url('amma/new_watch.jpg');
     }
 
-    &.other {
-        background-image: image-url('vyw_logo.svg');
-        background-size: 100%;
-        background-position: 50% 30%;
-    }
-}
+    .tile-title {
+        height: 38px;
+        border-radius: 3px;
+        background-color: rgba(244, 255, 255, .8);
+        color: #000000;
+        transition: all 750ms;
+        padding: 10px 10px;
 
-.tile-cover {
-    background-image: linear-gradient(180deg, transparent 45%, #fff);
-    position: relative;
-    width: 100%;
-    font-family: "Open Sans", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+        @include screen-large {
+            opacity: 0;
+            height: 64px;
+            padding: 14px 10px;
+        }
 
-    &.other {
-        position: relative;
-        text-align: center;
-    }
+        .title {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 700;
 
-    .title {
-        text-transform: uppercase;
-        font-size: 36px;
-        font-weight: 700;
-
-        @include screen-medium {
-            font-size: 26px;
+            @include screen-large{
+                font-size: 36px;
+            }
+        }
+        .subtitle {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            @include screen-large{
+                font-size: 14px;
+            }
         }
     }
-    .subtitle {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-    }
-}
-
-.title-container {
-    padding: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
 }
 
 .tile-row {
@@ -201,4 +85,9 @@
 .tile-cover {
     height: 100%;
     background-image: linear-gradient(180deg, transparent 54%, #fff);
+}
+
+.new-tile {
+    background-color: red;
+    border-radius: 5px;
 }
