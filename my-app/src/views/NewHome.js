@@ -17,8 +17,8 @@ export default class NewHome extends Component {
                             <div className="hello">Hello there, <span className="me">I'm Victoria!</span></div>
                         </div>
                         <div className='home-about header-item'>
-                            I’m a Product Designer <br className='tiny-only' />who seeks to understand users, <br/>
-                            strives to learn and grow, <br className='tiny-only' />and opts for Oxford commas.<br/>
+                            I’m a Product Designer <br className='tiny-only' />who strives to solve the big problems. <br/>
+                            I find happiness in learning, <br className='tiny-only' />eating sushi, and finding great deals.
                         </div>
                     </div>
                     <div className="row-group group-header">
