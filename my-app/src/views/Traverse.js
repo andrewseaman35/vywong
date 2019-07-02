@@ -122,7 +122,7 @@ export default class Traverse extends Component {
                 </section>
                 <div className="screens-container full-width">
                     <div>
-                        <img data-lightbox-group='mockups' data-lightbox-class='no-background' src={getImageSrc('traverse/signup.png')} alt="Sign Up Screen"/>
+                        <img data-lightbox-group='mockups' data-lightbox-class='no-background' src={getImageSrc('traverse/02Signup.png')} alt="Sign Up Screen"/>
                     </div>
                     <div>
                         <img data-lightbox-group='mockups' data-lightbox-class='no-background' src={getImageSrc('traverse/configure.png')} alt="Personalize"/>
@@ -168,7 +168,7 @@ export default class Traverse extends Component {
                             rel='noopener noreferrer'>here</a>.
                     </p>
                     <div className="full-width">
-                        <img data-lightbox-group='laptop' data-lightbox-class='no-background' src={getImageSrc('traverse/laptop_mockup.png')} alt="Laptop mockup"/>
+                        <img data-lightbox-group='laptop' data-lightbox-class='no-background' src={getImageSrc('traverse/laptop-mockup.png')} alt="Laptop mockup"/>
                     </div>
                 </section>
             </div>
