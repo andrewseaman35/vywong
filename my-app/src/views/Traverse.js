@@ -164,7 +164,8 @@ export default class Traverse extends Component {
                         product would be a great way to test the waters and gauge interest while also gathering
                         potential users to test the app. See the full landing page <a
                             className='highlighted'
-                            href='https://invis.io/49ACBERCS#/217769410_Landing_PageA' rel='noopener noreferrer'>here</a>.
+                            href='https://invis.io/49ACBERCS#/217769410_Landing_PageA' 
+                            rel='noopener noreferrer'>here</a>.
                     </p>
                     <div className="full-width">
                         <img data-lightbox-group='laptop' data-lightbox-class='no-background' src={getImageSrc('traverse/laptop_mockup.png')} alt="Laptop mockup"/>
