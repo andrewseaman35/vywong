@@ -1,1 +1,0 @@
-aws s3 cp ${1} s3://aseaman-public-bucket/vywong/${2}
