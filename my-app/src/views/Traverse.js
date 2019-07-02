@@ -168,7 +168,7 @@ export default class Traverse extends Component {
                             rel='noopener noreferrer'>here</a>.
                     </p>
                     <div className="full-width">
-                        <img data-lightbox-group='laptop' data-lightbox-class='no-background' src={getImageSrc('traverse/laptop-mockup.png')} alt="Laptop mockup"/>
+                        <img data-lightbox-group='laptop' data-lightbox-class='no-background' src={getImageSrc('traverse/laptop-mockup1.png')} alt="Laptop mockup"/>
                     </div>
                 </section>
             </div>
