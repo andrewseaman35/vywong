@@ -1,5 +1,9 @@
 APP_NAME := my-app
 
+watch_css:
+	rm -f my-app/src/App.css
+	sass --watch ${APP_NAME}/src/scss/main.scss:${APP_NAME}/src/App.css
+
 css:
 	rm -f my-app/src/App.css
 	sass ${APP_NAME}/src/scss/main.scss ${APP_NAME}/src/App.css

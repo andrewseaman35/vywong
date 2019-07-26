@@ -77,7 +77,7 @@
     justify-content: space-between;
     align-content: center;
 
-    @include screen-small-only {
+    @include screen-small {
         flex-direction: column;
     }
 }
