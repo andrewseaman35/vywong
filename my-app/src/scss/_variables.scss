@@ -1,5 +1,8 @@
 $WHITE: #FFFFFF;
+$BLACK: #000000;
 $LIGHT_GRAY: #ECECEC;
+$MED_GRAY: #EEEEEE;
+$GRAY: #9b9b9b;
 $DARK_GRAY: #4a4a4a;
 $YELLOW: #FFD756;
 $ORANGE: #FAB84A;
@@ -28,6 +31,7 @@ $ASSET_BASE_PATH: 'http://dsxhlwnbcmyjm.cloudfront.net/vywong';
 }
 
 $screen-tiny-max: 600px;
+$screen-sml-min: $screen-tiny-max + 1;
 $screen-sml-max: 767px;
 $screen-med-min: $screen-sml-max + 1;
 $screen-med-max: 1070px;
@@ -39,10 +43,20 @@ $screen-lrg-min: $screen-med-max + 1;
     }
  }
 
-@mixin screen-small-only {
+@mixin screen-small {
+    @media (min-width: #{$screen-sml-min}) and (max-width: #{$screen-sml-max}) {
+        @content;
+    }
+ }
+ @mixin small-screens {
     @media (max-width: #{$screen-sml-max}) {
         @content;
     }
+ }
+ @mixin not-small-screens {
+     @media (min-width: #{$screen-med-min}) {
+         @content;
+     }
  }
 
  @mixin screen-medium {
@@ -58,7 +72,7 @@ $screen-lrg-min: $screen-med-max + 1;
  }
 
 .hide-for-small-screen {
-    @include screen-small-only {
+    @include screen-small {
         display: none !important;
     }
 }

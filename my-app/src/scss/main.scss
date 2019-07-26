@@ -10,6 +10,10 @@
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @import 'home.scss';
 
 img {
@@ -35,10 +39,13 @@ img {
     // max-width: 730px;
 
     @include screen-large {
-        max-width: 1200px;
+        max-width: 1000px;
     }
 
-    @include screen-small-only {
+    @include screen-tiny {
+        padding: 0 20px;
+    }
+    @include screen-small {
         padding: 0 20px;
     }
 }
@@ -93,7 +100,7 @@ img {
         margin-top: 40px;
         align-items: flex-start;
 
-        @include screen-small-only {
+        @include screen-small {
             flex-direction: column;
         }
         img {

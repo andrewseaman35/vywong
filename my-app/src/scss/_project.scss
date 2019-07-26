@@ -3,7 +3,7 @@
     flex-direction: row;
     margin-bottom: 24px;
 
-    @include screen-small-only {
+    @include screen-small {
         flex-direction: column;
     }
 }
@@ -23,7 +23,7 @@
 
 .project-intro {
     padding: 0 20px;
-    @include screen-small-only {
+    @include screen-small {
         margin-top: 32px;
     }
 }
@@ -43,7 +43,7 @@
     margin-top: 60px;
     padding: 0 48px;
 
-    @include screen-small-only {
+    @include screen-small {
         padding: 0 20px;
     }
 }
@@ -54,7 +54,7 @@ section {
 
 .content {
     margin-top: 60px;
-    @include screen-small-only {
+    @include screen-small {
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -90,7 +90,7 @@ section {
         margin-top: 0;
     }
 
-    @include screen-small-only {
+    @include screen-small {
         flex-direction: column;
         max-width: 300px;
         margin-right: auto;
@@ -140,7 +140,7 @@ section {
         display: flex;
         padding: 20px 0;
 
-        @include screen-small-only {
+        @include screen-small {
             flex-direction: column-reverse;
         }
     }
@@ -150,7 +150,7 @@ section {
     }
 
     .item-image {
-        @include screen-small-only {
+        @include screen-small {
             padding: 24px 20px;
         }
         img {

@@ -49,7 +49,7 @@
     &.traverse {
         background-image: image-url('traverse/map.png');
         background-size: cover;
-        @include screen-small-only {
+        @include screen-small {
             background-position-x: 25%;
         }
 
