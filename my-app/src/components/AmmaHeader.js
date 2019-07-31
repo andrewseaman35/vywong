@@ -13,22 +13,25 @@ export default class TraverseHeader extends Component {
                     <div className="row inner">
                         <div className="column first project-text">
                             <div className="project-details">
-                                <div className="detail">Product: <strong>iOS App</strong></div>
+                                <div className="detail">Product: <strong>Android App</strong></div>
                                 <div className="detail">Duration: <strong>3 weeks</strong></div>
                                 <div className="detail">Role: <strong>Project Designer</strong></div>
                             </div>
                             <div className="project-intro">
                                 <p>
-                                    Traverse is a mobile app that helps individuals explore their surrounding areas.
-                                    By creating customizable routes, people can discover new sites around them and
-                                    still make their way to their destinations. Traverse automatically finds, maps,
-                                    and navigates you to unique places of interest, so you can spend more time exploring.
+                                    AMMA is a conceptual asthma monitoring and management app which
+                                    helps individuals with asthma gain real-time data about their
+                                    asthmatic triggers as well as long-term insights of asthma trends
+                                    over time. AMMA works by tracking vitals via a wearable device
+                                    and combining that data with user-inputted information to
+                                    calculate risk of an asthma attack in order to help users predict
+                                    and prevent any incident from happening.
                                 </p>
                             </div>
                         </div>
                         <div className="column project-header-images">
-                            <img className='project-header-image first' src={getImageSrc('traverse/whereto.png')} alt="Where to"/>
-                            <img className='project-header-image' src={getImageSrc('traverse/routing.png')} alt="Routing"/>
+                            <img className='project-header-image first' src={getImageSrc('amma/key_1_dashboard.png')} alt="Dashboard"/>
+                            <img className='project-header-image' src={getImageSrc('amma/key_4_history_logs.png')} alt="History Logs"/>
                         </div>
                     </div>
                 </div>

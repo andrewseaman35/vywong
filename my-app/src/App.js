@@ -4,6 +4,7 @@ import ReactGA from 'react-ga';
 import createBrowserHistory from 'history/createBrowserHistory';
 
 import NewHome from './views/NewHome';
+import Page from './views/Page';
 import ProjectPage from './views/ProjectPage';
 
 import MyCite from './views/MyCite';
@@ -63,16 +64,16 @@ class App extends Component {
           )}/>
           <Route exact={true} path='/traverse' render={changePage.bind(null,
             <div className="App">
-              <ProjectPage project='traverse'>
+              <Page project='traverse'>
                 <Traverse />
-              </ProjectPage>
+              </Page>
             </div>
           )}/>
           <Route exact={true} path='/amma' render={changePage.bind(null,
             <div className="App">
-              <ProjectPage project='amma'>
+              <Page project='amma'>
                 <Amma />
-              </ProjectPage>
+              </Page>
             </div>
           )}/>
           <Route exact={true} path='/other' render={changePage.bind(null,
