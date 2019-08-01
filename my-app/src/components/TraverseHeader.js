@@ -8,7 +8,7 @@ export default class TraverseHeader extends Component {
     render () {
         return (
             <div className="project-header">
-                <img className='project-image' src={getImageSrc('vyw_logo.svg')} alt="Traverse"/>
+                <img className='project-image' src={getImageSrc('traverse/traverse_logo.png')} alt="Traverse"/>
                 <div className="project-header-content">
                     <div className="row inner">
                         <div className="column first project-text">

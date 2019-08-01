@@ -17,8 +17,7 @@ export default class Amma extends Component {
     }
 
     componentDidMount() {
-        new ScrollTracker('traverse');
-        initLightbox('traverse', 'lightbox')
+        new ScrollTracker('amma');
     }
 
     showProcessContent() {
@@ -58,7 +57,7 @@ export default class Amma extends Component {
                         </p>
                     </div>
                     <div className="column second">
-                        <img data-lightbox-group='persona' data-lightbox-class='no-background' src={getImageSrc('amma/persona.jpg')} alt="Persona"/>
+                        <img data-lightbox-group='persona' data-lightbox-class='no-background' src={getImageSrc('amma/Skye.png')} alt="Persona Skye"/>
                     </div>
                 </section>
                 <section className="block-statement">
@@ -66,7 +65,7 @@ export default class Amma extends Component {
                     that can change and improve how she lives?
                 </section>
                 <section className="dual-text">
-                    <div className="column">
+                    <div className="column first">
                         <p>
                             I envisioned an app that could deliver real-time information
                             about asthmatic triggers and offer insights based on historically
@@ -81,15 +80,15 @@ export default class Amma extends Component {
                         </blockquote>
                     </div>
                     <div className="column two-images">
-                        <img className="column-image first" data-lightbox-group='persona' data-lightbox-class='no-background' src={getImageSrc('amma/key_1_dashboard.png')} alt="Dashboard"/>
-                        <img className="column-image" data-lightbox-group='persona' data-lightbox-class='no-background' src={getImageSrc('amma/key_1_dashboard.png')} alt="Dashboard"/>
+                        <img className="column-image first" data-lightbox-group='persona' data-lightbox-class='no-background' src={getImageSrc('amma/dashboard.png')} alt="Dashboard Wireframe"/>
+                        <img className="column-image" data-lightbox-group='persona' data-lightbox-class='no-background' src={getImageSrc('amma/history_logs.png')} alt="History Log Wireframe"/>
                     </div>
                 </section>
                 <section className="full-image">
-                    <img data-lightbox-group='full' src={getImageSrc('vyw_logo.svg')} alt="Full flow"/>
+                    <img data-lightbox-group='full' src={getImageSrc('amma/dashboard_history_logs.png')} alt="Style Guide"/>
                 </section>
                 <section className="dual-text">
-                    <div className="column">
+                    <div className="column first">
                         <p>
                             Although users navigated smoothly through the prototype, I found that
                             the asthma logging and history logs pages had too much information,
@@ -111,7 +110,7 @@ export default class Amma extends Component {
                     Knowing what I learned from working on an FDA-approved product, what would I do differently?
                 </section>
                 <section className="dual-text">
-                    <div className="column">
+                    <div className="column first">
                         <p>
                             After working on the <a href='/#/mycite'>MYCITE project</a> and understanding the
                             ]thoroughness of human factor studies in relation to medical devices, I wanted

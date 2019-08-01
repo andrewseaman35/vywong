@@ -18,7 +18,6 @@ export default class Traverse extends Component {
 
     componentDidMount() {
         new ScrollTracker('traverse');
-        initLightbox('traverse', 'lightbox')
     }
 
     showProcessContent() {
@@ -55,7 +54,7 @@ export default class Traverse extends Component {
                             Move pins on the map to find efficient route
                         </blockquote>
                     </div>
-                    <div className="column second">
+                    <div className="column">
                         <p>
                             Ample survey responses of people who love exploring new places showed the
                             market for an exploration app. The frustration of the current painfully
@@ -65,11 +64,11 @@ export default class Traverse extends Component {
                     </div>
                 </section>
                 <section className='no-margin'>
-                    <div className="column">
-                        <img data-lightbox-group='traverse-process' src={getImageSrc('vyw_logo.svg')} alt="Current process"/>
+                    <div className="column first">
+                        <img data-lightbox-group='traverse-process' src={getImageSrc('traverse/before_flow.png')} alt="Current process"/>
                     </div>
                     <div className="column">
-                        <img data-lightbox-group='traverse-process' src={getImageSrc('vyw_logo.svg')} alt="Reimagined process"/>
+                        <img data-lightbox-group='traverse-process' src={getImageSrc('traverse/after_flow.png')} alt="Reimagined process"/>
                     </div>
                 </section>
                 <section className="block-statement">
@@ -77,7 +76,7 @@ export default class Traverse extends Component {
                     you get back your time to explore and discover.
                 </section>
                 <section className="dual-text">
-                    <div className="column">
+                    <div className="column first">
                         <p>
                             Through my interviews, I found that there were two types of travelers:
                             Travis, the travel-when-I-can, and Emily, the travel-to-see-it-all.
@@ -95,14 +94,16 @@ export default class Traverse extends Component {
                         </p>
                     </div>
                     <div className="column">
-                        <img src={getImageSrc('vyw_logo.svg')} alt="Onboarding must see"/>
+                        <div className="image-container">
+                            <img src={getImageSrc('traverse/must_sees.png')} alt="Onboarding must see"/>
+                        </div>
                     </div>
                 </section>
                 <section className="block-statement">
                     Expedited can still involving planning ahead, just not too far in advance.
                 </section>
                 <section className="dual-text">
-                    <div className="column">
+                    <div className="column first">
                         <p>
                             Feedback gathered from my rounds of user testing included:
                         </p>
@@ -141,7 +142,7 @@ export default class Traverse extends Component {
                     Starting at the beginning, I asked myself, what would help people explore more often?
                 </section>
                 <section className="dual-text">
-                    <div className="column">
+                    <div className="column first">
                         <p>
                             While analyzing the apps I frequented, I began to notice that the apps
                             did bits and pieces of the exploration process, but none captured the
@@ -164,11 +165,11 @@ export default class Traverse extends Component {
                     </div>
                 </section>
                 <section className="dual-text">
-                    <div className="column">
-                        <img data-lightbox-group='personas' className='user-story' src={getImageSrc('traverse/userstory_travis.png')} alt="User Story Travis"/>
+                    <div className="column first">
+                        <img data-lightbox-group='personas' className='user-story' src={getImageSrc('traverse/Emily.png')} alt="Persona Emily"/>
                     </div>
                     <div className="column">
-                        <img data-lightbox-group='personas' className='user-story' src={getImageSrc('traverse/userstory_ciara.png')} alt="User Story Ciara"/>
+                        <img data-lightbox-group='personas' className='user-story' src={getImageSrc('traverse/Travis.png')} alt="Persona Travis"/>
                     </div>
                 </section>
                 <section className="block-statement">
@@ -176,7 +177,7 @@ export default class Traverse extends Component {
                     and be on my way to new places.
                 </section>
                 <section className="dual-text">
-                    <div className="column">
+                    <div className="column first">
                         <p>
                             Within the three week timeframe, I chose to focus on Travis’ user flow
                             as my initial persona. With the assumption that users like Travis who
@@ -186,18 +187,18 @@ export default class Traverse extends Component {
                         </p>
                     </div>
                     <div className="column">
-                        <img data-lightbox-group='full-flow' className='user-story' src={getImageSrc('vyw_logo.svg')} alt="Full flow"/>
+                        <img data-lightbox-group='full-flow' className='user-story' src={getImageSrc('traverse/traverse_flow.png')} alt="Full flow"/>
                     </div>
                 </section>
                 <section className="full-image">
-                    <img data-lightbox-group='full' src={getImageSrc('vyw_logo.svg')} alt="Full flow"/>
+                    <img data-lightbox-group='full' src={getImageSrc('traverse/wireframes.png')} alt="Traverse Wireframes"/>
                 </section>
                 <section className="block-statement">
                     Traverse’s brand captures the feeling of excitement and delight when
                     discovering something new.
                 </section>
                 <section className="dual-text">
-                    <div className="column">
+                    <div className="column first">
                         <p>
                             With the layout from the wireframes, I began to build Traverse's brand.
                             I built a style guide that encompassed Traverse's modern aesthetic with a
@@ -213,7 +214,7 @@ export default class Traverse extends Component {
                     </div>
                 </section>
                 <section className="full-image">
-                    <img data-lightbox-group='style-guide' src={getImageSrc('traverse/traverse_style_guide.png')} alt="Traverse style guide"/>
+                    <img data-lightbox-group='style-guide' src={getImageSrc('traverse/style_guide.png')} alt="Traverse style guide"/>
                 </section>
             </div>
         </div>

@@ -1,5 +1,4 @@
 .project-header {
-    display: flex;
     flex-direction: column;
     margin-bottom: 24px;
     margin-top: 120px;
@@ -10,10 +9,16 @@
 
     .project-image {
         max-height: 120px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 300px;
+        padding-bottom: 24px;
     }
 
     .project-header-content {
         background-color: $LIGHT_GRAY;
+        display: flex;
     }
 
     .project-text {
@@ -101,7 +106,10 @@ section {
         }
     }
 }
-
+.image-container {
+    background-color: $MED_GRAY; 
+    padding: 10px 60px;
+}
 .load-more {
     display: flex;
     flex-direction: column;
