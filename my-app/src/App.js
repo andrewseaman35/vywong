@@ -43,9 +43,9 @@ class App extends Component {
           )}/>
           <Route exact={true} path='/mycite' render={changePage.bind(null,
             <div className="App">
-              <ProjectPage project='mycite'>
+              <Page project='mycite'>
                 <MyCite />
-              </ProjectPage>
+              </Page>
             </div>
           )}/>
           <Route exact={true} path='/ybvr_white_label' render={changePage.bind(null,
