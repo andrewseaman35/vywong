@@ -363,7 +363,7 @@ export default class YbvrWhiteLabel extends Component {
                         <img src={getImageSrc('ybvr_white_label/video_description.png')} alt="Video Description"/>
                     </div>
                     <div className="column">
-                    <img src={getImageSrc('ybvr_white_label/video_description_modal.png')} alt="Video Description Modal"/>
+                        <img src={getImageSrc('ybvr_white_label/video_description_modal.png')} alt="Video Description Modal"/>
                     </div>
                 </section>
             </div>

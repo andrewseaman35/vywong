@@ -39,24 +39,28 @@ export default class MyCite extends Component {
                 <section className="dual-text">
                     <div className="column first">
                         <p>
-                            I love exploring new cities and seeing the unique local spots, but for most short trips, usual process of finding a route to explore is typically something of the following:
+                            At Mobiquity, I worked on the MYCITE system to build a native iOS and Android 
+                            app and web-based portal. As a FDA-regulated product, the MYCITE product depends 
+                            on human factor studies and development of new features that focus user’s 
+                            comprehension of tasks in order to optimize the efficiency, safety, and ease 
+                            of learning for their targeted users. 
                         </p>
-                        <blockquote className="quote">
-                            Look up a few sights nearby on Yelp<br/>
-                            Skim some Thrillist articles on new local spots<br/>
-                            Input each location into Google Maps<br/>
-                            Move pins on the map to find efficient route
-                        </blockquote>
                     </div>
                     <div className="column">
                         <p>
-                            Ample survey responses of people who love exploring new places showed the
-                            market for an exploration app. The frustration of the current painfully
-                            slow manual process of explore pointed to an opportunity to create a single
-                            experience for people discover, navigate, and explore new places.
+                            As the lead designer on the project, I guided the development of app designs 
+                            and documentation for the product's FDA submission and built mockups and 
+                            prototypes for user testing. Working under a heavily-regulated medical product, 
+                            design concepts were geared toward clear, easy to understand information and 
+                            interactions with directions and guidance. We geared our designs to straightforward 
+                            content and clear interactions in order to remove unnecessary interpretation or confusion.
                         </p>
                     </div>
                 </section>
+                <section className="full-image">
+                    <img src={getImageSrc('mycite/mycite_packaging.png')} alt="Mycite Packaging"/>
+                </section>
+                
             </div>
         </div>
         )
