@@ -50,9 +50,9 @@ class App extends Component {
           )}/>
           <Route exact={true} path='/ybvr_white_label' render={changePage.bind(null,
             <div className="App">
-              <ProjectPage project='ybvr_white_label'>
+              <Page project='ybvr_white_label'>
                 <YbvrWhiteLabel />
-              </ProjectPage>
+              </Page>
             </div>
           )}/>
           <Route exact={true} path='/ybvr_brand' render={changePage.bind(null,

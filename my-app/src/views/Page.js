@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import ProjectHeader from '../components/ProjectHeader';
 import AmmaHeader from '../components/AmmaHeader';
 import TraverseHeader from '../components/TraverseHeader';
+import YbvrWhiteLabelHeader from '../components/YbvrWhiteLabelHeader';
 import { ScrollTracker } from '../js/tracking';
 
 export default class ProjectPage extends Component {
@@ -19,6 +20,8 @@ export default class ProjectPage extends Component {
             return <TraverseHeader />;
         } else if (this.props.project === 'amma') {
             return <AmmaHeader />;
+        } else if (this.props.project === 'ybvr_white_label') {
+            return <YbvrWhiteLabelHeader />;
         }
         return <ProjectHeader project={this.props.project} />;
     }
