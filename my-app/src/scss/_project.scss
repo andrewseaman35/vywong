@@ -178,6 +178,42 @@ section {
     align-items: center;
     user-select: none;
 
+    .load-more-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+            .load-more-text {
+                color: $FADED_ORANGE;
+            }
+            .load-more-button {
+                border-color: $FADED_ORANGE;
+
+                path,
+                svg {
+                    fill: $FADED_ORANGE;
+                }
+            }
+        }
+        &:active {
+            cursor: pointer;
+            .load-more-text {
+                color: $ORANGE;
+            }
+            .load-more-button {
+                border-color: $ORANGE;
+
+                path,
+                svg {
+                    fill: $ORANGE;
+                }
+            }
+
+        }
+    }
+
     &.hide {
         display: none;
     }
@@ -200,35 +236,6 @@ section {
             width: 20px;
             height: 28px;
             vertical-align: middle;
-        }
-
-    }
-    &:hover {
-        cursor: pointer;
-        .load-more-text {
-            color: $FADED_ORANGE;
-        }
-        .load-more-button {
-            border-color: $FADED_ORANGE;
-
-            path,
-            svg {
-                fill: $FADED_ORANGE;
-            }
-        }
-    }
-    &:active {
-        cursor: pointer;
-        .load-more-text {
-            color: $ORANGE;
-        }
-        .load-more-button {
-            border-color: $ORANGE;
-
-            path,
-            svg {
-                fill: $ORANGE;
-            }
         }
 
     }

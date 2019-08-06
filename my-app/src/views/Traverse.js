@@ -64,10 +64,10 @@ export default class Traverse extends Component {
                 </section>
                 <section className='no-margin'>
                     <div className="column first">
-                        <img data-lightbox-group='traverse-process' src={getImageSrc('traverse/before_flow.png')} alt="Current process"/>
+                        <img src={getImageSrc('traverse/before_flow.png')} alt="Current process"/>
                     </div>
                     <div className="column">
-                        <img data-lightbox-group='traverse-process' src={getImageSrc('traverse/after_flow.png')} alt="Reimagined process"/>
+                        <img src={getImageSrc('traverse/after_flow.png')} alt="Reimagined process"/>
                     </div>
                 </section>
                 <section className="block-statement">
@@ -164,10 +164,10 @@ export default class Traverse extends Component {
                 </section>
                 <section className="dual-text">
                     <div className="column first">
-                        <img data-lightbox-group='personas' className='user-story' src={getImageSrc('traverse/Emily.png')} alt="Persona Emily"/>
+                        <img className='user-story' src={getImageSrc('traverse/Emily.png')} alt="Persona Emily"/>
                     </div>
                     <div className="column">
-                        <img data-lightbox-group='personas' className='user-story' src={getImageSrc('traverse/Travis.png')} alt="Persona Travis"/>
+                        <img className='user-story' src={getImageSrc('traverse/Travis.png')} alt="Persona Travis"/>
                     </div>
                 </section>
                 <section className="block-statement">
@@ -184,11 +184,11 @@ export default class Traverse extends Component {
                         </p>
                     </div>
                     <div className="column">
-                        <img data-lightbox-group='full-flow' className='user-story' src={getImageSrc('traverse/traverse_flow.png')} alt="Full flow"/>
+                        <img className='user-story' src={getImageSrc('traverse/traverse_flow.png')} alt="Full flow"/>
                     </div>
                 </section>
                 <section className="full-image">
-                    <img data-lightbox-group='full' src={getImageSrc('traverse/wireframes.png')} alt="Traverse Wireframes"/>
+                    <img src={getImageSrc('traverse/wireframes.png')} alt="Traverse Wireframes"/>
                 </section>
                 <section className="block-statement">
                     Traverse’s brand captures the <strong>feeling of excitement and delight when discovering something new</strong>.
@@ -210,7 +210,7 @@ export default class Traverse extends Component {
                     </div>
                 </section>
                 <section className="full-image">
-                    <img data-lightbox-group='style-guide' src={getImageSrc('traverse/style_guide.png')} alt="Traverse style guide"/>
+                    <img src={getImageSrc('traverse/style_guide.png')} alt="Traverse style guide"/>
                 </section>
             </div>
         </div>

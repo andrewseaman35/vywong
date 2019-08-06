@@ -55,7 +55,7 @@ export default class Amma extends Component {
                         </p>
                     </div>
                     <div className="column second">
-                        <img data-lightbox-group='persona' data-lightbox-class='no-background' src={getImageSrc('amma/Skye.png')} alt="Persona Skye"/>
+                        <img src={getImageSrc('amma/Skye.png')} alt="Persona Skye"/>
                     </div>
                 </section>
                 <section className="block-statement">
@@ -78,12 +78,12 @@ export default class Amma extends Component {
                         </blockquote>
                     </div>
                     <div className="column two-images">
-                        <img className="column-image first" data-lightbox-group='persona' data-lightbox-class='no-background' src={getImageSrc('amma/dashboard.png')} alt="Dashboard Wireframe"/>
-                        <img className="column-image" data-lightbox-group='persona' data-lightbox-class='no-background' src={getImageSrc('amma/history_logs.png')} alt="History Log Wireframe"/>
+                        <img className="column-image first" src={getImageSrc('amma/dashboard.png')} alt="Dashboard Wireframe"/>
+                        <img className="column-image" src={getImageSrc('amma/history_logs.png')} alt="History Log Wireframe"/>
                     </div>
                 </section>
                 <section className="full-image">
-                    <img data-lightbox-group='full' src={getImageSrc('amma/dashboard_history_logs.png')} alt="Style Guide"/>
+                    <img src={getImageSrc('amma/dashboard_history_logs.png')} alt="Style Guide"/>
                 </section>
                 <section className="dual-text">
                     <div className="column first">
