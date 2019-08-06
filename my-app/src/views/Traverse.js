@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import LoadMoreButton from '../components/LoadMoreButton';
 import { getImageSrc } from '../js/util';
-import { ScrollTracker, trackLinkClick } from '../js/tracking';
-import initLightbox from '../components/Lightbox';
+import { ScrollTracker } from '../js/tracking';
 
 
 export default class Traverse extends Component {
@@ -72,8 +71,7 @@ export default class Traverse extends Component {
                     </div>
                 </section>
                 <section className="block-statement">
-                    By removing the time-consuming app-hopping and route tweaking,
-                    you get back your time to explore and discover.
+                    <strong>By removing the time-consuming app-hopping and route tweaking</strong>, you get back your time to explore and discover.
                 </section>
                 <section className="dual-text">
                     <div className="column first">
@@ -100,7 +98,7 @@ export default class Traverse extends Component {
                     </div>
                 </section>
                 <section className="block-statement">
-                    Expedited can still involving planning ahead, just not too far in advance.
+                    <strong>Expedited can still involve planning ahead</strong>, just not too far in advance.
                 </section>
                 <section className="dual-text">
                     <div className="column first">
@@ -139,7 +137,7 @@ export default class Traverse extends Component {
             </div>
             <div id='process-content' ref={this.processRef} className={`project-content inner ${processClass}`}>
                 <section className="block-statement">
-                    Starting at the beginning, I asked myself, what would help people explore more often?
+                    Starting at the beginning, I asked myself, <strong>what would help people explore more often?</strong>
                 </section>
                 <section className="dual-text">
                     <div className="column first">
@@ -173,8 +171,7 @@ export default class Traverse extends Component {
                     </div>
                 </section>
                 <section className="block-statement">
-                    If I was Travis, I would want a way to hit a few buttons,
-                    and be on my way to new places.
+                    If I was Travis, I would want a way to hit a few buttons, <strong>and be on my way to new places.</strong>
                 </section>
                 <section className="dual-text">
                     <div className="column first">
@@ -194,8 +191,7 @@ export default class Traverse extends Component {
                     <img data-lightbox-group='full' src={getImageSrc('traverse/wireframes.png')} alt="Traverse Wireframes"/>
                 </section>
                 <section className="block-statement">
-                    Traverse’s brand captures the feeling of excitement and delight when
-                    discovering something new.
+                    Traverse’s brand captures the <strong>feeling of excitement and delight when discovering something new</strong>.
                 </section>
                 <section className="dual-text">
                     <div className="column first">

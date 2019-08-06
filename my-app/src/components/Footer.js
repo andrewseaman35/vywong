@@ -4,7 +4,6 @@ const FOOTER_LINKS = [
     [
         {text: 'mycite', href: '/#/mycite'},
         {text: 'white label', href: '/#/ybvr_white_label'},
-        {text: 'ybvr brand', href: '/#/ybvr_brand'},
     ], [
         {text: 'traverse',  href: '/#/traverse'},
         {text: 'amma', href: '/#/amma'},

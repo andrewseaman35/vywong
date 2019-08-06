@@ -32,9 +32,9 @@ $ASSET_BASE_PATH: 'http://dsxhlwnbcmyjm.cloudfront.net/vywong';
 
 $screen-tiny-max: 600px;
 $screen-sml-min: $screen-tiny-max + 1;
-$screen-sml-max: 767px;
+$screen-sml-max: 599px;
 $screen-med-min: $screen-sml-max + 1;
-$screen-med-max: 1070px;
+$screen-med-max: 1024px;
 $screen-lrg-min: $screen-med-max + 1;
 
 @mixin screen-tiny {

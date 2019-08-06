@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import LoadMoreButton from '../components/LoadMoreButton';
 import { getImageSrc } from '../js/util';
-import { ScrollTracker, trackLinkClick } from '../js/tracking';
-import initLightbox from '../components/Lightbox';
+import { ScrollTracker } from '../js/tracking';
 
 
 export default class Amma extends Component {
@@ -39,8 +37,8 @@ export default class Amma extends Component {
             <div id='lightbox'></div>
             <div className="inner">
                 <section className="block-statement">
-                    “In 2017, 3,564 people died from asthma. Many of these deaths are
-                    avoidable with proper treatment and care.” –CDC
+                    “In 2017, 3,564 people died from asthma. <strong>Many of these deaths are
+                    avoidable with proper treatment and care</strong>.” –CDC
                 </section>
                 <section className="dual-text">
                     <div className="column first">
@@ -61,8 +59,8 @@ export default class Amma extends Component {
                     </div>
                 </section>
                 <section className="block-statement">
-                    If having asthma is part of Skye’s lifestyle, how can I offer a product
-                    that can change and improve how she lives?
+                    If having asthma is part of Skye’s lifestyle, how can I <strong>offer a product
+                    that can change and improve how she lives</strong>?
                 </section>
                 <section className="dual-text">
                     <div className="column first">
@@ -107,7 +105,7 @@ export default class Amma extends Component {
                     </div>
                 </section>
                 <section className="block-statement">
-                    Knowing what I learned from working on an FDA-approved product, what would I do differently?
+                    <strong>Knowing what I learned from working on an FDA-approved product</strong>, what would I do differently?
                 </section>
                 <section className="dual-text">
                     <div className="column first">

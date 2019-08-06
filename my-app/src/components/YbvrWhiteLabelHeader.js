@@ -19,15 +19,15 @@ export default class YbvrWhiteLabelHeader extends Component {
                             </div>
                             <div className="project-intro">
                                 <p>
-                                YBVR is an early stage VR startup, building the technology to live stream VR videos in 8K. 
-                                Their white label is a VR video streaming platform, built of modular video components that 
-                                can accommodate any assortment of VR video content. With rounds of trial and error, the UI 
+                                YBVR is an early stage VR startup, building the technology to live stream VR videos in 8K.
+                                Their white label is a VR video streaming platform, built of modular video components that
+                                can accommodate any assortment of VR video content. With rounds of trial and error, the UI
                                 is optimized to provide viewers with a smooth, comfortable, and accessible VR experience.
                                 </p>
                             </div>
                         </div>
-                        <div className="column project-header-images">
-                            <img className='project-header-images' src={getImageSrc('ybvr_white_label/YBVRexperience.png')} alt="YBVR Experience"/>
+                        <div className="column project-header-images ybvr_white_label">
+                            <img className='project-header-image' src={getImageSrc('ybvr_white_label/YBVRexperience.png')} alt="YBVR Experience"/>
                         </div>
                     </div>
                 </div>

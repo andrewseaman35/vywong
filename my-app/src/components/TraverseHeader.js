@@ -27,8 +27,12 @@ export default class TraverseHeader extends Component {
                             </div>
                         </div>
                         <div className="column project-header-images">
-                            <img className='project-header-image first' src={getImageSrc('traverse/whereto.png')} alt="Where to"/>
-                            <img className='project-header-image' src={getImageSrc('traverse/routing.png')} alt="Routing"/>
+                            <div className='project-header-container'>
+                                <img src={getImageSrc('traverse/whereto.png')} alt="Where to"/>
+                            </div>
+                            <div className='project-header-container'>
+                                <img src={getImageSrc('traverse/routing.png')} alt="Routing"/>
+                            </div>
                         </div>
                     </div>
                 </div>

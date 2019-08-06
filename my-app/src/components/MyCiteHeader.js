@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { getImageSrc } from '../js/util';
 
-export default class TraverseHeader extends Component {
+export default class MyCiteHeader extends Component {
     state = {}
 
     render () {
@@ -19,9 +19,9 @@ export default class TraverseHeader extends Component {
                             </div>
                             <div className="project-intro">
                                 <p>
-                                    The MYCITE system consists of an FDA-approved native iOS and Android app and a web-based portal. 
-                                    The MYCITE app tracks pill ingestion of a digestible sensor via a wearable patch on the patient. 
-                                    The app monitors the patient’s adherence to medication as well as self-reported mood, rest, and activity. 
+                                    The MYCITE system consists of an FDA-approved native iOS and Android app and a web-based portal.
+                                    The MYCITE app tracks pill ingestion of a digestible sensor via a wearable patch on the patient.
+                                    The app monitors the patient’s adherence to medication as well as self-reported mood, rest, and activity.
                                 </p>
                                 <p>
                                     Details of my work on the MYCITE project are under strict NDA.
@@ -29,8 +29,12 @@ export default class TraverseHeader extends Component {
                             </div>
                         </div>
                         <div className="column project-header-images">
-                            <img className='project-header-image first' src={getImageSrc('mycite/2.2_phone.png')} alt="Welcome"/>
-                            <img className='project-header-image' src={getImageSrc('mycite/2.2_phone_tablet_registered.png')} alt="Tablet Registered"/>
+                            <div className='project-header-container'>
+                                <img src={getImageSrc('mycite/2.2_phone.png')} alt="Welcome"/>
+                            </div>
+                            <div className='project-header-container'>
+                                <img src={getImageSrc('mycite/2.2_phone_tablet_registered.png')} alt="Tablet Registered"/>
+                            </div>
                         </div>
                     </div>
                 </div>

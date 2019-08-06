@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LoadMoreButton from '../components/LoadMoreButton';
 import { getImageSrc } from '../js/util';
-import { ScrollTracker, trackLinkClick } from '../js/tracking';
+import { ScrollTracker } from '../js/tracking';
 
 
 export default class YbvrWhiteLabel extends Component {
@@ -56,7 +56,7 @@ export default class YbvrWhiteLabel extends Component {
                         </p>
                     </div>
                     <div className="column">
-                        <img src={getImageSrc('ybvr_white_label/before.png')} alt="Before"/>
+                        <img className="ybvr-before" src={getImageSrc('ybvr_white_label/before.png')} alt="Before"/>
                     </div>
                 </section>
                 <section className="block-statement">
@@ -113,8 +113,7 @@ export default class YbvrWhiteLabel extends Component {
                     </div>
                 </section>
                 <section className="block-statement">
-                    <strong>So I tested and tested until I couldn’t test anymore.</strong>
-                    And then I ran the same tests with everyone else.
+                    <strong>So I tested and tested until I couldn’t test anymore.</strong> And then I ran the same tests with everyone else.
                 </section>
                 <section className="dual-text">
                     <div className="column first">
@@ -290,8 +289,7 @@ export default class YbvrWhiteLabel extends Component {
                     </div>
                 </section>
                 <section className="block-statement">
-                    With the addition of even more videos, <strong>we needed to build more modules</strong>
-                    to accommodate the added content.
+                    With the addition of even more videos, <strong>we needed to build more modules</strong> to accommodate the added content.
                 </section>
                 <section className="dual-text">
                     <div className="column first">

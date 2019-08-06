@@ -31,22 +31,51 @@
 
         &.inner {
             display: flex;
+            flex-direction: column;
             margin-top: 20px;
             margin-bottom: 20px;
+
+            padding: 0 20px;
+            @include not-small-screens {
+                flex-direction: row;
+                padding: 0 68px;
+            }
+
+            @include screen-large {
+                padding: 0 108px;
+            }
         }
 
         .column {
-            padding-left: 10px;
+            padding-left: 0px;
             width: calc(100% - 10px);
+            @include not-small-screens {
+                padding-left: 20px;
+            }
+
             &.first {
                 padding-left: 0;
-                padding-right: 10px;
+                padding-right: 0;
+
+                @include not-small-screens {
+                    padding-right: 20px;
+                }
             }
         }
     }
 
     .project-header-images {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        @include not-small-screens {
+            margin-top: 0;
+        }
+
+        .project-header-container {
+            width: calc((100% - 24px) / 2);
+        }
 
         .project-header-image {
             margin: 0;
@@ -55,20 +84,51 @@
                 margin-right: 40px;
             }
         }
+
+        &.ybvr_white_label {
+            .project-header-image {
+                width: auto;
+            }
+        }
     }
 }
 
 section {
     display: flex;
+    flex-direction: column;
     margin-top: 60px;
     margin-bottom: 60px;
 
+    @include screen-small {
+        flex-direction: row;
+    }
+    @include not-small-screens {
+        flex-direction: row;
+    }
+
     .column {
-        padding-left: 10px;
         width: calc(100% - 10px);
+        padding-left: 0;
+
+        @include not-small-screens {
+            padding-left: 20px;
+        }
+
+        .ybvr-before {
+            display: block;
+            margin: auto;
+            @include small-screens {
+                margin-top: 20px;
+            }
+        }
+
         &.first {
             padding-left: 0;
-            padding-right: 10px;
+            padding-right: 0;
+
+            @include not-small-screens {
+                padding-right: 20px;
+            }
         }
 
         &.two-images {
@@ -88,6 +148,7 @@ section {
     }
 
     &.block-statement {
+        display: block;
         border: solid 1px $DARK_GRAY;
         padding: 20px;
         font-size: 24px;
@@ -107,7 +168,7 @@ section {
     }
 }
 .image-container {
-    background-color: $MED_GRAY; 
+    background-color: $MED_GRAY;
     padding: 10px 60px;
 }
 .load-more {
@@ -185,7 +246,7 @@ section {
     min-width: 33%;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 20px 0 0;
     line-height: 26px;
 
     strong {
@@ -194,7 +255,7 @@ section {
 }
 
 .project-intro {
-    padding: 0 20px;
+    padding: 0 20px 0 0;
     @include screen-small {
         margin-top: 32px;
     }
@@ -213,10 +274,18 @@ section {
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
-    padding: 0 48px;
+    padding: 0 20px;
 
-    @include screen-small {
-        padding: 0 20px;
+    @include not-small-screens {
+        padding: 0 48px;
+    }
+
+
+    .inner {
+        padding: 0;
+        @include not-small-screens {
+            padding: 0 20px;
+        }
     }
 }
 
@@ -334,6 +403,9 @@ section {
                 max-width: 600px;
             }
         }
+    }
+    section {
+        flex-direction: column;
     }
 }
 

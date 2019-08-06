@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { getImageSrc } from '../js/util';
 
-export default class TraverseHeader extends Component {
+export default class AmmaHeader extends Component {
     state = {}
 
     render () {
@@ -30,8 +30,12 @@ export default class TraverseHeader extends Component {
                             </div>
                         </div>
                         <div className="column project-header-images">
-                            <img className='project-header-image first' src={getImageSrc('amma/key_1_dashboard.png')} alt="Dashboard"/>
-                            <img className='project-header-image' src={getImageSrc('amma/key_4_history_logs.png')} alt="History Logs"/>
+                            <div className='project-header-container'>
+                                <img src={getImageSrc('amma/key_1_dashboard.png')} alt="Dashboard"/>
+                            </div>
+                            <div className='project-header-container'>
+                                <img src={getImageSrc('amma/key_4_history_logs.png')} alt="History Logs"/>
+                            </div>
                         </div>
                     </div>
                 </div>
