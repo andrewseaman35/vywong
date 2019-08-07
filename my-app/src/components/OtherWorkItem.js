@@ -13,8 +13,8 @@ export default class OtherWorkItem extends Component {
                 </div>
                 <div className="item-description">
                     <h2 className="item-title">{this.props.title}</h2>
+                    <p className="item-tools">Tools:<strong> {this.props.tools}</strong></p>
                     <p className="item-content">{this.props.content}</p>
-                    <p className="item-tools">Tools: {this.props.tools}</p>
                 </div>
             </div>
         )

@@ -336,7 +336,7 @@ export default class YbvrWhiteLabel extends Component {
                         </p>
                     </div>
                     <div className="column">
-                        <img src={getImageSrc('ybvr_white_label/home_empty_state_2.png')} alt="Empty State"/>
+                        <img src={getImageSrc('ybvr_white_label/home_empty_state_3.png')} alt="Empty State"/>
                     </div>
                 </section>
                 <section className="dual-text">
