@@ -43,7 +43,7 @@ export default class YbvrWhiteLabel extends Component {
                 <section className="dual-text">
                     <div className="column first">
                         <p>
-                            As their UI/UX designer, I was tasked to improve the UI for their VR streaming platform. Their existing
+                            As YBVR's UI/UX designer, I was tasked to improve the UI for their VR streaming platform. Their existing
                             UI did not reduce aliasing and could not accommodate more than six videos. Per their B2B business model,
                             they wanted their white label platform to be customizable to customers and approachable to end users.
                         </p>

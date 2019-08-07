@@ -14,7 +14,7 @@ export default class AmmaHeader extends Component {
                         <div className="column first project-text">
                             <div className="project-details">
                                 <div className="detail">Product: <strong>Android App</strong></div>
-                                <div className="detail">Duration: <strong>3 weeks</strong></div>
+                                <div className="detail">Duration: <strong>3 Weeks</strong></div>
                                 <div className="detail">Role: <strong>Project Designer</strong></div>
                             </div>
                             <div className="project-intro">

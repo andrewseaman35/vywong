@@ -7,6 +7,7 @@
     justify-content: center;
     align-items:center;
     z-index: $Z_INDEX_HEADER;
+    opacity: .9;
 
     // These are required to let flexbox work with fixed position
     top: 0;
