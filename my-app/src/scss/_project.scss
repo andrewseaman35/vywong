@@ -188,10 +188,10 @@ section {
                 color: $FADED_ORANGE;
             }
             .load-more-button {
+                background-color: $FADED_ORANGE;
                 border-color: $FADED_ORANGE;
-
                 path {
-                    fill: $FADED_ORANGE;
+                    fill: $WHITE;
                 }
             }
         }
@@ -202,7 +202,6 @@ section {
             }
             .load-more-button {
                 border-color: $ORANGE;
-
                 path {
                     fill: $ORANGE;
                 }
@@ -216,10 +215,13 @@ section {
     }
 
     .load-more-text {
-        color: $GRAY;
         font-size: 18px;
         font-weight: bold;
         transition: all $TRANSITION_TIME;
+        color: $FADED_ORANGE;
+        @include not-small-screens {
+            color: $GRAY;
+        }
     }
     .load-more-button {
         margin: 10px;
@@ -227,8 +229,13 @@ section {
         width: 48px;
         border-radius: 100%;
         border-width: 3px;
-        border-color: $GRAY;
         transition: all $TRANSITION_TIME;
+        background-color: $FADED_ORANGE;
+        border-color: $FADED_ORANGE;
+        @include not-small-screens {
+            border-color: $GRAY;
+            background-color: transparent;
+        }
         
         svg {
             margin: 0;
@@ -237,8 +244,11 @@ section {
             vertical-align: middle;
         
             path {
-                fill: $GRAY;
+                fill: $WHITE;
                 transition: all $TRANSITION_TIME;
+                @include not-small-screens {
+                    fill: $GRAY;
+                }
             }
         }
     }
