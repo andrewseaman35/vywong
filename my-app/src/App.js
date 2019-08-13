@@ -3,7 +3,7 @@ import { HashRouter, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import createBrowserHistory from 'history/createBrowserHistory';
 
-import NewHome from './views/NewHome';
+import Home from './views/Home';
 import Page from './views/Page';
 import ProjectPage from './views/ProjectPage';
 
@@ -37,7 +37,7 @@ class App extends Component {
         <div>
           <Route exact={true} path='/' render={changePage.bind(null,
             <div className="App home">
-              <NewHome />
+              <Home />
             </div>
           )}/>
           <Route exact={true} path='/mycite' render={changePage.bind(null,
