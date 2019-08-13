@@ -38,21 +38,20 @@ export default class YbvrWhiteLabel extends Component {
             <div id='lightbox'></div>
             <div className="inner">
                 <section className="block-statement">
-                    It could be the best experience, <strong>if only VR didn’t make people motion sick and uncomfortable.</strong>
+                    If VR didn’t make people motion sick and uncomfortable, <strong>it could be the most immersive video streaming experience.</strong>
                 </section>
                 <section className="dual-text">
                     <div className="column first">
                         <p>
                             As YBVR's UI/UX designer, I was tasked to improve the UI for their VR streaming platform. Their existing
-                            UI did not reduce aliasing and could not accommodate more than six videos. Per their B2B business model,
-                            they wanted their white label platform to be customizable to customers and approachable to end users.
+                            UI did not reduce aliasing and could not accommodate more than six videos. As a part of their B2B business model,
+                            they wanted their white label platform to be customizable for customers and approachable to end users.
                         </p>
                         <p>
-                            With little knowledge or experience of VR beyond my own memories of getting motion sickness within VR,
+                            With little knowledge or experience of VR beyond my having gotten motion sickness within VR,
                             I prioritized learning about virtual reality before attempting to design for it. Through my interviews
-                            with VR experts a.k.a the YBVR founders, analysis of other VR platforms, and reading into articles,
-                            I found that by minimizing aliasing and optimizing field of view (FOV), I could build a foundation for
-                            the VR video platform.
+                            with VR experts, analysis of other VR platforms, and indepdendent research, I found that by minimizing
+                            aliasing and optimizing field of view (FOV), I could build a strong foundation for the VR video platform.
                         </p>
                     </div>
                     <div className="column">
@@ -65,20 +64,20 @@ export default class YbvrWhiteLabel extends Component {
                 <section className='no-margin'>
                     <div className="column first">
                         <p>
-                            In order to reduce aliasing in typography, I ran countless A/B tests to determine which typeface and
+                            In order to reduce aliasing in the typography, I ran countless A/B tests to determine which typeface and
                             font size would be most resistant to aliasing. During this process of trial and error, I found that
-                            the readability of text was also dependant on the background behind the text, which was unpredictable
+                            the readability of text was also dependant on the text's background, which was unpredictable
                             with changing backgrounds and different videos. By optimizing typography within VR as well as figuring
-                            out how to accommodate for unpredictable backgrounds, the usability and comfortableness of the features
+                            out how to accommodate for unpredictable backgrounds, the usability and comfort of the features
                             within VR are greatly improved.
                         </p>
                     </div>
                     <div className="column">
                         <p>
                             After getting a handle on aliasing, I turned my attention to understanding how to optimize the field of
-                            view (FOV) of VR so that I could build a foundation for the VR video platform. During my research of FOV
-                            and initial tests of layout mockups, I found that people naturally grouped sections of videos by how they
-                            were visually placed.
+                            view (FOV) of VR so that I could build a visual foundation for the VR video platform. Through research of FOV
+                            and by running some initial tests of layout mockups, I found that people naturally grouped sections of videos
+                            by how they were visually placed.
                         </p>
                         <p>
                             This realization gave me the idea to propose a modular construction of the UI, which allowed YBVR customers
@@ -305,7 +304,7 @@ export default class YbvrWhiteLabel extends Component {
                             As YBVR was developing the platform for Samsung GearVR and Google Daydream, I needed to take into account
                             the features of the headsets themselves; the GearVR has a touchpad on the headset with tap and swipe
                             capabilities and an optional handheld controller while the Daydream requires the use of a controller
-                            to interact with the interface. Because interacting with the interaction in VR is less common, I also
+                            to interact with the interface. Because interactions in VR are less familiar, I also
                             wanted a clear indication of what elements were clickable.
                         </p>
                     </div>

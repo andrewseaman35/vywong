@@ -165,6 +165,9 @@ section {
         .column+.column {
             img {
                 margin-top: 20px;
+                @include not-small-screens {
+                    margin-top: 0;
+                }
             }
         }
     }
