@@ -35,7 +35,6 @@ export default class YbvrWhiteLabel extends Component {
 
         return (
         <div className='ybvr_white_label'>
-            <div id='lightbox'></div>
             <div className="inner">
                 <section className="block-statement">
                     If VR didn’t make people motion sick and uncomfortable, <strong>it could be the most immersive video streaming experience.</strong>

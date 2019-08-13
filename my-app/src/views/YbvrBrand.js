@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
 import { getImageSrc } from '../js/util';
-import initLightbox from '../components/Lightbox';
 
 export default class YbvrBrand extends Component {
     state = {}
 
-    componentDidMount() {
-        initLightbox('ybvr_brand', 'lightbox')
-    }
-
     render () {
         return (
         <div className='ybvr-brand'>
-            <div id='lightbox'></div>
             <div className="before-after-container">
                 <div className="before">
                     <h2>Before</h2>

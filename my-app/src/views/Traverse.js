@@ -35,7 +35,6 @@ export default class Traverse extends Component {
 
         return (
         <div className='traverse'>
-            <div id='lightbox'></div>
             <div className="inner">
                 <section className="block-statement">
                     <strong>Exploration should be about experiencing new places</strong>,

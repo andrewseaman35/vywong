@@ -1,40 +1,16 @@
 import React, { Component } from 'react';
 import { getImageSrc } from '../js/util';
-import { ScrollTracker } from '../js/tracking';
+import { ScrollTracker, trackLinkClick } from '../js/tracking';
 
 
 export default class Amma extends Component {
-    constructor(props) {
-        super(props);
-        this.processRef = React.createRef()
-        this.showProcessContent = this.showProcessContent.bind(this);
-        this.state = {
-            processShown: false,
-            hideButtom: false,
-        }
-    }
-
     componentDidMount() {
         new ScrollTracker('amma');
     }
 
-    showProcessContent() {
-        this.setState({ processShown: true },
-            () => {
-                window.scrollTo(0, this.processRef.current.offsetTop - 350)
-                this.setState({
-                    hideButton: true,
-                })
-            }
-        );
-    }
-
     render () {
-        const processClass = this.state.processShown ? '' : 'hidden';
-
         return (
         <div className='traverse'>
-            <div id='lightbox'></div>
             <div className="inner">
                 <section className="block-statement">
                     “In 2017, 3,564 people died from asthma. <strong>Many of these deaths are
@@ -45,11 +21,11 @@ export default class Amma extends Component {
                         <p>
                             As an individual without asthma, I wanted to gather information
                             from first hand experiences of individuals living with asthma.
-                            I conducted interviews and heard about their recollections of
+                            I conducted interviews and heard their recollections of
                             having asthma attacks as well as how they have learned to cope
                             with living with asthma. Based on the interviews, I found that
                             although the individuals were diagnosed and treated for asthma,
-                            they did not know what would always cause their asthma attacks.
+                            they did not always know what would trigger their asthma attacks.
                             This lack of certainty often led people to feel weary and held
                             back by their asthma.
                         </p>
@@ -59,8 +35,8 @@ export default class Amma extends Component {
                     </div>
                 </section>
                 <section className="block-statement">
-                    If having asthma is part of Skye’s lifestyle, how can I <strong>offer a product
-                    that can change and improve how she lives</strong>?
+                    If having asthma is part of Skye’s lifestyle, <strong>how can I offer a product
+                    that can change and improve how she lives?</strong>
                 </section>
                 <section className="dual-text">
                     <div className="column first">
@@ -96,7 +72,7 @@ export default class Amma extends Component {
                     </div>
                     <div className="column">
                         <p>
-                            This feedback suggested that the asthma logging process  and
+                            This feedback suggested that the asthma logging process and
                             visualization of the history logs were too convoluted and needed to
                             be streamlined. For future iterations of the project, I would revisit
                             ways to make user entry easier and the data visualization more
@@ -110,7 +86,7 @@ export default class Amma extends Component {
                 <section className="dual-text">
                     <div className="column first">
                         <p>
-                            After working on the <a href='/#/mycite'>MYCITE project</a> and understanding the
+                            After working on the <a href='/#/mycite' onClick={function() { trackLinkClick('amma-mycite') }}>MYCITE project</a> and understanding the
                             ]thoroughness of human factor studies in relation to medical devices, I wanted
                             to reflect on AMMA as a viable medicine companion app.
                         </p>
@@ -138,5 +114,5 @@ export default class Amma extends Component {
             </div>
         </div>
         )
-   }
+    }
 }

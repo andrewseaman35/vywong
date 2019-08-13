@@ -10,7 +10,6 @@ import ProjectPage from './views/ProjectPage';
 import MyCite from './views/MyCite';
 import Traverse from './views/Traverse';
 import YbvrWhiteLabel from './views/YbvrWhiteLabel';
-import YbvrBrand from './views/YbvrBrand';
 import Amma from './views/Amma';
 import Other from './views/Other';
 
@@ -53,13 +52,6 @@ class App extends Component {
               <Page project='ybvr_white_label'>
                 <YbvrWhiteLabel />
               </Page>
-            </div>
-          )}/>
-          <Route exact={true} path='/ybvr_brand' render={changePage.bind(null,
-            <div className="App">
-              <ProjectPage project='ybvr_brand'>
-                <YbvrBrand />
-              </ProjectPage>
             </div>
           )}/>
           <Route exact={true} path='/traverse' render={changePage.bind(null,
