@@ -90,6 +90,10 @@
     }
 }
 
+.column-image {
+    vertical-align: top;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -104,10 +108,10 @@ section {
     }
 
     .column {
-        width: calc(100% - 10px);
         padding-left: 0;
 
         @include not-small-screens {
+            width: calc(100% - 10px);
             padding-left: 20px;
         }
 
@@ -156,7 +160,13 @@ section {
     &.dual-text {
         blockquote {
             font-size: 16px;
-        }   
+        }
+
+        .column+.column {
+            img {
+                margin-top: 20px;
+            }
+        }
     }
 
     &.full-image {
@@ -210,7 +220,7 @@ section {
         }
     }
 
-    &.hide { 
+    &.hide {
         display: none;
     }
 
@@ -236,13 +246,13 @@ section {
             border-color: $GRAY;
             background-color: transparent;
         }
-        
+
         svg {
             margin: 0;
             width: 20px;
             height: 28px;
             vertical-align: middle;
-        
+
             path {
                 fill: $WHITE;
                 transition: all $TRANSITION_TIME;
