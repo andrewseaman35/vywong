@@ -57,8 +57,8 @@ export default class Traverse extends Component {
                         <p>
                             Ample survey responses of people who love exploring new places showed the
                             market for an exploration app. The frustration of the current painfully
-                            slow manual process of explore pointed to an opportunity to create a single
-                            experience for people discover, navigate, and explore new places.
+                            slow manual process of exploring pointed to an opportunity to create a single
+                            experience for people to discover, navigate, and explore new places.
                         </p>
                     </div>
                 </section>
@@ -71,7 +71,7 @@ export default class Traverse extends Component {
                     </div>
                 </section>
                 <section className="block-statement">
-                    <strong>By removing the time-consuming app-hopping and route tweaking</strong>, you get back your time to explore and discover.
+                    By removing the time-consuming app-hopping and route tweaking, <strong>you get back your time to explore and discover.</strong>
                 </section>
                 <section className="dual-text">
                     <div className="column first">
@@ -80,20 +80,20 @@ export default class Traverse extends Component {
                             Travis, the travel-when-I-can, and Emily, the travel-to-see-it-all.
                             With the assumption that users who extensively planned trips would be
                             desktop users, I wanted to focus my initial prototype on Travis, the
-                            on-the-go weekend tripper in order to targer mobile users with high
+                            on-the-go weekend tripper in order to target mobile users with high
                             app usage.
                         </p>
                         <p>
                             For the core experience, I tailored to the impromptu traveling habits
                             of Travis and designed a flow that would allow for an expedited process
-                            to finding a route with sites nearby. Throughout the wireframing and
+                            of finding a route with sites nearby. Throughout the wireframing and
                             mockup process, I gathered user feedback to refine the exploration
                             experience from account creation to route navigation.
                         </p>
                     </div>
                     <div className="column">
                         <div className="image-container">
-                            <img src={getImageSrc('traverse/must_sees.png')} alt="Onboarding must see"/>
+                            <img src={getImageSrc('traverse/must_sees.png')} alt="Onboarding must sees"/>
                         </div>
                     </div>
                 </section>
@@ -106,8 +106,9 @@ export default class Traverse extends Component {
                             Feedback gathered from my rounds of user testing included:
                         </p>
                         <blockquote className="quote">
-                            Onboarding steps were too long and users felt personal details and friend invitation were unnecessary <br/>
-                            Users wanted the option to save a trip for the future Users asked for the ability to customize generated routes <br/>
+                            Onboarding steps were too long and users felt personal details and friend invitations were unnecessary <br/>
+                            Users wanted the option to save a trip for the future <br/>
+                            Users asked for the ability to customize generated routes <br/>
                             Users preferred to see reviews and information from apps they normally used<br/>
                         </blockquote>
                     </div>
@@ -153,12 +154,12 @@ export default class Traverse extends Component {
                         <p>
                             I wanted to gain a better understanding of the potential opportunity
                             as well as target users for the app. I conducted interviews with
-                            people who said they liked to explore to get clearer understanding of
-                            how people explored local spots and when traveling. I focused my
+                            people who said they liked to explore to get a clearer understanding of
+                            how people explored local spots when traveling. I focused my
                             questions around how they found and planned their trips as well as
-                            what they liked and felt frustration about their planning and the
-                            execution of their exploration. Based on the information gathered, I
-                            built personas that encompassed two types of explorers: Emily and Travis.
+                            what their likes and frustrations about their planning and exploring
+                            process. Based on the information gathered, I built personas that
+                            encompassed two types of explorers: Emily and Travis.
                         </p>
                     </div>
                 </section>
@@ -171,14 +172,14 @@ export default class Traverse extends Component {
                     </div>
                 </section>
                 <section className="block-statement">
-                    If I was Travis, I would want a way to hit a few buttons, <strong>and be on my way to new places.</strong>
+                    If I was Travis, I would want to <strong>hit a few buttons and be on my way to new places.</strong>
                 </section>
                 <section className="dual-text">
                     <div className="column first">
                         <p>
                             Within the three week timeframe, I chose to focus on Travis’ user flow
                             as my initial persona. With the assumption that users like Travis who
-                            take impromptu weekend trips, they would have more opportunities to
+                            take impromptu weekend trips would have more opportunities to
                             utilize the core feature of the app: expedited route discovery and
                             navigation.
                         </p>
