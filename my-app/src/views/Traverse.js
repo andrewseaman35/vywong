@@ -209,8 +209,15 @@ export default class Traverse extends Component {
                         </p>
                     </div>
                 </section>
-                <section className="full-image">
-                    <img src={getImageSrc('traverse/style_guide.png')} alt="Traverse style guide"/>
+                <section className="dual-text">
+                    <div className="column first two-images">
+                        <img className="column-image first" src={getImageSrc('traverse/whereto2.png')} alt="Home"/>
+                        <img className="column-image" src={getImageSrc('traverse/create_route.png')} alt="Create Route"/>
+                    </div>
+                    <div className="column two-images">
+                        <img className="column-image first" src={getImageSrc('traverse/navigation_preview.png')} alt="Route Preview"/>
+                        <img className="column-image" src={getImageSrc('traverse/navigation_in_progress.png')} alt="Navigation"/>
+                    </div>
                 </section>
             </div>
         </div>
