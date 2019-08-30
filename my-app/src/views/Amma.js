@@ -59,7 +59,7 @@ export default class Amma extends Component {
                     </div>
                 </section>
                 <section className="full-image">
-                    <img src={getImageSrc('amma/dashboard_history_logs.png')} alt="Style Guide"/>
+                    <img src={getImageSrc('amma/dashboard_history_logs2.png')} alt="Amma Dashboard"/>
                 </section>
                 <section className="dual-text">
                     <div className="column first">

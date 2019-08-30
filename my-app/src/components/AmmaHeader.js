@@ -31,10 +31,10 @@ export default class AmmaHeader extends Component {
                         </div>
                         <div className="column project-header-images">
                             <div className='project-header-container'>
-                                <img src={getImageSrc('amma/key_1_dashboard.png')} alt="Dashboard"/>
+                                <img src={getImageSrc('amma/1dashboard.png')} alt="Dashboard"/>
                             </div>
                             <div className='project-header-container'>
-                                <img src={getImageSrc('amma/key_4_history_logs.png')} alt="History Logs"/>
+                                <img src={getImageSrc('amma/2history_logs.png')} alt="History Logs"/>
                             </div>
                         </div>
                     </div>
