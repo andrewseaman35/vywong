@@ -182,6 +182,8 @@ section {
     background-color: $MED_GRAY;
     padding: 20px 60px;
 }
+
+.back-to-top,
 .load-more {
     $TRANSITION_TIME: 0.3s;
     display: flex;
@@ -190,6 +192,7 @@ section {
     align-items: center;
     user-select: none;
 
+    .back-to-top-container,
     .load-more-container {
         display: flex;
         flex-direction: column;
@@ -200,6 +203,7 @@ section {
             .load-more-text {
                 color: $FADED_ORANGE;
             }
+            .back-to-top-button,
             .load-more-button {
                 background-color: $FADED_ORANGE;
                 border-color: $FADED_ORANGE;
@@ -213,6 +217,7 @@ section {
             .load-more-text {
                 color: $ORANGE;
             }
+            .back-to-top-button,
             .load-more-button {
                 border-color: $ORANGE;
                 path {
@@ -236,6 +241,7 @@ section {
             color: $GRAY;
         }
     }
+    .back-to-top-button,
     .load-more-button {
         margin: 10px;
         height: 48px;
@@ -263,6 +269,35 @@ section {
                     fill: $GRAY;
                 }
             }
+        }
+    }
+
+    button:focus {
+        outline: 0;
+        border-color: $FADED_ORANGE;
+        path {
+            fill: $FADED_ORANGE;
+        }
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+
+    .back-to-top-container {
+        svg {
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+    }
+
+    &.hidden {
+        pointer-events: none;
+        button {
+            opacity: 0;
         }
     }
 }

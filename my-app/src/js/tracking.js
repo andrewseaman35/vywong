@@ -19,6 +19,14 @@ export function trackLinkClick(linkId) {
     });
 };
 
+export function trackButtonClick(buttonId) {
+    ReactGA.event({
+        category: 'button',
+        action: 'click',
+        label: buttonId,
+    });
+};
+
 export function trackLightbox(page, action, label) {
     ReactGA.event({
         category: 'lightbox-' + page,
