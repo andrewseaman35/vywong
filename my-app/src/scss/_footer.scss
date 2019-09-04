@@ -1,6 +1,6 @@
 .footer {
     height: $FOOTER_HEIGHT;
-    background-color: #1f1f1f;
+    background-color: $WHITE;
     color: #999;
     margin-top: 24px;
     text-align: center;
@@ -9,54 +9,165 @@
     .inner {
         padding-top: 24px;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+        flex-direction: column;
+        padding-bottom:  48px;
+
+        @include screen-large {
+            flex-direction: row;
+            padding-bottom:  0;
+        }
     }
 
-    .title {
-        height: 48px;
+    .icon-button {
+        width: 30px;
+        height: 30px;
+        border-radius: 20%;
+        border-width: 2px;
+        transition: all $TRANSITION_TIME;
+        border-color: $GRAY;
+        border-style: solid;
+        @include screen-large {
+            margin-right: 20px;
+        }
+
+        svg {
+            margin: 0;
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            transition: all $TRANSITION_TIME;
+
+            rect {
+                transition: all $TRANSITION_TIME;
+            }
+            path {
+                transition: all $TRANSITION_TIME;
+                fill: $GRAY;
+            }
+        }
+        &:hover {
+            border-color: $FADED_ORANGE;
+            svg path {
+                fill: $FADED_ORANGE;
+            }
+        }
+
+        &.email {
+            svg {
+                transition: all $TRANSITION_TIME;
+                width: 24px;
+                path {
+                    transition: all $TRANSITION_TIME;
+                    fill: none;
+                }
+            }
+            &:hover {
+                svg {
+                    rect,
+                    path {
+                        stroke: $FADED_ORANGE;
+                    }
+                }
+            }
+        }
     }
 
-    .footer-title {
-        display: inline-block;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        float: none;
-        color: $LIGHT_GRAY;
-        font-size: 18px;
-        line-height: 18px;
-        font-weight: 400;
-        text-align: left;
+    .icon-link-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        @include screen-large {
+            flex-direction: row;
+        }
+
+        .vyw-logo {
+            padding: 0;
+            margin-bottom: 32px;
+            @include screen-large {
+                margin-bottom: 0;
+                padding: 0 40px 0 0;
+                height: 48px;
+            }
+
+            img {
+                height: 64px;
+                min-width: 104px;
+            }
+        }
     }
 
-    .link-container {
+    .inner-link-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        @include small-screens {
+            margin-bottom: 40px;
+            a:first-child .icon-button {
+                margin-right: 20px;
+            }
+        }
+
+        @include screen-medium-only {
+            margin-bottom: 40px;
+            a:first-child .icon-button {
+                margin-right: 20px;
+            }
+        }
+
+    }
+
+    .project-link-container {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+
+        @include screen-large {
+            margin-right: 30px;
+            flex-direction: row;
+        }
+
+        .footer-project-link {
+            padding: 0;
+            margin-bottom: 20px;
+
+            @include screen-large {
+                padding: 0 0 0 40px;
+                margin-bottom: 0;
+            }
+
+        }
+        a:hover {
+            color: $FADED_ORANGE;
+        }
     }
 
-    .link-container .link-column {
+    .project-group {
         display: flex;
         flex-direction: column;
-        width: 140px;
-    }
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 0;
 
-    a.footer-link {
-        color: #616161;
-        font-size: 14px;
-        text-align: center;
-        padding-bottom: 5px;
-        line-height: 18px;
+        @include small-screens {
+            &:first-child {
+                margin-right: 64px;
+            }
+        }
+        @include screen-medium-only {
+            &:first-child {
+                margin-right: 64px;
+            }
+        }
 
-        -o-transition:.5s;
-        -ms-transition:.5s;
-        -moz-transition:.5s;
-        -webkit-transition:.5s;
-        transition:.5s;
 
-        &:hover {
-            color: rgb(244, 156, 80);
-            cursor: pointer;
+        @include screen-large {
+            flex-direction: row;
         }
     }
 }

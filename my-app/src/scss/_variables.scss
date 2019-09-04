@@ -12,10 +12,12 @@ $DARK_ORANGE: #F49C50;
 $DOT_UNSELECTED: #878787;
 $DOT_SELECTED: $WHITE;
 
+$TRANSITION_TIME: 0.3s;
+
 $YBVR_DARK: #333132;
 
 $CONTENT_MARGIN: 20%;
-$FOOTER_HEIGHT: 170px;
+$FOOTER_HEIGHT: 100px;
 $ABOUT_MARGIN_TOP: 140px;
 $INNER_MARGIN_TOP: 60px;
 
@@ -61,6 +63,11 @@ $screen-lrg-min: $screen-med-max + 1;
 
  @mixin screen-medium {
     @media (min-width: #{$screen-med-min}) {
+        @content;
+    }
+ }
+ @mixin screen-medium-only {
+    @media (min-width: #{$screen-med-min}) and (max-width: #{$screen-med-max}) {
         @content;
     }
  }
