@@ -306,6 +306,9 @@ section {
     &.hidden {
         height: 0;
         overflow: hidden;
+        &.inner {
+            margin: 0;
+        }
     }
 }
 
