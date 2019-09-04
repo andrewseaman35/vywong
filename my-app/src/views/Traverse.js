@@ -188,7 +188,7 @@ export default class Traverse extends Component {
                     </div>
                 </section>
                 <section className="full-image">
-                    <img src={getImageSrc('traverse/wireframes.png')} alt="Traverse Wireframes"/>
+                    <img src={getImageSrc('traverse/wireframes_2.png')} alt="Traverse Wireframes"/>
                 </section>
                 <section className="block-statement">
                     Traverse’s brand captures the <strong>feeling of excitement and delight when discovering something new</strong>.
