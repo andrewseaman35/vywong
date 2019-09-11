@@ -1,10 +1,14 @@
 .footer {
-    height: $FOOTER_HEIGHT;
+    height: auto;
     background-color: $MED_GRAY;
     color: #999;
     margin-top: 24px;
     text-align: center;
     text-transform: uppercase;
+    
+    @include screen-large {
+        height: $FOOTER_HEIGHT;
+    }
 
     .inner {
         padding-top: 40px;
@@ -12,112 +16,12 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        padding-bottom:  48px;
+        padding-bottom:  40px;
+        
         @include screen-large {
             flex-direction: row;
             padding-bottom:  0;
         }
-    }
-
-    .icon-button {
-        width: 30px;
-        height: 30px;
-        border-radius: 20%;
-        border-width: 2px;
-        transition: all $TRANSITION_TIME;
-        border-color: $GRAY;
-        border-style: solid;
-        @include screen-large {
-            margin-right: 20px;
-        }
-
-        svg {
-            margin: 0;
-            width: 30px;
-            height: 30px;
-            vertical-align: middle;
-            transition: all $TRANSITION_TIME;
-
-            rect {
-                transition: all $TRANSITION_TIME;
-            }
-            path {
-                transition: all $TRANSITION_TIME;
-                fill: $GRAY;
-            }
-        }
-        &:hover {
-            border-color: $FADED_ORANGE;
-            svg path {
-                fill: $FADED_ORANGE;
-            }
-        }
-
-        &.email {
-            svg {
-                transition: all $TRANSITION_TIME;
-                width: 24px;
-                path {
-                    transition: all $TRANSITION_TIME;
-                    fill: none;
-                }
-            }
-            &:hover {
-                svg {
-                    rect,
-                    path {
-                        stroke: $FADED_ORANGE;
-                    }
-                }
-            }
-        }
-    }
-
-    .icon-link-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        @include screen-large {
-            flex-direction: row;
-        }
-
-        .vyw-logo {
-            padding: 0;
-            margin-bottom: 32px;
-            @include screen-large {
-                margin-bottom: 0;
-                padding: 0 40px 0 0;
-                height: 48px;
-            }
-
-            img {
-                height: 64px;
-                min-width: 104px;
-            }
-        }
-    }
-
-    .inner-link-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-
-        @include small-screens {
-            margin-bottom: 40px;
-            a:first-child .icon-button {
-                margin-right: 20px;
-            }
-        }
-
-        @include screen-medium-only {
-            margin-bottom: 40px;
-            a:first-child .icon-button {
-                margin-right: 20px;
-            }
-        }
-
     }
 
     .project-link-container {
@@ -140,6 +44,9 @@
                 padding: 0 20px 0 20px;
                 margin-bottom: 0;
             }
+            &:last-child {
+                margin-bottom: 0;
+            }
 
         }
         a:hover {
@@ -153,17 +60,6 @@
         justify-content: space-between;
         align-items: center;
         margin-right: 0;
-
-        @include small-screens {
-            &:first-child {
-                margin-right: 0px;
-            }
-        }
-        @include screen-medium-only {
-            &:first-child {
-                margin-right: 0px;
-            }
-        }
 
         @include screen-large {
             flex-direction: row;

@@ -27,8 +27,10 @@
     border-radius: 20%;
     border-width: 2px;
     transition: all $TRANSITION_TIME;
+    background-color: $GRAY;
     border-color: $GRAY;
     border-style: solid;
+    display: flex;
     @include screen-large {
         margin-right: 20px;
     }
@@ -45,13 +47,14 @@
         }
         path {
             transition: all $TRANSITION_TIME;
-            fill: $GRAY;
+            fill: $WHITE;
         }
     }
     &:hover {
         border-color: $FADED_ORANGE;
+        background-color: $FADED_ORANGE;
         svg path {
-            fill: $FADED_ORANGE;
+            fill: $WHITE;
         }
     }
 
@@ -59,9 +62,14 @@
         svg {
             transition: all $TRANSITION_TIME;
             width: 24px;
+            margin-left: auto;
+            margin-right: auto;
             path {
                 transition: all $TRANSITION_TIME;
                 fill: none;
+            }
+            g {
+                fill:$WHITE;
             }
         }
         &:hover {
@@ -80,6 +88,8 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    position: absolute;
+    right: 12px;
 
     @include small-screens {
         margin-bottom: 40px;
