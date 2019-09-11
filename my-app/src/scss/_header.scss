@@ -20,3 +20,79 @@
     }
 
 }
+
+.icon-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    border-width: 2px;
+    transition: all $TRANSITION_TIME;
+    border-color: $GRAY;
+    border-style: solid;
+    @include screen-large {
+        margin-right: 20px;
+    }
+
+    svg {
+        margin: 0;
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        transition: all $TRANSITION_TIME;
+
+        rect {
+            transition: all $TRANSITION_TIME;
+        }
+        path {
+            transition: all $TRANSITION_TIME;
+            fill: $GRAY;
+        }
+    }
+    &:hover {
+        border-color: $FADED_ORANGE;
+        svg path {
+            fill: $FADED_ORANGE;
+        }
+    }
+
+    &.email {
+        svg {
+            transition: all $TRANSITION_TIME;
+            width: 24px;
+            path {
+                transition: all $TRANSITION_TIME;
+                fill: none;
+            }
+        }
+        &:hover {
+            svg {
+                rect,
+                path {
+                    stroke: $FADED_ORANGE;
+                }
+            }
+        }
+    }
+}
+
+.inner-link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    @include small-screens {
+        margin-bottom: 40px;
+        a:first-child .icon-button {
+            margin-right: 20px;
+        }
+    }
+
+    @include screen-medium-only {
+        margin-bottom: 40px;
+        a:first-child .icon-button {
+            margin-right: 20px;
+        }
+    }
+
+}
