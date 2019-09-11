@@ -1,19 +1,18 @@
 .footer {
     height: $FOOTER_HEIGHT;
-    background-color: $WHITE;
+    background-color: $MED_GRAY;
     color: #999;
     margin-top: 24px;
     text-align: center;
     text-transform: uppercase;
 
     .inner {
-        padding-top: 24px;
+        padding-top: 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
         padding-bottom:  48px;
-
         @include screen-large {
             flex-direction: row;
             padding-bottom:  0;
@@ -126,9 +125,10 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin: 0 auto;
 
         @include screen-large {
-            margin-right: 30px;
+            // margin-right: 30px;
             flex-direction: row;
         }
 
@@ -137,7 +137,7 @@
             margin-bottom: 20px;
 
             @include screen-large {
-                padding: 0 0 0 40px;
+                padding: 0 20px 0 20px;
                 margin-bottom: 0;
             }
 
@@ -156,15 +156,14 @@
 
         @include small-screens {
             &:first-child {
-                margin-right: 64px;
+                margin-right: 0px;
             }
         }
         @include screen-medium-only {
             &:first-child {
-                margin-right: 64px;
+                margin-right: 0px;
             }
         }
-
 
         @include screen-large {
             flex-direction: row;
