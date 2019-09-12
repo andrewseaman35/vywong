@@ -252,7 +252,7 @@ section {
         border-color: $FADED_ORANGE;
         @include not-small-screens {
             border-color: $GRAY;
-            background-color: transparent;
+            background-color: $GRAY;
         }
 
         svg {
@@ -265,7 +265,7 @@ section {
                 fill: $WHITE;
                 transition: all $TRANSITION_TIME;
                 @include not-small-screens {
-                    fill: $GRAY;
+                    fill: $WHITE;
                 }
             }
         }

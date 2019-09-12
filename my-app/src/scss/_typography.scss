@@ -9,10 +9,10 @@ a {
     font-weight: 700;
 
     &.highlighted {
-        color: $ORANGE;
+        color: $GRAY;
 
         &:hover {
-            text-decoration: underline;
+            color: $FADED_ORANGE;
         }
     };
 }

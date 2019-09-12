@@ -63,7 +63,7 @@ export default class Home extends Component {
                                     to create delightful experiences for others.
                                 </p>
                                 <p>
-                                    Want to see older visual designs? <a className='highlighted' href='/#/other/'>Click here!</a>
+                                    <a className='highlighted' href='/#/other/'>Want to see older visual designs? Click here!</a>
                                 </p>
                             </div>
                         </div>
