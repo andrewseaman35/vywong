@@ -1,5 +1,5 @@
 function getImageSrc(path) {
-    return 'http://dsxhlwnbcmyjm.cloudfront.net/vywong/' + path;
+    return 'https://dsxhlwnbcmyjm.cloudfront.net/vywong/' + path;
 }
 
 export {
